@@ -1,0 +1,23 @@
+/* src/app/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  background-color: #f8f3ea;
+  color: #E5E5E5;
+
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  
+}

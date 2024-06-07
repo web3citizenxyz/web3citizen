@@ -1,0 +1,314 @@
+.learnSection {
+    display: flex;
+    width: 100%;
+    background-color: #2b2c3a;
+    padding: 200px 0;
+  position: relative;
+ 
+  }
+  
+  .leftSection {
+    flex: 1;
+    position: relative;
+   
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width:50%;
+    height: 100%;
+    background-image: url('/images/learn-elipse.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+ 
+  }
+  .rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   width: 50%;
+   
+  }
+  
+  .contentWrapper {
+    width: 100%;
+  
+  }
+  
+  .textContent {
+    text-align: left;
+   width: 100%;
+   margin-bottom: 100px;
+  }
+  .textContent h1 {
+    font-family: 'Montserrat';
+    font-size: 86px;
+    font-weight: 500;
+  }
+  
+  .textContent p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+.swiperContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+  
+  .swiperSlide {
+    display: flex;
+    justify-content: center;
+    cursor: pointer; 
+  
+  }
+  
+  .card {
+    width: 260px;
+    height: 150px;
+    background-color: #2b2c3a;
+    color: #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+    margin-right: 10px;
+  }
+  .card h2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .card p {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+
+  .dash {
+    display: block;
+    width: 10px;
+    height: 2px; 
+    background-color: #e5e5e5; 
+    margin-bottom:  -15px; 
+  }
+
+
+.buttonWrapper {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+   
+  }
+  
+
+  .learnMore {
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+   text-decoration: underline;
+    border: none;
+    background: none;
+    position: relative;
+  }
+  
+  .learnMore:hover .arrows {
+    animation: moveArrows 1s infinite;
+  }
+  
+  .arrows {
+    margin-right: 10px;
+    position: absolute;
+    top: -20px;
+    right: 0%;
+  }
+  
+  @keyframes moveArrows {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .learnSection {
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 0; 
+
+      }
+    
+      .background {
+        
+          position: absolute;
+          top: 50% !important;
+          left: -1% !important;
+          width: 55% !important;
+          height: 50% !important;
+          background-image: url('/images/learn-elipse-mobile.svg');
+          background-size: cover;
+          background-position: center;
+          z-index: 1;
+       }
+    
+      .rightSection {
+        width: 100%;
+        align-items: center;
+      }
+    
+      .contentWrapper {
+        text-align: left;
+        width: 130%;
+       
+      }
+    
+      .textContent {
+        margin-bottom: 100px;
+        padding: 0;
+        width: 100%;
+        margin-top: 0px;
+ 
+      }
+    
+      .textContent h1 {
+        font-size: 40px !important;
+        margin-left: 10px;
+      }
+    
+      .textContent p {
+        font-size: 18px;
+        margin: 0 10px;
+        margin-bottom: 10px;
+      }
+    
+    
+      .card {
+   
+        height: auto;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px; 
+      
+      }
+    
+      .buttonWrapper {
+        bottom: 50px;
+        right: 20px;
+      }
+
+      .learnMore{
+        font-size: 16px;
+      }
+  }
+
+
+  @media (max-width: 400px
+  ){
+    .learnSection {
+      flex-direction: column;
+      align-items: center;
+      padding: 150px 0; 
+     margin-bottom: 38px;
+    }
+  
+    .background {
+      
+        position: absolute;
+        top: 50% !important;
+        left: -1% !important;
+        width: 50% !important;
+        height: 40% !important;
+        background-image: url('/images/learn-elipse-mobile.svg');
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+     }
+  
+   
+    .contentWrapper {
+      text-align: left;
+      width: 140%;
+     
+    }
+  
+    .textContent {
+  
+      padding: 0;
+      width: 100%;
+      margin-top: 0px;
+
+    }
+  
+    .textContent h1 {
+      font-size: 40px !important;
+      margin-left: 10px;
+    }
+  
+    .textContent p {
+      font-size: 18px;
+      margin: 0 10px;
+      margin-bottom: 10px;
+    }
+  
+  
+    .card {
+ 
+      height: auto;
+      margin-bottom: 0px;
+      width: 200px;
+      height: 200px; 
+    
+    }
+  
+    .buttonWrapper {
+      bottom: 100px;
+      right: 20px;
+    }
+
+    .learnMore{
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .swiperContainer {
+      width: 100%;
+    }
+  
+    .swiper-slide {
+      flex: 0 0 50%; 
+    }
+  
+    .textContent h1 {
+      font-size: 64px;
+    }
+    .background {
+        position: absolute;
+        top:10%;
+        left: -27%;
+        width:55%;
+        height: 85%;
+     
+    
+     
+      }
+      .rightSection{
+        width: 60%;
+      }
+  }

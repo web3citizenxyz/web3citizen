@@ -1,0 +1,86 @@
+.partnerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, #050706, #2b2c3a);
+    padding: 120px 20px;
+    color: #E5E5E5;
+  }
+  
+  .partnerSection .content {
+    max-width: 800px;
+    margin-top: 100px;
+  }
+  
+  .partnerSection h1 {
+    font-size: 86px;
+    margin-bottom: 60px;
+ 
+    font-weight: 400;
+  
+    font-family: 'Montserrat';
+  }
+  
+  .partnerSection p {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight:lighter;
+    margin-bottom: 30px;
+    width: 500px;
+ 
+
+  }
+  
+  .partnerSection .contactButton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: underline;
+    border-radius: 20px;
+    color: #E5E5E5;
+  
+    font-family: 'Roboto Mono';
+    font-weight: lighter;
+    font-size: 20px;
+    color: grey;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .partnerSection .contactButton:hover {
+    background-color: #E5E5E5;
+    color: grey;
+
+  }
+  
+  .partnerSection .svgContainer {
+    margin-top: 50px;
+  }
+  
+  .partnerSection .semicircles {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 100px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .partnerSection {
+      padding: 50px 20px;
+      margin-top: -50px;
+    }
+  
+    .partnerSection h1 {
+      font-size: 36px;
+      
+    }
+  
+    .partnerSection p {
+      font-size: 18px;
+    }
+  
+    .partnerSection .contactButton {
+      padding: 8px 16px;
+      font-size: 18px;
+    }
+  }
+  

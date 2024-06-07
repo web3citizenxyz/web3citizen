@@ -1,0 +1,11 @@
+<svg width="284" height="461" viewBox="0 0 284 461" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="150.269" cy="284.28" r="133.636" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="284.28" cy="150.269" r="133.636" transform="rotate(90 284.28 150.269)" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="284.28" cy="418.291" r="133.636" transform="rotate(90 284.28 418.291)" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="189.52" cy="189.52" r="133.636" transform="rotate(45 189.52 189.52)" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="379.04" cy="379.04" r="133.636" transform="rotate(45 379.04 379.04)" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="379.04" cy="189.52" r="133.636" transform="rotate(135 379.04 189.52)" stroke="#F1EAE1" stroke-width="0.75"/>
+<circle cx="189.52" cy="379.04" r="133.636" transform="rotate(135 189.52 379.04)" stroke="#F1EAE1" stroke-width="0.75"/>
+<ellipse cx="36.5601" cy="351.06" rx="2" ry="2.5" fill="#F1EAE1"/>
+<circle cx="153.06" cy="179.06" r="2.5" fill="#F1EAE1"/>
+</svg>

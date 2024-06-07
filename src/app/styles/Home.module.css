@@ -1,0 +1,271 @@
+/* src/app/styles/Home.module.css */
+.gradientLine {
+  width: 100%;
+  height: 20px; /* Ajusta la altura según sea necesario */
+  background: linear-gradient(to top, 
+                              rgba(43, 44, 58, 1) 0%, 
+                              rgba(43, 44, 58, 0.75) 25%, 
+                              rgba(43, 44, 58, 0.5) 50%, 
+                              rgba(43, 44, 58, 0.25) 75%, 
+                              rgba(229, 229, 229, 0) 100%);
+  margin: 0; 
+  padding: 0; 
+}
+/* Sección de introducción */
+.introSection {
+  background-color: #f8f3ea; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.intro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 40px;
+  color: #2b2c3a;
+ 
+}
+
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.intro h1 {
+  font-family: 'Montserrat';
+  font-size: 100px;
+  width: 70%;
+  font-weight: 500;
+  margin-bottom: 120px;
+
+}
+.line { 
+  position: relative;
+  flex-grow: 1;
+  height: 1px;
+  background-color: #2B2C3A;
+  margin-left: -30px;
+  margin-top: 10.5%;
+
+  width: 935px;
+}
+.intro p {
+  font-family: 'Roboto Mono';
+  font-size: 25px;
+  font-weight: 300;
+  color: #2B2C3A;
+  margin-bottom: -25px;
+
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+  color: white;
+  padding: 100px 40px;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+}
+
+
+
+
+/* COMMUNITY SECTION */
+.community {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  color: #E5E5E5;
+  padding: 100px 40px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+
+.community .content {
+  max-width: 70%;
+
+}
+
+.community h1 {
+  font-size: 86px;
+  margin-bottom: 20px;
+  color: #E5E5E5;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-align: left;
+}
+
+.community p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  font-family: 'Montserrat';
+  text-align: left;
+}
+
+.community button {
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  color: #2B2C3A;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 194px;
+  height: 67px;
+  font-weight: bold;
+  margin-top: 50px;
+  align-self: flex-start;
+}
+
+.community button:hover {
+  background-color: #99979778;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main {
+    margin-top: 0px;
+  }
+
+  .community {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 1px;
+  }
+
+  .community .content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .community h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #E5E5E5;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .community p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+    text-align: left;
+  }
+
+  .background {
+    background-image: url('/images/elipse-mobile.svg');
+    background-size: cover;
+    background-position: bottom;
+    height: 50%;
+    top: 70%;
+    z-index: 10;
+  }
+
+  .community button {
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    color: #2B2C3A;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 80px;
+    width: 112px;
+    height: 41px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  .community .content button {
+    align-self: flex-start;
+  }
+  .line { 
+  display: none; 
+  }
+}
+
+@media (max-width: 400px) {
+  .background {
+    background-size: cover;
+    background-position: bottom;
+    height: 45%;
+    top: 60%;
+    right: 0%;
+    z-index: 100;
+  }
+
+  .line { 
+    position: relative;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2B2C3A;
+    margin-left: -10px;
+    margin-top: 60%;
+  
+    width: 40px;
+  }
+
+  .main {
+    margin-top: 0px;
+  }
+/* Sección de introducción */
+
+
+.intro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 40px;
+  color: #2b2c3a;
+ 
+}
+
+.intro h1 {
+  font-family: 'Montserrat';
+  font-size: 64px;
+  width: 70%;
+  font-weight: 500;
+  margin-bottom: 150px;
+
+}
+
+.intro p {
+display: none;
+}
+
+
+
+} 
