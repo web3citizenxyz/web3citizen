@@ -1,4 +1,7 @@
 /* src/app/styles/Home.module.css */
+@import './animations.css';
+
+
 .gradientLine {
   width: 100%;
   height: 20px; /* Ajusta la altura según sea necesario */
@@ -12,15 +15,15 @@
   padding: 0; 
 }
 /* Sección de introducción */
-.introSection {
+.welcomeSection {
   background-color: #f8f3ea; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
+  margin-top:0;
 }
 
-.intro {
+.welcomeIntro {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -39,7 +42,7 @@
 }
 
 
-.intro h1 {
+.welcomeIntro h1 {
   font-family: 'Montserrat';
   font-size: 100px;
   width: 70%;
@@ -57,7 +60,7 @@
 
   width: 935px;
 }
-.intro p {
+.welcomeIntro p {
   font-family: 'Roboto Mono';
   font-size: 25px;
   font-weight: 300;
@@ -67,6 +70,91 @@
 
 }
 
+
+/* Estilos para la animación */
+.introSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #050706;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.logoContainer {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.expandLine .line {
+  width: 100%;
+}
+
+.hideWelcome {
+  display: none;
+}
+
+.expandedLine {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  z-index: 3;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.introSection .line {
+  animation: expand 1s forwards;
+}
+
+body.whiteBackground {
+  background-color: #ffffff;
+}
+
+/* Estilos para la sección de telón */
+.curtainSection {
+  background-color: #2A2D39;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.curtainLine {
+  position: absolute;
+  width: 0.5px;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: width 0.5s ease;
+}
+
+.expandCurtainLine {
+  width: 100%;
+}
+
+
+
+
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -74,8 +162,7 @@
   align-items: flex-start;
   background-color: black;
   color: white;
-  padding: 100px 40px;
-  position: relative;
+  padding: 100px 0px;
   margin-top: 0px;
   width: 100%;
 }
@@ -90,16 +177,17 @@
   align-items: flex-start;
   background-color: transparent;
   color: #E5E5E5;
-  padding: 100px 40px;
+  padding: 100px 0px;
   position: relative;
   z-index: 1;
   text-align: left;
+  margin-top: -100px;
 }
 
 
 .community .content {
   max-width: 70%;
-
+  padding-left: 80px;
 }
 
 .community h1 {
@@ -142,7 +230,18 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.svgcommunity {
+  margin-top: -10%;
 
+}
+
+.communityelipse {
+
+  width: 100%;
+  max-width: 800px;
+  margin-top: 0px;
+  right: 0%;
+}
 
 
 
@@ -155,7 +254,7 @@
   .community {
     flex-direction: column;
     text-align: center;
-    padding: 120px 1px;
+    padding: 50px 1px;
   }
 
   .community .content {
@@ -164,6 +263,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    padding-left: 40px;
   }
 
   .community h1 {
@@ -183,14 +283,6 @@
     text-align: left;
   }
 
-  .background {
-    background-image: url('/images/elipse-mobile.svg');
-    background-size: cover;
-    background-position: bottom;
-    height: 50%;
-    top: 70%;
-    z-index: 10;
-  }
 
   .community button {
     background-color: #ffffff;
@@ -213,17 +305,50 @@
   .line { 
   display: none; 
   }
+
+
+
+.svgcommunity {
+  margin-top: -10%;
+
+}
+
+.communityelipse {
+
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0px;
+  right: -10%;
+}
+
+
+.welcomeIntro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 40px;
+  color: #2b2c3a;
+ 
+}
+
+.welcomeIntro h1 {
+  font-family: 'Montserrat';
+  font-size: 75px;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: -50px;
+
+}
+
+.welcomeIntro p {
+display: none;
+}
 }
 
 @media (max-width: 400px) {
-  .background {
-    background-size: cover;
-    background-position: bottom;
-    height: 45%;
-    top: 60%;
-    right: 0%;
-    z-index: 100;
-  }
 
   .line { 
     position: relative;
@@ -239,30 +364,35 @@
   .main {
     margin-top: 0px;
   }
+
+
+
+
 /* Sección de introducción */
 
 
-.intro {
+.welcomeIntro {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 100px 40px;
+  padding: 60px 40px;
   color: #2b2c3a;
  
 }
 
-.intro h1 {
+.welcomeIntro h1 {
   font-family: 'Montserrat';
   font-size: 64px;
   width: 70%;
   font-weight: 500;
-  margin-bottom: 150px;
+  margin-bottom: 10px;
+  margin-top: -50px;
 
 }
 
-.intro p {
+.welcomeIntro p {
 display: none;
 }
 

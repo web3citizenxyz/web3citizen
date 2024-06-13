@@ -1,0 +1,54 @@
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse 150% 90% at top center, rgba(241, 234, 225, 1)2%, rgba(9, 52, 70, 1) 25%, rgba(0, 0, 0, 1) 100%);
+  color: #F1EAE1;
+  padding: 20px;
+  margin-top: -100px;
+}
+
+.header {
+  margin-bottom: 40px;
+
+}
+
+.logo{
+  margin-top: 50px;
+}
+.headerTitle {
+  font-size: 100px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  
+}
+
+.headerText {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #6E8391;
+  font-family: 'Montserrat';
+  margin-left: 25%;
+  margin-right: 25%;
+ 
+}
+
+.highlight {
+  font-weight: bold;
+  color: #F1EAE1;
+}
+
+@media (max-width: 768px) {
+  .headerTitle {
+    font-size: 36px;
+  }
+
+  .headerText {
+    font-size: 16px;
+  }
+}

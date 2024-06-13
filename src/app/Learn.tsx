@@ -14,7 +14,10 @@ import styles from './styles/Learn.module.css';
 export default function Learn () {
     return (
         <section className={styles.learnSection}>
-               <div className={styles.background}></div>
+               <div className={styles.background}>
+               <img src="/images/learn-elipse.svg" alt="Semicircles" className={styles.learnelipse}/>
+  
+                </div>
         <div className={styles.leftSection}> 
         </div>
         <div className={styles.rightSection}>

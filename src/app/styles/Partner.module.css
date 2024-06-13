@@ -4,13 +4,14 @@
     align-items: center;
     text-align: center;
     background: linear-gradient(to top, #050706, #2b2c3a);
-    padding: 120px 20px;
+    padding: 100px 40px;
     color: #E5E5E5;
+   
   }
   
   .partnerSection .content {
     max-width: 800px;
-    margin-top: 100px;
+    margin-top: -100px;
   }
   
   .partnerSection h1 {
@@ -53,34 +54,53 @@
   }
   
   .partnerSection .svgContainer {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .partnerSection .semicircles {
     width: 100%;
     max-width: 800px;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   
   /* Responsive styles */
   @media (max-width: 768px) {
     .partnerSection {
-      padding: 50px 20px;
-      margin-top: -50px;
+      padding: 120px 40px;
+      margin-top: -10px;
+      align-items: flex-start;
+      text-align: left;
     }
   
     .partnerSection h1 {
-      font-size: 36px;
-      
+      font-size: 40px;
+      margin-top: 130px;
     }
   
     .partnerSection p {
       font-size: 18px;
+     width: 300px;
     }
   
     .partnerSection .contactButton {
-      padding: 8px 16px;
+      padding: 8px 1px;
       font-size: 18px;
     }
+  .partnerSection .semicircles {
+    display: none;
   }
   
+  }
+  @media (max-width: 400px){
+    .partnerSection {
+      padding: 120px 40px;
+      margin-top: -40px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .partnerSection h1 {
+      font-size: 40px;
+      margin-top:180px;
+    }
+  }

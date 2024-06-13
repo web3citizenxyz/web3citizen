@@ -1,0 +1,184 @@
+.researchPage {
+    padding: 100px 80px;
+    text-align: center;
+    background: linear-gradient(180deg, #050706 0%, #2A2D39 100%);
+    margin-top: -100px;
+    min-height: 100vh;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 80px;
+    color: #F1EAE1;
+    font-family: 'Montserrat';
+    font-weight: 400;
+   line-height: 1;
+
+  }
+  
+  .header p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #6E8391;
+
+  }
+  
+  .researchLink {
+    color: #F1EAE1;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+  }
+  
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+   
+  }
+  
+  .card {
+    background: linear-gradient(225deg, #1C2029 0%, #1C2029 30%, #1B1F38 50%, #4E4D4F 70%, #D0C9BE 100%);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px; 
+    width: 275px;
+    height: 300px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h2 {
+    font-size: 28px ;
+    color: #F1EAE1;
+    margin-bottom: 50px ;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+ 
+    font-weight: lighter;
+
+
+  }
+
+
+
+  .categoryIcon {
+    width: 50px  ;
+    height: 50px ;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+  }
+  
+  .arrow {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    fill: #a3c4f3;
+    align-items: end;
+
+  }
+  
+
+ 
+  @media (max-width: 768px) {
+
+    .researchPage {
+        padding: 100px 40px;
+        text-align: center;
+        background: linear-gradient(180deg, #050706 0%, #2A2D39 100%);
+        margin-top: -100px;
+        min-height: 100vh;
+      } 
+  .header {
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    color: #F1EAE1;
+    font-family: 'Montserrat';
+    font-weight: 400;
+   line-height: 1;
+   text-align: left;
+
+  }
+  
+  .header p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #6E8391;
+    text-align: left;
+  }
+    .cardsContainer {
+      justify-content: center;
+    }
+  
+    .card {
+      width: 100%;
+      height: 200px;
+      margin: 10px 0;
+      padding: 10px;
+
+    }
+  
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .categoryIcon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .arrow {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  /* Media query para pantallas muy pequeñas */
+  @media (max-width: 480px) {
+ 
+  
+    .card h2 {
+      font-size: 20px;
+    }
+  
+    .categoryIcon  {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  
+    .arrow {
+      width: 20px;
+      height: 20px;
+    }
+  } 

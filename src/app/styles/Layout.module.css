@@ -43,7 +43,10 @@
 }
 
 .navItem:hover {
-  color: grey;
+   
+  color:  #2b2c3a    ;
+  font-weight: 500;
+
 }
 
 .arrow {
@@ -52,6 +55,9 @@
   width: 20px; 
   height: 20px;
  
+}
+.arrow:hover {
+  color: #6E8391;
 }
 
 .searchIcon {
@@ -120,12 +126,15 @@
 }
 .nav.open {
   display: flex;
-  background-color: #e5e5e5; /* Color de fondo cuando se despliega */
+  background-color: #e5e5e5; 
 }
 .nav.open .navItem {
-  color: #2b2c3a; /* Color de texto cuando el fondo es blanco */
+  color: #e5e5e5; 
 }
-
+.navDark .navItem:hover {
+  color: #6E8391; 
+  font-weight: 500;
+}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -146,7 +155,6 @@
     padding: 20px;
     gap: 10px;
   }
-
 
   .menuToggle {
     display: flex;
@@ -170,40 +178,114 @@
     order: 2;
     width: 25px;
     height: 25px;
-  
   }
 
+  
   .header.navDark {
-    background-color: transparent 
+    background-color: #2b2c3a;
   }
 
   .nav {
     background-color: #ffffff;
   }
 
+
   .nav.open {
     background-color: #2b2c3a; 
   }
 
   .navItem {
-    color: #e5e5e5; /* Color de texto en el menú móvil */
+    color: #e5e5e5; 
   }
 
   .nav.open .navItem {
-    color: #e5e5e5; /* Color de texto cuando el fondo es azul en móvil */
+    color: #e5e5e5; 
   }
-
 
   .whiteIcon,
   .whiteBar {
     background-color: transparent;
     color: #e5e5e5;
-    
+ 
   }
 
   .darkIcon,
   .darkBar {
-    background-color: transparent
+    background-color:transparent;
+    color: #e5e5e5;
   }
+}
 
+
+.submenu {
+  background-color: #2b2c3a;
+  padding: 20px;
+  position: absolute;
+  top: 50px; /* Ajusta esta posición */
+  left: 53%; /* Ajusta esta posición */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  transform: translate(-50%, 10px); /* Ajusta según sea necesario */
+}
+
+
+.submenuItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.submenuItem label {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color: #e5e5e5;
+  margin-left: 10px;
+}
+/* src/app/styles/Layout.module.css */
+
+.submenuItem input[type="checkbox"] {
+  display: none;
+}
+
+.submenuItem input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.submenuItem input[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: #2b2c3a;
+}
+
+.submenuItem input[type="checkbox"]:checked + label::before {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.submenuItem input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #2b2c3a; 
+  border-radius: 50%;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.active {
+  transform: rotate(180deg);
 }

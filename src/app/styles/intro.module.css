@@ -1,0 +1,79 @@
+.introSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #050706 0%, #2A2D39 100%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .logoContainer {
+    text-align: center;
+    margin-top: 350px;
+  }
+  .logoContainer p {
+    color: #6E8391;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 80px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  
+.line { 
+    position: relative;
+    height: 1px;
+    background-color: #ffffff;
+    width: 100px; /* Width of the line */
+    margin: 0 auto; /* Center the line */
+  }
+  
+  .hideWelcome {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .curtainSection {
+    display: none;
+    background-color: #2A2D39;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .showCurtain {
+    display: block;
+  }
+  
+  .curtainLine {
+    position: absolute;
+    width: 0.5px;
+    height: 100vh;
+    background-color: #f8f3ea;
+    transition: width 0.5s ease;
+  }
+  
+  .expandCurtainLine {
+    width: 100%;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .introActive {
+    background-color: #f8f3ea;
+  }
