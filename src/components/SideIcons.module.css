@@ -1,0 +1,42 @@
+/* src/components/SideIcons.module.css */
+.sideIcons {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.iconContainer {
+ 
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.iconContainer:hover {
+
+    transform: translateY(-3px);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+@media (max-width: 768px) {
+    .sideIcons{
+        display: none;
+    }
+  
+  
+    }

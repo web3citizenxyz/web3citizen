@@ -10,6 +10,7 @@ import Team from './Team';
 
 
 export default function Home() {
+ 
   const learnRef = useRef<HTMLDivElement>(null);
   const partnerRef = useRef<HTMLDivElement>(null);
   const communityRef = useRef<HTMLDivElement>(null);
@@ -20,35 +21,37 @@ export default function Home() {
   useFadeInOnScroll(communityRef);
   useFadeInOnScroll(teamRef);
 
-
-
+ 
   return (
     <>
-    
-       <div className={styles.welcomeSection}>
-        <section className={styles.welcomeIntro}>
-        <div className={styles.headerContainer}>
-          <h1>Your infinite garden guide.</h1>
-          <div className={styles.line}></div>
+
+          <div className={styles.welcomeSection}>
+            <section className={styles.welcomeIntro}>
+              <div className={styles.headerContainer}>
+                <h1>Your infinite garden guide.</h1>
+                <div className={styles.line}></div>
+              </div>
+              <p>/</p>
+              <p>WE ARE</p>
+              <p>WEB3CITIZEN</p>
+            </section>
           </div>
-          <p>/</p>
-          <p>WE ARE</p>
-          <p>WEB3CITIZEN</p>
-        </section>
-      </div>
-      <div className={styles.gradientLine}></div>
-      <div ref={learnRef} className="fade-section">
-        <Learn />
-      </div>
-      <div ref={partnerRef} className="fade-section">
-        <Partner />
-      </div>
-      <div ref={communityRef} className="fade-section">
-        <Community />
-      </div>
-      <div ref={teamRef} className="fade-section">
-        <Team />
-      </div>
+      
+          <div className={styles.gradientLine}></div>
+          <div ref={learnRef} className="fade-section">
+            <Learn />
+          </div>
+          <div ref={partnerRef} className="fade-section">
+            <Partner />
+          </div>
+          <div ref={communityRef} className="fade-section">
+            <Community />
+          </div>
+          <div ref={teamRef} className="fade-section">
+            <Team />
+          </div>
+      
+      
     </>
   );
 }

@@ -2,9 +2,10 @@
 import Link from 'next/link';
 import { ReactNode, useState, useEffect, useRef} from 'react';
 import Head from 'next/head';
+import { usePathname } from 'next/navigation';
 import './styles/globals.css'; 
 import styles from './styles/Layout.module.css';
-
+import Intro from './intro/Intro';
 
 type LayoutProps = {
   children: ReactNode;
@@ -14,8 +15,10 @@ export default function RootLayout({ children }: LayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [navDark, setNavDark] = useState(false);
+  const [introFinished, setIntroFinished] = useState(false);
+  
 
-
+  const pathname = usePathname();
    
   const learnRef = useRef<HTMLDivElement>(null);
   const partnerRef = useRef<HTMLDivElement>(null);
@@ -31,21 +34,22 @@ export default function RootLayout({ children }: LayoutProps) {
     setSubmenuOpen(!submenuOpen);
   };
 
+
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.location.pathname === '/research') {
-        return;
-      }
-      if (window.scrollY > window.innerHeight) {
-        setNavDark(true);
-      } else {
+      if (pathname === '/' && window.scrollY < window.innerHeight) {
         setNavDark(false);
+      } else {
+        setNavDark(true);
       }
     };
+
 
     window.addEventListener('scroll', handleScroll);
 
    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -72,17 +76,23 @@ export default function RootLayout({ children }: LayoutProps) {
     if (partnerRef.current) observer.observe(partnerRef.current);
     if (communityRef.current) observer.observe(communityRef.current);
     if (teamRef.current) observer.observe(teamRef.current);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
-     
       if (learnRef.current) observer.unobserve(learnRef.current);
       if (partnerRef.current) observer.unobserve(partnerRef.current);
       if (communityRef.current) observer.unobserve(communityRef.current);
       if (teamRef.current) observer.unobserve(teamRef.current);
     };
-  }, [learnRef, partnerRef, communityRef, teamRef]);
+  }, [pathname, learnRef, partnerRef, communityRef, teamRef]);
 
-
+  useEffect(() => {
+    if (pathname === '/') {
+      setNavDark(false);
+    } else {
+      setNavDark(true);
+    }
+  }, [pathname]);
 
 
 
@@ -95,30 +105,46 @@ export default function RootLayout({ children }: LayoutProps) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" />
       </Head>
       <body>
-        <div className={styles.container}>
-        <header className={`${styles.header} ${navDark ? styles.navDark : ''}`}>
+     {pathname === '/' && !introFinished && <Intro onFinish={() => setIntroFinished(true)} />}
+        <div className={`${styles.container} ${introFinished ? styles.visible : styles.hidden}`}>
+        <header className={`${styles.header} ${navDark ? styles.navDark : styles.navLight}`}>
             <div className={styles.logo}>
             <Link href="/">
-              <img src={navDark ? "./images/iso-nav.svg" : "/icons/logo-blue.svg"} alt="Logo" />
+              <img src={navDark ? "/images/iso-nav.svg" : "/icons/logo-blue.svg"} alt="Logo" />
               </Link>
             </div>
 
             <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
             <Link href="/research" className={styles.navItem}>
                 RESEARCH 
+                  {/*
                 <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} 
                   alt="Arrow" 
                   className={`${styles.arrow} ${submenuOpen ? styles.active : ''}`} 
                   onClick={toggleSubmenu}
                 />
+  */}
               </Link>
-              <a href="#" className={styles.navItem}>RESOURCES <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} /></a>
-              <a href="#" className={styles.navItem}>NEWS <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} /></a>
+              <Link href="/resources" className={styles.navItem}> RESOURCES 
+                {/*
+              <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
+  */}
+              </Link>
+              <a href="#" className={styles.navItem}>NEWS 
+
+               {/*
+              <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
+*/}
+              </a>
+
               <Link href="/about">
+
              <div className={styles.navItem}>ABOUT</div>
              </Link>
               <a href="#" className={styles.navItem}>
+ 
                 <img src={navDark ? "/icons/Search.svg" : "/icons/search-blue.svg"} alt="Search" className={styles.searchIcon} />
+  
               </a>
               {submenuOpen && (
                 <div className={styles.submenu}>
@@ -144,25 +170,25 @@ export default function RootLayout({ children }: LayoutProps) {
                   </div>
                 </div>
               )}
-            </nav>
-            <div className={`${styles.menuToggle} ${navDark ? styles.whiteIcon : styles.darkIcon}`} onClick={toggleMenu}>
-              {menuOpen ? (
-                <img src="/icons/cierre.svg" alt="Close" className={`${styles.closeIcon} ${navDark ? styles.whiteIcon : styles.darkIcon}`} />
-              ) : (
-                <>
-                  <div className={`${styles.bar} ${navDark ? styles.whiteBar : styles.darkBar}`}></div>
-                  <div className={`${styles.bar} ${navDark ? styles.whiteBar : styles.darkBar}`}></div>
-                  <div className={`${styles.bar} ${navDark ? styles.whiteBar : styles.darkBar}`}></div>
-                </>
+                {menuOpen && (
+                <a href="#" className={styles.navItem}>
+                  SEARCH
+                </a>
               )}
-            </div>
+            </nav>
+            <div className={`${styles.menuToggle}`} onClick={toggleMenu}>
+  {menuOpen ? (
+    <img src={navDark ? "/icons/cierre.svg" : "/icons/cruz-azul.svg"} alt="Close" className={styles.closeIcon} />
+  ) : (
+    <img src={navDark ? "/icons/mobile-blanco.svg" : "/icons/mobile-azul.svg"} alt="Menu" className={styles.menuIcon} />
+  )}
+</div>
           </header>
           <main className={styles.main}>
-        
           <div ref={learnRef}>{children}</div>
-          <div ref={partnerRef}></div>
-          <div ref={communityRef}></div>
-          <div ref={teamRef}></div>
+            <div ref={partnerRef}></div>
+            <div ref={communityRef}></div>
+            <div ref={teamRef}></div>
           </main>
         </div>
       </body>

@@ -1,0 +1,243 @@
+.articleContainer {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #F1EAE1;
+    background-color: #2A2D39;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+  }
+  
+  .section p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+  .section h1 {
+    font-size: 30px;
+  }
+
+  .black {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    margin-top: 50px !important;
+  }
+
+  .list {
+    list-style-type: disc;
+    padding-left: 20px;
+  
+   
+  }
+  
+  .list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+   
+  }
+  
+  .list li strong {
+    font-weight: bold;
+  }
+
+
+.quoteContainer {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  border: solid 1px #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.6em !important;
+  text-align: center;
+  color: #F1EAE1;
+}
+
+
+
+.benefitsImage {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.toolCard {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #2A2D39;
+}
+
+.toolTitle {
+  font-weight: bold !important;
+  margin-bottom: 10px;
+  color: #2A2D39;
+}
+
+.toolDescription {
+  margin: 0;
+  font-size: 1em;
+}
+
+.toolLink {
+  color: #2A2D39;
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.toolLink:hover {
+  text-decoration: underline;
+}
+
+
+.toolCard:nth-child(1) {
+  background-color: #f9e6e6; /* Color lila */
+}
+
+.toolCard:nth-child(2) {
+  background-color: #F1EAE1; /* Color verde claro */
+}
+
+.toolCard:nth-child(3) {
+  background-color: #f9e6e6; /* Color rosa claro */
+}
+
+.toolCard:nth-child(4) {
+  background-color: #F1EAE1; /* Color gris claro */
+}
+
+
+
+.cardsContainer {
+    display: flex;
+    gap: 60px;
+    padding: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    flex: 1;
+    width: 275px;
+    height: 300px;
+    position: relative;
+    border: solid 1px #F1EAE1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.cardHubIcon {
+    width: 40px;
+   
+
+}
+
+
+.cardTitle {
+    font-size:1.5em !important; 
+    font-weight: 500;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.cardLine {
+    width: 100%;
+    height: 1px;
+    background-color: #F1EAE1;
+    margin: 10px 0;
+}
+
+.arrowRightIcon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .header p,
+    .section p {
+      font-size: 1rem;
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+    }
+
+  .quoteContainer {
+    padding: 15px;
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+
+  .benefitsImage {
+    max-width: 100%;
+  }
+  .toolsSection {
+    padding: 10px;
+  }
+
+  .toolCard {
+    padding: 15px;
+  }
+
+  .toolTitle {
+    font-size: 1.2em;
+  }
+
+  .toolDescription {
+    font-size: 0.9em;
+  }
+  }
+  

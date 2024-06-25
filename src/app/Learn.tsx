@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper';
 import '/node_modules/swiper/swiper-bundle.min.css';
 import 'swiper/css/autoplay';
 import { Autoplay} from 'swiper/modules';
@@ -91,7 +90,7 @@ export default function Learn () {
         </div>
 
         <div className={styles.buttonWrapper}>
-    <a href="#" className={styles.learnMore}>
+    <a href="" className={styles.learnMore}>
       <span className={styles.arrows}>&gt;&gt;&gt;</span>
       CHECK OUT ALL
     </a>

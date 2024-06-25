@@ -1,0 +1,240 @@
+.grantsSection {
+    padding: 40px 80px;
+    background-color: #2A2D39;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .headerContainer {
+    display: flex;
+    align-items: center;
+   
+    align-self: flex-start;
+     }
+  
+  .headerContainer h1 {
+    font-size: 86px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    
+
+  }
+
+ 
+  .arrow {
+    margin-right: 1px;
+    margin-top: 50px;
+    width: 100px; 
+    height: auto; 
+}
+
+  
+  .dot {
+    color: #F1EAE1;
+  }
+  
+  .line {
+    flex-grow: 1;
+    width:400px;
+    height: 0.5px;
+    background-color: #F1EAE1;
+    margin-left: 0px;
+    margin-top: 55px;
+  } 
+
+  .subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .filterButton {
+    background-color: #4A4A4A;
+    color: #e5e5e5;
+    border: none;
+    font-family: 'Roboto Mono';
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filterButton:hover {
+    background-color: #6E8391;
+ 
+  }
+  
+  .filterButton.active {
+    background-color: #e5e5e5;
+    color: #2A2D39;
+   
+  }
+  
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+   justify-items: center;
+   
+  }
+  
+  .card {
+    background-color: transparent;
+    padding:
+    20px;
+    border-radius: 15px;
+    border: solid 1px #F1EAE1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 275px;
+    min-height: 150px;
+    position: relative;
+    max-width: 400px;
+    color:#8a8a8a;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #F1EAE1;
+    cursor: pointer;
+  }
+  
+
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  
+  }
+  
+  .cardCategory {
+    font-size: 1em;
+    color: #888;
+    display: none;
+  }
+  
+  .arrowRightIcon {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    
+  }
+  .cardHubIcon{
+    width: 30px;
+    margin-right:0px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #e5e5e5;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; /* Ocultar flechas de navegación */
+  }
+  @media (max-width: 768px) {
+
+    .grantsSection{
+      padding: 20px;
+    }
+
+
+    .headerContainer{
+      align-self:  center;
+    }
+ 
+
+    .filterButton {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+ 
+    .headerContainer h1 {
+      font-size: 30px;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      
+  
+    }
+    .line{
+      display: none;
+    }
+  
+    .arrow{display: none;}
+  
+
+  .filters {
+    margin-top: 10px;
+  }
+
+  .filterButton {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+
+  .cardsContainer {
+    display: none; 
+  }
+  .card{
+    margin-top: 20px;
+    min-width: 250px;
+    max-width: 300px;
+  height: 270px;
+   
+  }
+  .cardTitle{
+ text-align: center;
+  font-size: 25px;
+  padding-left: 0;
+  }
+  .swiper-container {
+    width: 100%;
+
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  }

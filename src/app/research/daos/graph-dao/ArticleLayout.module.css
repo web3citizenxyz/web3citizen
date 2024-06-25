@@ -1,0 +1,83 @@
+.articleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  padding: 20px;
+}
+
+.menuContainer {
+  width: 250px;
+  position: sticky;
+  top: 20px;
+  margin-left: -100px;
+ margin-right: 100px;
+  align-self: flex-start; /* Alinear el menú al inicio */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #6E8391;
+  font-weight: bold;
+}
+
+.menuLink:hover {
+  color: #F1EAE1;
+}
+
+.contentContainer {
+  max-width: 800px; 
+  flex-grow: 1;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.sectionSubtitle {
+  font-size: 2em !important;
+  margin-bottom: 20px;
+}
+
+.benefitsImage {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+
+.quoteContainer {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border: solid 1px #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+  color: #F1EAE1;
+}

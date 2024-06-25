@@ -24,6 +24,7 @@
 }
 .logo img {
   height: 40px; 
+  transition: filter 0.3s ease-in-out;
 }
 
 .nav {
@@ -32,8 +33,9 @@
 
 }
 
+
 .navItem {
-  color: #2b2c3a;
+  
   text-decoration: none;
   font-size: 20px;
   font-family: 'Roboto Mono', monospace; 
@@ -44,24 +46,16 @@
 
 .navItem:hover {
    
-  color:  #2b2c3a    ;
+    
   font-weight: 500;
 
 }
 
-.arrow {
-  margin-top: 5px;
-  margin-left: 10px;
-  width: 20px; 
-  height: 20px;
- 
-}
-.arrow:hover {
-  color: #6E8391;
-}
 
-.searchIcon {
+
+.searchIcon, .seacrhText{
   height: 20px; 
+  transition: opacity 0.3s ease-in-out; 
 }
 
 .menuToggle {
@@ -75,6 +69,7 @@
   height: 3px;
   background-color: #2b2c3a;
   margin: 4px 0;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .main {
@@ -89,52 +84,28 @@
   color: white;
 }
 
-.navLight .navItem {
+.navLight .navItem, .navLight .searchText {
   color: #2b2c3a;
 }
-
-.navLight .searchIcon {
+.navLight .logo img, .navLight .menuToggle .bar {
   filter: none;
 }
-
-.navLight .logo img {
-  filter: none;
-}
-
-.navLight .arrow {
-  filter: none;
-}
-
-.navDark {
-  background-color: #2b2c3a;
-}
-
-.navDark .navItem {
+.navDark .navItem, .navDark .searchText {
   color: #e5e5e5;
 }
-
-.navDark .searchIcon {
- filter: invert(0);
-}
-
-.navDark .logo img {
-  filter: invert(0);
-}
-
-.navDark .arrow {
+.navDark .logo img, .navDark .menuToggle .bar {
   filter: invert(0);
 }
 .nav.open {
   display: flex;
-  background-color: #e5e5e5; 
+  background-color: #e5e5e5;
+  top: 0;
+  padding: 60px 40px;
 }
 .nav.open .navItem {
-  color: #e5e5e5; 
+  color: #e5e5e5;
 }
-.navDark .navItem:hover {
-  color: #6E8391; 
-  font-weight: 500;
-}
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -147,7 +118,7 @@
     flex-direction: column;
     background-color: transparent;
     position: absolute;
-    top: 80px;
+    top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
@@ -161,59 +132,32 @@
   }
 
   .navItem {
-    color: #e5e5e5;
-    text-decoration: none;
     font-size: 34px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 30px;
   }
   
-  .arrow {
-    margin-left: 0;
-    margin-right: 10px;
-    order: 2;
-    width: 25px;
-    height: 25px;
-  }
-
-  
-  .header.navDark {
-    background-color: #2b2c3a;
-  }
-
-  .nav {
-    background-color: #ffffff;
-  }
-
 
   .nav.open {
-    background-color: #2b2c3a; 
+    background-color: #2b2c3a;
   }
-
-  .navItem {
-    color: #e5e5e5; 
+  .logo {
+    z-index: 1000;
   }
-
-  .nav.open .navItem {
-    color: #e5e5e5; 
+  .closeIcon {
+    z-index: 1000;
   }
-
-  .whiteIcon,
-  .whiteBar {
-    background-color: transparent;
-    color: #e5e5e5;
- 
-  }
-
-  .darkIcon,
-  .darkBar {
-    background-color:transparent;
+  .searchText {
+    display: block;
+    font-size: 34px;
+    margin-top: 30px;
     color: #e5e5e5;
   }
+  .searchIcon {
+    display: none;
+  }
+
+
 }
 
 
@@ -288,4 +232,16 @@
 
 .arrow.active {
   transform: rotate(180deg);
+}
+
+.hidden {
+  opacity: 0;
+ 
+  transition: opacity 0.5s ease-out; /* Ajusta la duración según sea necesario */
+}
+
+.visible {
+ 
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Ajusta la duración según sea necesario */
 }
