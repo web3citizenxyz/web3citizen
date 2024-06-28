@@ -56,15 +56,15 @@ export default function Learn () {
              
             >
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/link4" className={styles.card}>
-        <h2>Topic</h2>
+    <a href="/research/daos" className={styles.card}>
+        <h2>DAOS</h2>
         <span className={styles.dash}></span>
         <p>Small explanation on the subject.</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/link4" className={styles.card}>
-        <h2>Topic
+    <a href="/research/grants" className={styles.card}>
+        <h2>GRANTS
         </h2>
         <span className={styles.dash}></span>
         <p>Small explanation on the subject.</p>
@@ -72,29 +72,30 @@ export default function Learn () {
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/link4" className={styles.card}>
-        <h2>Topic</h2>
+        <h2>COMING SOON</h2>
         <span className={styles.dash}></span> 
         <p>Small explanation on the subject.</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/link4" className={styles.card}>
-        <h2>Topic</h2>
+    <a href="/research/grants" className={styles.card}>
+        <h2>GRANTS</h2>
         <span className={styles.dash}></span>
         <p>Small explanation on the subject.</p>
       </a>
     </SwiperSlide> 
   </Swiper>
 </div>
-        </div>
-        </div>
-
-        <div className={styles.buttonWrapper}>
-    <a href="" className={styles.learnMore}>
+<div className={styles.buttonWrapper}>
+    <a href="/research" className={styles.learnMore}>
       <span className={styles.arrows}>&gt;&gt;&gt;</span>
       CHECK OUT ALL
     </a>
   </div>
+        </div>
+        </div>
+
+
   
       </section>
       

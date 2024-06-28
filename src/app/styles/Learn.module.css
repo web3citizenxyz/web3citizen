@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     background-color: #2b2c3a;
-    padding: 120px 0;
+    padding: 100px 0;
   position: relative;
  
   }
@@ -32,6 +32,7 @@
     justify-content: flex-start;
     align-items: flex-start;
    width: 50%;
+   margin-bottom: 0;
    
   }
   
@@ -43,7 +44,7 @@
   .textContent {
     text-align: left;
    width: 100%;
-   margin-bottom: 100px;
+   margin-bottom: 20px;
   }
   .textContent h1 {
     font-family: 'Montserrat';
@@ -53,7 +54,7 @@
   
   .textContent p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
 
@@ -70,17 +71,26 @@
     cursor: pointer; 
   
   }
-  
   .card {
-    width: 260px;
-    height: 150px;
-    background-color: #2b2c3a;
-    color: #e5e5e5;
-    padding: 10px 20px;
+    background-image: url('/images/cards-gradients.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en la tarjeta */
+    background-repeat: no-repeat;
     border-radius: 30px;
-    text-align: left;
-    border: 1px solid #e5e5e5;
-    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px; 
+    width: 275px;
+    height: 300px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
   }
   .card h2 {
     font-family: 'Montserrat';
@@ -105,7 +115,7 @@
 
 .buttonWrapper {
     position: absolute;
-    bottom: 300px;
+    bottom: 280px;
     right: 20px;
    
   }
@@ -150,7 +160,7 @@
     .learnSection {
         flex-direction: column;
         align-items: center;
-        padding: 150px 0; 
+        padding: 100px 0; 
 
       }
      
@@ -161,15 +171,8 @@
       }
       
       .learnelipse {
-      
-       
         width: 290px;
-       
-        
       }
-
-
-    
       .rightSection {
         width: 100%;
         align-items: center;
@@ -182,7 +185,7 @@
       }
     
       .textContent {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
         padding: 0;
         width: 100%;
         margin-top: -60px;
@@ -203,10 +206,9 @@
     
       .card {
    
-        height: auto;
+       
         margin-bottom: 10px;
-        width: 200px;
-        height: 200px; 
+        height: 300px;
       
       }
     
@@ -221,8 +223,7 @@
   }
 
 
-  @media (max-width: 400px
-  ){
+  @media (max-width: 400px ){
     .learnSection {
       flex-direction: column;
       align-items: center;
@@ -276,13 +277,13 @@
  
       height: auto;
       margin-bottom: 0px;
-      width: 200px;
-      height: 200px; 
+
+      height: 300px; 
     
     }
   
     .buttonWrapper {
-      bottom: -70px;
+    
       right: 20px;
     }
 
@@ -301,7 +302,7 @@
     }
   
     .textContent h1 {
-      font-size: 64px;
+      font-size: 84px;
     }
     .background {
         position: absolute;
@@ -316,4 +317,18 @@
       .rightSection{
         width: 60%;
       }
-  }
+      .buttonWrapper {
+        bottom: 0px;
+        right: 20px;
+      }
+
+    }
+
+
+    @media (min-width: 1900px)
+    {
+      .buttonWrapper {
+        bottom: 80px;
+        right: 20px;
+      } 
+    }

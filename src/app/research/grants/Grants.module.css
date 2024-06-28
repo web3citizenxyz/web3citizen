@@ -129,7 +129,7 @@
   }
 
   .cardTitle {
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
   
@@ -142,10 +142,16 @@
   }
   
   .arrowRightIcon {
+    visibility: hidden;
     position: absolute;
     bottom: 20px;
     right: 30px;
     
+  }
+
+  .card:hover .arrowRightIcon {
+    visibility: visible;
+
   }
   .cardHubIcon{
     width: 30px;

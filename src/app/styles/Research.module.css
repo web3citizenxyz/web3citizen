@@ -48,7 +48,10 @@
   }
   
   .card {
-    background: linear-gradient(225deg, #1C2029 0%, #1C2029 30%, #1B1F38 50%, #4E4D4F 70%, #D0C9BE 100%);
+    background-image: url('/images/cards-gradients.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en la tarjeta */
+    background-repeat: no-repeat;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 10px; 
@@ -88,10 +91,10 @@
   .categoryIcon {
     width: 50px  ;
     height: 50px ;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50% ;
     transform: translate(-50%, -50%);
   }
@@ -146,12 +149,16 @@
   
     .card h2 {
       font-size: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      top: 0;
+      left: 10%;
+   
     }
   
     .categoryIcon {
       width: 20px;
       height: 20px;
+    
     }
   
     .arrow {
@@ -165,12 +172,19 @@
  
   
     .card h2 {
-      font-size: 20px;
+      font-size: 24px;
+      left: 10%;
+
+     
+    
     }
   
     .categoryIcon  {
-      width: 20px !important;
-      height: 20px !important;
+   
+      width: 20px ;
+      height: 20px ;
+  
+    
     }
   
     .arrow {

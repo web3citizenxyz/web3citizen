@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 import styles from '../styles/Resources.module.css';
+import Link from 'next/link';
+
 
 export default function Resources() {
   return (
@@ -11,7 +13,9 @@ export default function Resources() {
               <div className={styles.line}></div>
           </div>
           <div className={styles.cardsContainer}>
+       
                 <div className={styles.card}>
+                <Link href="/resources/op">
                     <div className={styles.cardHeader}>
                         <img src="/icons/op.svg" alt="OP Logo" className={styles.cardHubIcon} />
                         <h2 className={styles.cardTitle}>OP Hub</h2>
@@ -20,8 +24,11 @@ export default function Resources() {
                     <p className={styles.cardDescription}>Your hub with essential resources and guides authored by Optimism, The Optimism Collective and the OP community.</p>
                  
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
+                    </Link>
                 </div>
+            
                 <div className={styles.card}>
+                <Link href="/resources/arbitrum">
                     <div className={styles.cardHeader}>
                         <img src="/icons/arbitrum.svg" alt="Arbitrum Logo" className={styles.cardHubIcon} />
                         <h2 className={styles.cardTitle}>Arbitrum Hub</h2>
@@ -30,8 +37,10 @@ export default function Resources() {
                     <p className={styles.cardDescription}>Your hub with essential resources and guides authored by the Arbitrum Foundation, ArbitrumDAO and the community.</p>
                   
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
+                    </Link>
                 </div>
                 <div className={styles.card}>
+                <Link href="/resources/eigen">
                     <div className={styles.cardHeader}>
                         <img src="/icons/eigen.png" alt="EigenLayer Logo" className={styles.cardHubIcon} />
                         <h2 className={styles.cardTitle}>EigenLayer Hub</h2>
@@ -40,6 +49,7 @@ export default function Resources() {
                     <p className={styles.cardDescription}>Key resources, docs and guides on EigenLayer.</p>
                    
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
+                    </Link>
                 </div>
             </div>
         </div>

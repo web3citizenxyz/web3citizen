@@ -43,12 +43,35 @@ const Article = () => {
                   <p className={styles.paragraph}>There is no ‘central’ DAO, however there is an ecosystem that allows the protocol to operate in a decentralized manner. The ecosystem is made up by Network Participants, core developer teams, The Graph Council and includes two DAOs.</p>
                   <img src="/images/graph-ecosystem.avif" alt="The Graph" className={styles.benefitsImage} />
               </div>
+           
               <div id="section3" className={styles.section}>
                   <h2 className={styles.sectionSubtitle}>Governance</h2>
-                  <p className={styles.paragraph}>Governance within The Graph is structured to ensure...</p>
-                
+                  </div>
+                  <div id="section4" className={styles.section}> 
+                  <p className={styles.titleBlack}>Governance Framework </p>
+                  <img src="/images/ecosystem.avif" alt="The Graph" className={styles.benefitsImage} /> 
+                  </div>
+                  <div id="section5" className={styles.section}> 
+                  <p className={styles.titleBlack}>The Graph Council</p>
+                  <p>The Council is the <strong> primary governance body</strong> of The Graph Network. It comprises ten members representing the interests of the five stakeholder groups of The Graph Ecosystem.</p>
+                  <p>The Graph Council oversees:</p>
+                  <ol className={styles.orderedList}>
+            <li className={styles.listItem}><strong>The Graph Foundation Operations</strong></li>
+            <li className={styles.listItem}><strong>Grants and Ecosystem Funding</strong></li>
+            <li className={styles.listItem}><strong>Protocol Upgrades</strong></li>
+            <li className={styles.listItem}><strong>Protocol Parameterization</strong></li>
+            <li className={styles.listItem}><strong>Emergency Protocol Operations</strong></li>
+            </ol>
+             <p>The Graph Council is responsible for managing the treasury, providing funds to The Graph Foundation, funding programs, and ensuring that proposals align with the protocol's vision and main contributors.</p>
+            <p>The Council votes and makes decisions via a 6-of-10 multisig.</p>
               </div>
-           
+              <div id="section6" className={styles.section}> 
+              <p className={styles.titleBlack}>The Graph Foundation</p>
+              <p>The foundation focuses on uniting all the fundamentals that allow the ecosystem to continue to operate.</p>
+</div>
+
+
+
           </div>
       </div>
   );

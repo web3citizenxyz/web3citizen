@@ -86,7 +86,8 @@
     .team {
       flex-direction: column;
       text-align: center;
-      padding: 80px 1px;
+      padding: 150px 10px;
+ 
     }
   
     .team .content {
@@ -96,6 +97,9 @@
       align-items: flex-start;
       text-align: left;
       padding-left: 40px;
+      margin-top: -100px;
+     
+   
     }
   
     .team h1 {
@@ -152,3 +156,32 @@
 
   
   }
+
+
+  @media (min-width: 1900px ) {
+
+    .team p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: lighter;
+      font-family: 'Montserrat';
+      text-align: left;
+      width: 100%;
+    
+  }  
+  .elipseTeam {
+  
+    width: 100%;
+    max-width: 800px;
+    margin-top: 70%;
+
+  }
+
+  .team .content {
+
+    padding-left: 90px;
+    margin-top: 60px;
+    width: 100%;
+    margin-right: 300px;
+  }
+}

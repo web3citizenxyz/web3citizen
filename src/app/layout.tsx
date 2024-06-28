@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import './styles/globals.css'; 
 import styles from './styles/Layout.module.css';
 import Intro from './intro/Intro';
+import SearchModal from '../components/SearchModal';
 
 type LayoutProps = {
   children: ReactNode;
@@ -13,6 +14,7 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [navDark, setNavDark] = useState(false);
   const [introFinished, setIntroFinished] = useState(false);
@@ -20,20 +22,23 @@ export default function RootLayout({ children }: LayoutProps) {
 
   const pathname = usePathname();
    
-  const learnRef = useRef<HTMLDivElement>(null);
-  const partnerRef = useRef<HTMLDivElement>(null);
-  const communityRef = useRef<HTMLDivElement>(null);
-  const teamRef = useRef<HTMLDivElement>(null);
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
   };
 
   const toggleSubmenu = (e: React.MouseEvent) => {
     e.preventDefault();
     setSubmenuOpen(!submenuOpen);
   };
-
 
 
   useEffect(() => {
@@ -45,10 +50,9 @@ export default function RootLayout({ children }: LayoutProps) {
       }
     };
 
-
     window.addEventListener('scroll', handleScroll);
 
-   
+
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -71,20 +75,13 @@ export default function RootLayout({ children }: LayoutProps) {
       },
       { threshold: 0.5 }
     );
-   
-    if (learnRef.current) observer.observe(learnRef.current);
-    if (partnerRef.current) observer.observe(partnerRef.current);
-    if (communityRef.current) observer.observe(communityRef.current);
-    if (teamRef.current) observer.observe(teamRef.current);
+    
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (learnRef.current) observer.unobserve(learnRef.current);
-      if (partnerRef.current) observer.unobserve(partnerRef.current);
-      if (communityRef.current) observer.unobserve(communityRef.current);
-      if (teamRef.current) observer.unobserve(teamRef.current);
+
     };
-  }, [pathname, learnRef, partnerRef, communityRef, teamRef]);
+  }, [pathname]);
 
   useEffect(() => {
     if (pathname === '/') {
@@ -100,13 +97,21 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en">
       <Head>
         <title>Web3 Citizen</title>
-        <meta name="description" content="A blog built with Next.js" />
+        <meta name="description" content="Your infinite garden guide" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" />
       </Head>
       <body>
-     {pathname === '/' && !introFinished && <Intro onFinish={() => setIntroFinished(true)} />}
-        <div className={`${styles.container} ${introFinished ? styles.visible : styles.hidden}`}>
+      {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
+        <div className={`${styles.container} ${introFinished}`}>
         <header className={`${styles.header} ${navDark ? styles.navDark : styles.navLight}`}>
             <div className={styles.logo}>
             <Link href="/">
@@ -115,7 +120,7 @@ export default function RootLayout({ children }: LayoutProps) {
             </div>
 
             <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
-            <Link href="/research" className={styles.navItem}>
+            <Link href="/research" className={styles.navItem} onClick={closeMenu}>
                 RESEARCH 
                   {/*
                 <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} 
@@ -125,12 +130,12 @@ export default function RootLayout({ children }: LayoutProps) {
                 />
   */}
               </Link>
-              <Link href="/resources" className={styles.navItem}> RESOURCES 
+              <Link href="/resources" className={styles.navItem} onClick={closeMenu}> RESOURCES 
                 {/*
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
   */}
               </Link>
-              <a href="#" className={styles.navItem}>NEWS 
+              <a href="#" className={styles.navItem} onClick={closeMenu}>NEWS 
 
                {/*
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
@@ -139,9 +144,9 @@ export default function RootLayout({ children }: LayoutProps) {
 
               <Link href="/about">
 
-             <div className={styles.navItem}>ABOUT</div>
+             <div className={styles.navItem} onClick={closeMenu}>ABOUT</div>
              </Link>
-              <a href="#" className={styles.navItem}>
+              <a href="#" className={styles.navItem}onClick={toggleSearch}>
  
                 <img src={navDark ? "/icons/Search.svg" : "/icons/search-blue.svg"} alt="Search" className={styles.searchIcon} />
   
@@ -171,7 +176,7 @@ export default function RootLayout({ children }: LayoutProps) {
                 </div>
               )}
                 {menuOpen && (
-                <a href="#" className={styles.navItem}>
+                <a href="#" className={styles.navItem} onClick={toggleSearch}>
                   SEARCH
                 </a>
               )}
@@ -185,12 +190,10 @@ export default function RootLayout({ children }: LayoutProps) {
 </div>
           </header>
           <main className={styles.main}>
-          <div ref={learnRef}>{children}</div>
-            <div ref={partnerRef}></div>
-            <div ref={communityRef}></div>
-            <div ref={teamRef}></div>
+            {children}
           </main>
         </div>
+        <SearchModal isOpen={searchOpen} onClose={toggleSearch} />
       </body>
     </html>
   );

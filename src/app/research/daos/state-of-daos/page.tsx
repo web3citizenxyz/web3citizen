@@ -59,7 +59,7 @@ const StateOfDaos = () => {
                     <Link href={dao.href} key={index}>
                         <div className={styles.card}>
                             <div className={styles.cardHeader}>
-                                <img src={dao.icon} alt={`${dao.title} icon`} className={styles.cardHubIcon} />
+                      {     /* <img src={dao.icon} alt={`${dao.title} icon`} className={styles.cardHubIcon} /> */}
                             </div>
                             <h2 className={styles.cardTitle}>{dao.title}</h2>
                             <div className={styles.cardLine}></div>
