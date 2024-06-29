@@ -15,18 +15,18 @@ export default function Intro({ onFinish }: IntroProps) {
       const line = document.querySelector(`.${styles.line}`) as HTMLElement | null;
 
       if (logoContainer && line) {
-        logoContainer.style.transform = `translateY(-${scrollY * 0.5}px)`;
-        line.style.height = `${scrollY * 1.5}px`;
+        (logoContainer as HTMLElement).style.transform = `translateY(-${scrollY * 0.5}px)`;
+        (line as HTMLElement).style.height = `${scrollY * 1.5}px`;
 
         if (scrollY >= window.innerHeight) {
-          line.style.width = '2500px';
+          (line as HTMLElement).style.width = '2500px';
           setTimeout(() => {
             window.scrollTo(0, 0);
             localStorage.setItem('introFinished', 'true');
             onFinish();
           }, 1500);
         } else {
-          line.style.width = '1px';
+          (line as HTMLElement).style.width = '1px';
         }
       }
     };
@@ -48,5 +48,3 @@ export default function Intro({ onFinish }: IntroProps) {
     </div>
   );
 }
-
-    
