@@ -2,31 +2,22 @@
 import React, { useEffect } from 'react';
 import styles from './Intro.module.css';
 
-
 interface IntroProps {
   onFinish: () => void;
 }
+
 export default function Intro({ onFinish }: IntroProps) {
- 
- 
+
   useEffect(() => {
-
-
-
-
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const logoContainer = document.querySelector(`.${styles.logoContainer}`) as HTMLElement | null;
       const line = document.querySelector(`.${styles.line}`) as HTMLElement | null;
 
-
-
-
       if (logoContainer && line) {
         logoContainer.style.transform = `translateY(-${scrollY * 0.5}px)`;
         line.style.height = `${scrollY * 1.5}px`;
 
-        
         if (scrollY >= window.innerHeight) {
           line.style.width = '2500px';
           setTimeout(() => {
@@ -39,17 +30,15 @@ export default function Intro({ onFinish }: IntroProps) {
         }
       }
     };
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [onFinish]);
-  
-  return (
 
-    
-    
+  return (
     <div className={styles.introContainer}>
       <div className={styles.logoContainer}>
         <img src="/icons/logo-intro.svg" alt="Logo" className={styles.logo} />
@@ -59,3 +48,5 @@ export default function Intro({ onFinish }: IntroProps) {
     </div>
   );
 }
+
+    
