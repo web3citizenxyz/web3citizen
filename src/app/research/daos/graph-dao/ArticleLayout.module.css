@@ -94,3 +94,11 @@
   font-size: 1em;
   margin-bottom: 10px;
 }
+
+
+@media (max-width: 768px) {
+
+  .menuContainer{
+    display: none;
+  }
+}

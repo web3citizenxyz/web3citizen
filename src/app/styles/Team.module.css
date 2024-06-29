@@ -86,8 +86,10 @@
     .team {
       flex-direction: column;
       text-align: center;
-      padding: 150px 10px;
- 
+      padding: 60px 10px;
+     margin-top: 0px;
+    
+    
     }
   
     .team .content {
@@ -97,11 +99,12 @@
       align-items: flex-start;
       text-align: left;
       padding-left: 40px;
-      margin-top: -100px;
-      padding-right: 40px;
-     
+      margin-top: 0px;
+      padding-right: 60px;
+     margin-bottom: 30gi0px;
    
     }
+  
   
     .team h1 {
       font-size: 40px;
@@ -162,12 +165,23 @@
   @media (max-width: 400px){
 
     .team .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      padding-left: 40px;
+      margin-top: 0;
+      padding-right: 0px;
+     
    
-         padding-right: 0px;
-        
-      
        }
-
+.team {
+      flex-direction: column;
+      text-align: center;
+      padding: 100px 10px;
+     margin-top: 0;
+    }
 
 
 

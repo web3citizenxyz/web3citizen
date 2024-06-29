@@ -249,12 +249,15 @@ body.whiteBackground {
 @media (max-width: 768px) {
   .main {
     margin-top: 0px;
+    padding-bottom: 50px;
+    overflow: hidden;
   }
 
   .community {
     flex-direction: column;
     text-align: center;
     padding: 50px 0px;
+
   }
 
   .community .content {
@@ -317,9 +320,9 @@ body.whiteBackground {
 .communityelipse {
 
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   margin-top: 0px;
-  right: -10%;
+ margin-left: 40%;
 }
 
 
