@@ -16,8 +16,9 @@ export default function Intro({ onFinish }: IntroProps) {
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const logoContainer = document.querySelector(`.${styles.logoContainer}`);
-      const line = document.querySelector(`.${styles.line}`);
+      const logoContainer = document.querySelector(`.${styles.logoContainer}`) as HTMLElement | null;
+      const line = document.querySelector(`.${styles.line}`) as HTMLElement | null;
+
 
 
 
