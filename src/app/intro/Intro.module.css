@@ -28,7 +28,7 @@
 
 .logo {
   width: 70px;
-  margin-bottom: px;
+  margin-bottom: 0;
 }
 .line {
   margin-top: 30px;
@@ -53,4 +53,16 @@
 
 .visible {
   opacity: 1;
+}
+
+@media (max-width:768px ) {
+
+  .logoContainer {
+    
+    margin-top: 50%;
+  }
+  .line{
+   height: 300px;
+   transition: height 0.3s ease-out, width 1.5s ease-out, opacity 1s ease-out;
+  };
 }
