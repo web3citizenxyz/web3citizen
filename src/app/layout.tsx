@@ -111,7 +111,7 @@ export default function RootLayout({ children }: LayoutProps) {
       </Head>
       <body>
       {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
-      <div className={`${styles.container} ${introFinished ? styles.visible : styles.hidden}`}>
+      <div className={`${styles.container}`}>
         <header className={`${styles.header} ${navDark ? styles.navDark : styles.navLight}`}>
             <div className={styles.logo}>
             <Link href="/">
