@@ -25,10 +25,10 @@
     background: none;
     border: none;
     color: #e5e5e5;
-    font-size: 1.5em;
+    font-size: 2em;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
   }
   

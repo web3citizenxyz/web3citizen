@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './SearchModal.module.css';
 
 type SearchResult = {
@@ -28,13 +28,33 @@ const SearchModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
 
   const filteredResults = results.filter(result => result.title.toLowerCase().includes(query.toLowerCase()));
 
+
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
   if (!isOpen) {
     return null;
   }
-
   return (
     <div className={styles.overlay}>
-      <div className={styles.modal}>
+      <div className={styles.modal} ref={modalRef}>
         <button className={styles.closeButton} onClick={onClose}>X</button>
         <input
           type="text"
