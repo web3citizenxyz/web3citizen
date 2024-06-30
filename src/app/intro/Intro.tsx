@@ -24,7 +24,7 @@ export default function Intro({ onFinish }: IntroProps) {
             window.scrollTo(0, 0);
             localStorage.setItem('introFinished', 'true');
             onFinish();
-          }, 1500);
+          }, 1000);
         } else {
           (line as HTMLElement).style.width = '1px';
         }

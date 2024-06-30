@@ -8,14 +8,16 @@
   align-items: center;
   z-index: 1000;
 
- 
+  transition: opacity 1.5s ease;
 }
+
 .logoContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin-top: 25%;
+ 
 }
 
 .logoContainer p {
@@ -36,6 +38,7 @@
   height: 250px;
   background-color: #F1EAE1;
   transition: height 0.3s ease-out, width 2.5s ease-out, opacity 2s ease-out;
+
 }
 
 .fadeOut {
@@ -55,6 +58,7 @@
   opacity: 1;
 }
 
+
 @media (max-width:768px ) {
 
   .logoContainer {
@@ -63,6 +67,8 @@
   }
   .line{
    height: 300px;
-   transition: height 0.3s ease-out, width 1.5s ease-out, opacity 1s ease-out;
+   
   };
+
+  
 }
