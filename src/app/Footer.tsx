@@ -3,7 +3,14 @@
 import React from 'react';
 import styles from './styles/Footer.module.css';
 
-const Footer = ({ isBlack }) => {
+
+type FooterProps = {
+  isBlack: boolean;
+};
+
+
+
+const Footer = ({ isBlack }: FooterProps) => {
   return (
     <footer className={`${styles.footer} ${isBlack ? styles.black : ''}`}>
       <div className={styles.footerContainer}>
