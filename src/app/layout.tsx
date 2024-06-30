@@ -1,12 +1,17 @@
-"use client"
+"use client";
+
+
 import Link from 'next/link';
 import { ReactNode, useState, useEffect, useRef} from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 import './styles/globals.css'; 
 import styles from './styles/Layout.module.css';
 import Intro from './intro/Intro';
 import SearchModal from '../components/SearchModal';
+import Footer from './Footer';
+
 
 type LayoutProps = {
   children: ReactNode;
@@ -18,11 +23,14 @@ export default function RootLayout({ children }: LayoutProps) {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [navDark, setNavDark] = useState(false);
   const [introFinished, setIntroFinished] = useState(false);
-  
+
+
+
 
   const pathname = usePathname();
    
-
+  
+  const isBlackFooter = pathname === '/about';
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -194,30 +202,7 @@ export default function RootLayout({ children }: LayoutProps) {
           </main>
         </div>
         <SearchModal isOpen={searchOpen} onClose={toggleSearch} />
-
-
-
-        <footer className={styles.footer}>
-          <div className={styles.footerContainer}>
-            <div className={styles.logoContainer}>
-              <img src="/icons/logo-completo.svg" alt="Logo" className={styles.logo} />
-            </div>
-            <div className={styles.rightsReserved}>
-              © 2024 — All Rights Reserved
-            </div>
-            <div className={styles.socialIcons}>
-              <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                <img src="/icons/x-twitter.svg" alt="X" className={styles.icon} />
-              </a>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                <img src="/icons/in.svg" alt="LinkedIn" className={styles.icon} />
-              </a>
-            </div>
-            <a href="#" className={styles.scrollToTop} onClick={() => window.scrollTo(0, 0)}>
-              <img src="/icons/arrow-foot.svg" alt="Scroll to Top" className={styles.arrowIcon} />
-            </a>
-          </div>
-        </footer>
+        <Footer isBlack={isBlackFooter} />
       </body>
     </html>
   );
