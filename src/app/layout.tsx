@@ -103,6 +103,7 @@ export default function RootLayout({ children }: LayoutProps) {
 
   return (
     <html lang="en">
+    
       <Head>
         <title>Web3 Citizen</title>
         <meta name="description" content="Your infinite garden guide" />
@@ -204,6 +205,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <SearchModal isOpen={searchOpen} onClose={toggleSearch} />
         <Footer isBlack={isBlackFooter} />
       </body>
+
     </html>
   );
 }

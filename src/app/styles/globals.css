@@ -4,11 +4,13 @@
 
 body {
   margin: 0;
+  padding: 0;
+
   font-family: 'Montserrat';
   background-color:#2A2D39 ;
   color: #E5E5E5;
 
-  padding: 0;
+
   overflow-x: hidden;
 }
 
