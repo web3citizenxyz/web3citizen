@@ -36,22 +36,28 @@
   .partnerSection .contactButton {
     display: inline-block;
     padding: 10px 20px;
-    text-decoration: underline;
+    text-decoration:none;
     border-radius: 20px;
-    color: #E5E5E5;
-  
+    color: #2B2C3A;
+   
+    background-color: #ffffff; 
     font-family: 'Roboto Mono';
     font-weight: lighter;
     font-size: 20px;
-    color: grey;
+
     transition: background-color 0.3s, color 0.3s;
   }
   
   .partnerSection .contactButton:hover {
-    background-color: #E5E5E5;
-    color: grey;
-
+    
+  
+    background-color: #99979778;
+    color: #ffffff;
+  
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
+
+  
   
   .partnerSection .svgContainer {
     margin-top: 0px;
@@ -96,6 +102,9 @@
       margin-top: 80px;
     
     }
+
+
+  
   .partnerSection .semicircles {
    max-width: 500px;
    margin-top: -100px;

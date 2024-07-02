@@ -14,8 +14,10 @@ const Footer = ({ isBlack }: FooterProps) => {
   return (
     <footer className={`${styles.footer} ${isBlack ? styles.black : ''}`}>
       <div className={styles.footerContainer}>
-        <div className={styles.logoContainer}>
+        <div className={styles.logoContainer}> 
+        <a href="/" target="_blank" rel="noopener noreferrer">
           <img src="/icons/logo-completo.svg" alt="Logo" className={styles.logo} />
+          </a>
         </div>
         <div className={styles.rightsReserved}>
           © 2024 — All Rights Reserved

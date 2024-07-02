@@ -72,7 +72,9 @@
 
 
 }
-
+.welcomeIntro p:hover{
+  font-weight: bold;
+}
 
 /* Estilos para la animación */
 .introSection {
@@ -204,19 +206,19 @@ body.whiteBackground {
 
 .community p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: lighter;
   font-family: 'Montserrat';
   text-align: left;
 }
 
-.community button {
+.btn {
   background-color: #ffffff;
   font-family: 'Montserrat';
   color: #2B2C3A;
   border: none;
   padding: 10px 20px;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 80px;
   width: 194px;
@@ -226,7 +228,7 @@ body.whiteBackground {
   align-self: flex-start;
 }
 
-.community button:hover {
+.btn:hover {
   background-color: #99979778;
   color: #ffffff;
   transform: scale(1.05);
@@ -290,23 +292,23 @@ body.whiteBackground {
     text-align: left;
   }
 
-
-  .community button {
+.btn {
     background-color: #ffffff;
     font-family: 'Montserrat';
     color: #2B2C3A;
     border: none;
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 10px 10px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 80px;
     width: 112px;
-    height: 41px;
+    height: 35px;
     font-weight: bold;
     margin-top: 50px;
+    text-align: center;
   }
 
-  .community .content button {
+  .btn {
     align-self: flex-start;
   }
   .line { 

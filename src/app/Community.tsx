@@ -10,9 +10,8 @@ export default function Community () {
 <section className={styles.community}>
   <div className={styles.content}>
     <h1>Community</h1>
-    <p>Imagine being part of a project that makes a real difference in the ecosystem.</p>
-    <p>Let's create something amazing together.</p>
-    <button>Join now</button>
+    <p>Keep up to date of the latest narratives in the ecosystem and the main projects and DAOs out there.</p>
+    <a href='@web3citizenxyz' target='_blank' className={styles.btn}>Join Now</a>
   </div>
   <div className={styles.svgcommunity}>
         <img src="/images/community-elipse.svg" alt="Semicircles" className={styles.communityelipse}/>

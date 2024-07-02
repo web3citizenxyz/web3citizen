@@ -35,9 +35,11 @@ export default function Home() {
                 <h1>Your infinite garden guide.</h1>
                 <div className={styles.line}></div>
               </div>
+              <a href='/about'>
               <p>/</p>
               <p>WE ARE</p>
               <p>WEB3CITIZEN</p>
+              </a>
             </section>
           </div>
       

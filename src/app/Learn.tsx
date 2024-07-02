@@ -23,8 +23,8 @@ export default function Learn () {
           <div className={styles.contentWrapper}>
             <div className={styles.textContent}>
               <h1>Learn</h1>
-              <p>Explore our curated resources and tutorials to understand the fundamentals of the decentralized web.</p>
-              <p>Start your journey and expand your knowledge!</p>
+              <p>Explore our curated resources and guides to jump into new narratives in the Ethereum ecosystem</p>
+              <p>Start your journey and expand your knowledge while you become a web3 citizen.</p>
             </div>
             <div className={styles.swiperContainer}>
             <Swiper
