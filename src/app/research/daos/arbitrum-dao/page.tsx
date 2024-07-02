@@ -11,15 +11,16 @@ const Article = () => {
                   <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Arbitrum</a></li>
                   <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>AIP-1</a></li>
                   <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Arbitrum DAO Governance</a></li>
-                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Security Council Actions</a></li>
-                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>The Graph Foundation</a></li>
-                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Technical Advisory Board</a></li>
-                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>DAOs within The Graph</a></li>
-                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Advocates DAO</a></li>
-                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Builders DAO</a></li>
-                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Governance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>The Graph Improvement Proposal (GIP)</a></li>
+                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
+                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
+                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
+                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Voting Power</a></li>
+                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Delays and Waiting Periods</a></li>
+                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Contribution Pathways</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Ambassadors Program</a></li>
+                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Grants</a></li>
               </ul>
           </div>
           <div className={styles.contentContainer}>
@@ -66,7 +67,7 @@ const Article = () => {
                   </div>
                   <div id="section4" className={styles.section}> 
                   <p className={styles.titleBlack}>Governance Framework </p>
-
+                  <img src="/images/gob-frame-arb.avif" alt="Benefits of DAO frameworks" className={styles.benefitsImage} />
                   <p className={styles.paragraph}>
         <Link href="https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup" target='_blank'>
           <p className={styles.link}>ArbitrumDAO's governance has three main bodies:</p>
@@ -118,11 +119,32 @@ const Article = () => {
               </div>
               <div id="section6" className={styles.section}> 
               <p className={styles.titleBlack}>Security Council Actions</p>
-              <p>The<strong> Security Council</strong> has the power to execute emergency actions and non-emergency actions. These differ from traditional AIPs because the Security Council can approve them without going through the above process</p>
+            <p>The<strong> Security Council</strong> has the power to execute emergency actions and non-emergency actions. These differ from traditional AIPs because the Security Council can approve them without going through the above process</p>
 </div>
+<div id="section7" className={styles.section}> 
+<h2 className={styles.sectionSubtitle}>Governance Process and Mechanisms</h2> 
+</div>
+<div id="section8" className={styles.section}> 
+<h2 className={styles.sectionSubtitle}>Voting Power</h2> 
+<p>The Arbitrum DAO may be new, but it has already gained a large and active community. With over 633.43k token holders and 137.02k voters, members are dedicated to advancing the goals of the Arbitrum Mission and the Ethereum ecosystem.</p>
+</div>
+<div id="section9" className={styles.section}> 
+<h2 className={styles.sectionSubtitle}>Voting Process</h2> 
+<p>For proposals not enacted by The Security Council:</p>
+<p className={styles.titleBlack}>Step 1: Temperature check using Snapshot Poll</p>
+<p>This preliminary vote gauges the community's interest in a proposal before it moves on to the next stage.</p>
+<p className={styles.titleBlack}>Step 2: Submit your on-chain proposal using Tally</p>
+<p>To submit a proposal you need to have an Ethereum Wallet Address representing at least 1,000,000 tokens. </p>
+<p>Today, 19 delegates can submit on-chain proposals to the Arbitrum DAO ecosystem. </p>
+<p>To be approved, more than 50% of tokens must have voted in favor of the proposal:</p>
+<ul className={styles.orderedList}>
+            <li className={styles.listItem}><strong>Constitutional AIPs</strong> must receive votes from at least 5% of all votable tokens; </li>
+            <li className={styles.listItem}><strong>Non-constitutional</strong> AIPs must receive votes from at least 3% of all votable tokens.</li>
+            </ul>
+<p>The entire AIP voting process typically takes 34 days for Constitutional or 21 days for Non-Constitutional AIPs. </p>
+<img src="/images/dao-vote.webp" alt="DAO vote" className={styles.benefitsImage} />
 
-
-
+</div>
           </div>
       </div>
   );

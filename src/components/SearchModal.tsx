@@ -10,19 +10,19 @@ type SearchResult = {
 const SearchModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([
-    { title: 'Home', href: '/', icon: '/icons/ade.svg' },
-    { title: 'Resourses', href: '/resources', icon: '/icons/ade.svg' },
-    { title: 'Research', href: '/research', icon: '/icons/ade.svg' },
-    { title: 'Daos', href: '/research/daos', icon: '/icons/ade.svg' },
+    { title: 'Home', href: '/', icon: '/icons/bullet.svg' },
+    { title: 'Resourses', href: '/resources', icon: '/icons/bullet.svg' },
+    { title: 'Research', href: '/research', icon: '/icons/bullet.svg' },
+    { title: 'Daos', href: '/research/daos', icon: '/icons/bullet.svg' },
     
-    { title: 'Grants', href: '/research/grants', icon: '/icons/ade.svg' },
-    { title: 'DAO Basics', href: '/research/daos/dao-basics', icon: '/icons/ade.svg' },
-    { title: 'State of DAOs', href: '/research/daos/state-of-daos', icon: '/icons/ade.svg' },
-    { title: 'OP Hub', href: '/resourses/op', icon: '/icons/ade.svg' },
-    { title: 'Arbitrum Hub', href: '/resourses/arbitrum', icon: '/icons/ade.svg' },
-    { title: 'EigenLayer Hub', href: '/resoruses/eigen', icon: '/icons/ade.svg' },
-    { title: 'News', href: '/news', icon: '/icons/ade.svg' },
-    { title: 'About', href: '/about', icon: '/icons/ade.svg' },
+    { title: 'Grants', href: '/research/grants', icon: '/icons/bullet.svg' },
+    { title: 'DAO Basics', href: '/research/daos/dao-basics', icon: '/icons/bullet.svg' },
+    { title: 'State of DAOs', href: '/research/daos/state-of-daos', icon: '/icons/bullet.svg' },
+    { title: 'OP Hub', href: '/resourses/op', icon: '/icons/bullet.svg' },
+    { title: 'Arbitrum Hub', href: '/resourses/arbitrum', icon: '/icons/bullet.svg' },
+    { title: 'EigenLayer Hub', href: '/resoruses/eigen', icon: '/icons/bullet.svg' },
+    { title: 'News', href: '/news', icon: '/icons/bullet.svg' },
+    { title: 'About', href: '/about', icon: '/icons/bullet.svg' },
    
   ]);
 

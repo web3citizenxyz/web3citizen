@@ -1,17 +1,17 @@
 .articleContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centrar el contenido horizontalmente */
+  justify-content: center; 
   padding: 20px;
 }
 
 .menuContainer {
   width: 250px;
   position: sticky;
-  top: 20px;
+  top: 90px;
   margin-left: -100px;
  margin-right: 100px;
-  align-self: flex-start; /* Alinear el menú al inicio */
+  align-self: flex-start; 
 }
 
 .menu {
