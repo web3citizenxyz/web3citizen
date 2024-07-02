@@ -28,12 +28,12 @@ export default function Learn () {
             </div>
             <div className={styles.swiperContainer}>
             <Swiper
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={3}
               loop={true}
               centeredSlides={true}
               autoplay={{
-                delay: 2500,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
               breakpoints={{
@@ -55,13 +55,7 @@ export default function Learn () {
             
              
             >
-    <SwiperSlide className={styles.swiperSlide}>
-    <a href="/research/daos" className={styles.card}>
-        <h2>DAOS</h2>
-        <span className={styles.dash}></span>
-        <p>Small explanation on the subject.</p>
-      </a>
-    </SwiperSlide>
+
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/grants" className={styles.card}>
         <h2>GRANTS
@@ -77,13 +71,39 @@ export default function Learn () {
         <p>Small explanation on the subject.</p>
       </a>
     </SwiperSlide>
+   
+    <SwiperSlide className={styles.swiperSlide}>
+    <a href="/research/daos" className={styles.card}>
+        <h2>DAOS</h2>
+        <span className={styles.dash}></span>
+        <p>Small explanation on the subject.</p>
+      </a>
+    </SwiperSlide>
+       <SwiperSlide className={styles.swiperSlide}>
+    <a href="/link4" className={styles.card}>
+        <h2>COMING SOON</h2>
+        <span className={styles.dash}></span> 
+        <p>Small explanation on the subject.</p>
+      </a>
+    </SwiperSlide>
+   
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/grants" className={styles.card}>
-        <h2>GRANTS</h2>
+        <h2>GRANTS
+        </h2>
+        <span className={styles.dash}></span>
+        <p>Small explanation on the subject.</p>
+      </a>
+    </SwiperSlide>
+ 
+    <SwiperSlide className={styles.swiperSlide}>
+    <a href="/research/daos" className={styles.card}>
+        <h2>DAOS</h2>
         <span className={styles.dash}></span>
         <p>Small explanation on the subject.</p>
       </a>
     </SwiperSlide> 
+    
   </Swiper>
 </div>
 <div className={styles.buttonWrapper}>
