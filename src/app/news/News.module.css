@@ -1,0 +1,222 @@
+.newslettersSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cardsContainer {
+    overflow-y: auto;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+
+
+  .newsletterCard {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 520px;
+    height: 270px;
+    position: relative;
+    border: 0.75px solid #F1EAE1;
+    text-align: left;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .newsletterRadio {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    top: 45px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+
+  }
+  
+  .newsletterRadio::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .newsletterRadio:checked::before {
+    opacity: 1;
+  }
+  
+  .newsletterCard h3 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #F1EAE1;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .separator {
+    border: none;
+    height: 0.75px;
+    background-color: #F1EAE1;
+    margin: 0px 60px;
+    margin-bottom: 20px;
+  }
+
+
+  .newsletterCard p {
+    font-size: 1em;
+    color: #6E8391;
+    font-family: 'Roboto Mono';
+   text-transform: uppercase;
+    font-weight: lighter;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  
+  .viewMore {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #6E8391;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    text-transform: uppercase;
+    font-weight: lighter;
+   
+  }
+  
+.viewMore:hover{
+    color: #C4A753;
+    font-weight: bold;
+}
+
+
+.More {
+    color: #C4A753;
+}
+
+
+  .buttons {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .buttons button {
+    background-color: transparent;
+    color: #6E8391;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono';
+    text-align: left;
+  }
+  .buttons button:hover {
+ 
+    color: #C4A753;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .newsletterCard {
+      width: 100%;
+      padding: 15px;
+      height: auto;
+      margin-top: 50px;
+    }
+  
+    .newsletterCard h3 {
+      font-size: 24px;
+      padding-left: 50px;
+    }
+  
+    .newsletterCard p {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .separator {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .buttons {
+        position: absolute;
+      top: 0px;
+      left: 10px;
+      right: 10px;
+      padding: 8px;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 650px;
+    }
+  
+    .buttons button {
+      font-size: 12px;
+      margin: 0 2px;
+    }
+
+  
+    .newsletterRadio {
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        position: absolute;
+        border-radius: 50%;
+        top: 35px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+    
+      }
+      
+
+}
+  @media (max-width:400px){
+
+    .buttons {
+        position: absolute;
+      top: 0px;
+      left: 10px;
+      right: 10px;
+      padding: 8px;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 450px;
+    }
+    .newsletterCard {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+        margin-top: 0px;
+      }
+  }

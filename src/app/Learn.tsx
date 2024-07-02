@@ -52,7 +52,7 @@ export default function Learn () {
                     spaceBetween: 10,
                 }
               }}
-              modules={[Autoplay]}
+            
              
             >
     <SwiperSlide className={styles.swiperSlide}>

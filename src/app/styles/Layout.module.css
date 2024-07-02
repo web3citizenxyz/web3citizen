@@ -12,7 +12,7 @@
   top: 0;
   width: 100%;
   display: flex;
-  height: 100px;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
   background: transparent;
@@ -107,7 +107,9 @@
 .nav.open .navItem {
   color: #e5e5e5;
 }
-
+.header.navScrolled {
+  background-color: rgba(169, 169, 169, 0.5); 
+}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -158,7 +160,9 @@
   .searchIcon {
     display: none;
   }
-
+  .header.navScrolled {
+    background-color: rgba(169, 169, 169, 0.3); 
+  }
 
 }
 

@@ -23,11 +23,14 @@ export default function RootLayout({ children }: LayoutProps) {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [navDark, setNavDark] = useState(false);
   const [introFinished, setIntroFinished] = useState(false);
+  const [navScrolled, setNavScrolled] = useState(false);
 
 
 
 
   const pathname = usePathname();
+
+
    
   
   const isBlackFooter = pathname === '/about';
@@ -51,12 +54,19 @@ export default function RootLayout({ children }: LayoutProps) {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setNavScrolled(true);
+      } else {
+        setNavScrolled(false);
+      }
+
       if (pathname === '/' && window.scrollY < window.innerHeight) {
         setNavDark(false);
       } else {
         setNavDark(true);
       }
     };
+
 
     window.addEventListener('scroll', handleScroll);
 
@@ -121,7 +131,8 @@ export default function RootLayout({ children }: LayoutProps) {
       <body>
       {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
       <div className={`${styles.container}`}>
-        <header className={`${styles.header} ${navDark ? styles.navDark : styles.navLight}`}>
+      <header className={`${styles.header} ${navDark ? styles.navDark : styles.navLight} ${navScrolled ? styles.navScrolled : ''}`}>
+
             <div className={styles.logo}>
             <Link href="/">
               <img src={navDark ? "/images/iso-nav.svg" : "/icons/logo-blue.svg"} alt="Logo" />
@@ -144,7 +155,7 @@ export default function RootLayout({ children }: LayoutProps) {
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
   */}
               </Link>
-              <a href="#" className={styles.navItem} onClick={closeMenu}>NEWS 
+              <a href="/news" className={styles.navItem} onClick={closeMenu}>NEWS 
 
                {/*
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />

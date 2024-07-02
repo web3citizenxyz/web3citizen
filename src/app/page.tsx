@@ -46,13 +46,14 @@ export default function Home() {
             <Learn />
           </div>
           <div ref={partnerRef} className="fade-section">
-            <Partner />
+          <Team />
           </div>
           <div ref={communityRef} className="fade-section">
             <Community />
           </div>
           <div ref={teamRef} className="fade-section">
-            <Team />
+       
+            <Partner />
           </div>
       
       

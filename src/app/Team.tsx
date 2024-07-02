@@ -9,7 +9,7 @@ export default function Team () {
 
 <section className={styles.team}>
   <div className={styles.content}>
-    <h1>Team</h1>
+    <h1>Contributors</h1>
     <p>Team up, fuel web 3 innovation. Together, we create, collaborate, and shape the future.</p>
     <p>We are Web3 Citizen. We bring ideas to life.</p>
     <button>Join in</button>
