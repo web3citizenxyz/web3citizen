@@ -203,7 +203,7 @@ export default function RootLayout({ children }: LayoutProps) {
             </nav>
             <div className={`${styles.menuToggle}`} onClick={toggleMenu}>
   {menuOpen ? (
-    <img src={navDark ? "/icons/cierre.svg" : "/icons/cruz-azul.svg"} alt="Close" className={styles.closeIcon} />
+    <img src={"/icons/cierre.svg"} alt="Close" className={styles.closeIcon} />
   ) : (
     <img src={navDark ? "/icons/mobile-blanco.svg" : "/icons/mobile-azul.svg"} alt="Menu" className={styles.menuIcon} />
   )}

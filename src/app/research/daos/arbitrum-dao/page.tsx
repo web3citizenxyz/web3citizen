@@ -145,6 +145,8 @@ const Article = () => {
 <img src="/images/dao-vote.webp" alt="DAO vote" className={styles.benefitsImage} />
 
 </div>
+
+
           </div>
       </div>
   );
