@@ -127,6 +127,15 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@300;400;700&display=swap" />
+      
+      
+         {/* Open Graph tags */}
+         <meta property="og:title" content="Web3 Citizen - Your infinite garden guide" />
+        <meta property="og:description" content="Explore our curated resources and tutorials to understand the fundamentals of the decentralized web." />
+        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://www.web3citizen.xyz/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Web3 Citizen" />
       </Head>
       <body>
       {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
