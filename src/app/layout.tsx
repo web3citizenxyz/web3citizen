@@ -220,9 +220,7 @@ export default function RootLayout({ children }: LayoutProps) {
   ) : (
     <img src={navDark ? "/icons/mobile-blanco.svg" : "/icons/mobile-azul.svg"} alt="Menu" className={styles.menuIcon} />
   
-  )
-  
-  }
+  )}
 </div>
           </header>
           <main className={styles.main}>
