@@ -1,7 +1,7 @@
 /* src/components/BackToTop.module.css */
 .backToTop {
     position: fixed;
-    bottom: 40px;
+    bottom: 100px;
     right: 40px;
     z-index: 1000;
   }

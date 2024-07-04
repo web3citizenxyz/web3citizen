@@ -18,8 +18,8 @@ const researchTopics = [
   {
     title: "EigenLayer",
     imgSrc: "/icons/category-3.svg",
-    slug: "EigenLayer.pdf",
-    isPdf: true
+    slug: "eigenlayer",
+   
   },
  /*
   {
@@ -41,13 +41,7 @@ export default function Research() {
       </header>
       <div className={styles.cardsContainer}>
         {researchTopics.map((topic, index) => (
-          topic.isPdf ? (
-            <a href={topic.slug} key={index} target="_blank" rel="noopener noreferrer" className={styles.card}>
-              <h2>{topic.title}</h2>
-              <img src={topic.imgSrc} alt={`${topic.title} graphic`} className="categoryIcon" />
-              <img src="/icons/arrow-card.svg" alt="Arrow" className={styles.arrow}  />
-            </a>
-          ) : (
+       
             <Link href={`/research/${topic.slug}`} key={index}>
               <div className={styles.card}>
                 <h2>{topic.title}</h2>
@@ -55,7 +49,7 @@ export default function Research() {
                 <img src="/icons/arrow-card.svg" alt="Arrow" className={styles.arrow}  />
               </div>
             </Link>
-          )
+          
         ))}
       </div>
     </div>

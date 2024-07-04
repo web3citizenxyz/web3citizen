@@ -1,7 +1,7 @@
 /* src/components/SideIcons.module.css */
 .sideIcons {
     position: fixed;
-    bottom: 40px;
+    bottom: 100px;
     left: 40px;
     z-index: 1000;
     display: flex;

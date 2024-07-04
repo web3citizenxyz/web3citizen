@@ -65,7 +65,7 @@ export default function Learn () {
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/EigenLayer.pdf" target='_blank' className={styles.card}>
+    <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
         <p>Understand EigenLayer’s importance in blockchain performance</p>
@@ -80,7 +80,7 @@ export default function Learn () {
       </a>
     </SwiperSlide>
        <SwiperSlide className={styles.swiperSlide}>
-    <a href="/EigenLayer.pdf" target='_blank' className={styles.card}>
+    <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
         <p>Understand EigenLayer’s importance in blockchain performance</p>
