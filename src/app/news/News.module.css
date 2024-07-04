@@ -120,7 +120,7 @@
 
   .buttons {
     position: fixed;
-    bottom: 80px;
+    bottom: 100px;
     left: 20px;
     display: flex;
     flex-direction: column;

@@ -44,17 +44,20 @@
   .textContent {
     text-align: left;
    width: 100%;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
   }
   .textContent h1 {
     font-family: 'Montserrat';
     font-size: 86px;
     font-weight: 500;
+    margin-bottom: 10px;
+
   }
   
   .textContent p {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    width: 90%;
   }
   
 
@@ -72,13 +75,13 @@
   
   }
   .card {
-    background-image: url('/images/cards-gradients.png'); /* Ruta a tu imagen */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-image: url('/images/cards-gradients.png'); 
+    background-size: cover; 
     background-position: center; /* Centra la imagen en la tarjeta */
     background-repeat: no-repeat;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px; 
+    padding: 10px 1px; 
     width: 275px;
     height: 300px;
     margin: 5px;
@@ -96,11 +99,12 @@
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 20px;
+
   }
   .card p {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
   }
 
 
@@ -160,8 +164,8 @@
     .learnSection {
         flex-direction: column;
         align-items: center;
-        padding: 100px 0; 
-           margin-bottom: 110px;      }
+        padding: 80px 0; 
+             }
      
       .background {
         margin-top: 70%;
@@ -200,6 +204,7 @@
         font-size: 18px;
         margin: 0 10px;
         margin-bottom: 10px;
+        width: 100%;
       }
     
     
@@ -227,7 +232,7 @@
       flex-direction: column;
       align-items: center;
       padding: 100px 0; 
-     margin-bottom: 110px;
+     margin-bottom: 170px;
     }
   
   

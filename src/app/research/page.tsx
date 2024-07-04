@@ -16,9 +16,10 @@ const researchTopics = [
     slug: "grants"
   },
   {
-    title: "Coming Soon",
+    title: "EigenLayer",
     imgSrc: "/icons/category-3.svg",
-    slug: "state-of-daos"
+    slug: "EigenLayer.pdf",
+    isPdf: true
   },
  /*
   {
@@ -32,24 +33,31 @@ export default function Research() {
   return (
     <div className={styles.researchPage}>
       <header className={styles.header}>
-        <h1>Keep updated with our Research Reports</h1>
+        <h1>Stay Updated with Our Research Reports</h1>
+        <p>Explore our curated selection of reports. </p>
         <p>
-          Find our special curated selection of reports, select a category or
-          choose your <br /> specific topic filters from the <a  className={styles.researchLink} > RESEARCH</a> menu on the navigation bar.
+      Select a category or filter topics from <a  className={styles.researchLink} > RESEARCH</a> menu in the navigation bar.
         </p>
       </header>
-
       <div className={styles.cardsContainer}>
         {researchTopics.map((topic, index) => (
-              <Link href={`/research/${topic.slug}`} key={index}>
-          <div className={styles.card}>
-            <h2>{topic.title}</h2>
-            <img src={topic.imgSrc} alt={`${topic.title} graphic`} className="categoryIcon" />
-            <img src="/icons/arrow-card.svg" alt="Arrow" className={styles.arrow}  />
-          </div>
-      </Link>
+          topic.isPdf ? (
+            <a href={topic.slug} key={index} target="_blank" rel="noopener noreferrer" className={styles.card}>
+              <h2>{topic.title}</h2>
+              <img src={topic.imgSrc} alt={`${topic.title} graphic`} className="categoryIcon" />
+              <img src="/icons/arrow-card.svg" alt="Arrow" className={styles.arrow}  />
+            </a>
+          ) : (
+            <Link href={`/research/${topic.slug}`} key={index}>
+              <div className={styles.card}>
+                <h2>{topic.title}</h2>
+                <img src={topic.imgSrc} alt={`${topic.title} graphic`} className="categoryIcon" />
+                <img src="/icons/arrow-card.svg" alt="Arrow" className={styles.arrow}  />
+              </div>
+            </Link>
+          )
         ))}
       </div>
     </div>
   );
-        }
+}

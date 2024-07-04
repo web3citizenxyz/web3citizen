@@ -22,8 +22,9 @@
 
     padding-left: 80px;
     margin-top: 40px;
-    width: 45%;
+    width: 50%;
     margin-right: 300px;
+ 
   }
   
   .team h1 {
@@ -90,7 +91,7 @@
       flex-direction: column;
       text-align: center;
       padding: 60px 10px;
-     margin-top: 0px;
+
     
     
     }
@@ -105,7 +106,7 @@
       margin-top: 0px;
       padding-right: 60px;
      margin-bottom: 20px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
     }
   
@@ -174,9 +175,10 @@
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
-      padding-left: 40px;
+      padding-left: 30px;
       margin-top: 20px;
-      padding-right: 0px;
+      padding-right: 20px;
+
      
    
        }

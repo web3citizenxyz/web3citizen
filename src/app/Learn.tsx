@@ -23,8 +23,8 @@ export default function Learn () {
           <div className={styles.contentWrapper}>
             <div className={styles.textContent}>
               <h1>Learn</h1>
-              <p>Explore our curated resources and guides to jump into new narratives in the Ethereum ecosystem</p>
-              <p>Start your journey and expand your knowledge while you become a web3 citizen.</p>
+              <p>Explore Curated Guides.</p>
+              <p>Access aggregated resources and information about the Ethereum ecosystem.</p>
             </div>
             <div className={styles.swiperContainer}>
             <Swiper
@@ -58,49 +58,49 @@ export default function Learn () {
 
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/grants" className={styles.card}>
-        <h2>GRANTS
+        <h2>Grants
         </h2>
         <span className={styles.dash}></span>
-        <p>Find your next grant, learn how to apply.<br />See more</p>
+        <p>Find grants to fund your projects within Ethereum</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/link4" className={styles.card}>
-        <h2>COMING SOON</h2>
+    <a href="/EigenLayer.pdf" target='_blank' className={styles.card}>
+        <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
-        <p>Small explanation on the subject.</p>
+        <p>Understand EigenLayer’s importance in blockchain performance</p>
       </a>
     </SwiperSlide>
    
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/daos" className={styles.card}>
-        <h2>DAOS</h2>
+        <h2>DAOs</h2>
         <span className={styles.dash}></span>
-        <p>Guide on DAO governance and the DAO Landscape.</p>
+        <p>Learn about DAOs and their role in blockchain governance.</p>
       </a>
     </SwiperSlide>
        <SwiperSlide className={styles.swiperSlide}>
-    <a href="/link4" className={styles.card}>
-        <h2>COMING SOON</h2>
+    <a href="/EigenLayer.pdf" target='_blank' className={styles.card}>
+        <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
-        <p>Small explanation on the subject.</p>
+        <p>Understand EigenLayer’s importance in blockchain performance</p>
       </a>
     </SwiperSlide>
    
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/grants" className={styles.card}>
-        <h2>GRANTS
+        <h2>Grants
         </h2>
         <span className={styles.dash}></span>
-        <p>Find your next grant, learn how to apply.See more</p>
+        <p>Find grants to fund your projects within Ethereum</p>
       </a>
     </SwiperSlide>
  
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/daos" className={styles.card}>
-        <h2>DAOS</h2>
+        <h2>Daos</h2>
         <span className={styles.dash}></span>
-        <p>Guide on DAO governance and the DAO Landscape.</p>
+        <p>Learn about DAOs and their role in blockchain governance.</p>
       </a>
     </SwiperSlide> 
     
@@ -109,7 +109,7 @@ export default function Learn () {
 <div className={styles.buttonWrapper}>
     <a href="/research" className={styles.learnMore}>
       <span className={styles.arrows}>&gt;&gt;&gt;</span>
-      CHECK OUT ALL
+      EXPLORE MORE
     </a>
   </div>
         </div>

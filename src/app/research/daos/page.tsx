@@ -22,7 +22,7 @@ export default function DAOS() {
                         <h2 className={styles.cardTitle}>DAO Basics</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>DAOs have transformed how we think about collective organization.</p>
+                    <p className={styles.cardDescription}>An introduction to DAOs, their purpose, and how they operate.</p>
                  
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>
@@ -31,10 +31,10 @@ export default function DAOS() {
                 <div className={styles.card}>
                     <div className={styles.cardHeader}>
                         <img src="/icons/ade.svg" alt="icon adelantar" className={styles.cardHubIcon} />
-                        <h2 className={styles.cardTitle}>The State Of DAOs</h2>
+                        <h2 className={styles.cardTitle}>The State Of DAOs 2023</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>Our first guide focuses on DAO governance and the DAO Landscape.</p>
+                    <p className={styles.cardDescription}>A comprehensive report on the current trends, challenges, and innovations within DAOs in 2023.</p>
                   
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>

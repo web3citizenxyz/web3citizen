@@ -78,14 +78,16 @@
   
   .cardArrowIcon {
     margin-right: 10px;
+  
   }
   .cardHubIcon{
     width: 30px;
     margin-right:10px;
+    display: none;
   }
   .cardTitle {
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: bold ;
     font-family: 'Montserrat';
 
   }

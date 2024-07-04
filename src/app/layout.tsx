@@ -136,9 +136,25 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta property="og:url" content="https://www.web3citizen.xyz/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Web3 Citizen" />
+       
+<script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-2XB363WRVJ`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2XB363WRVJ');
+            `,
+          }}
+        />
 
 
-        
+
+
       </Head>
       <body>
       {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
