@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Welcome to the Web3 Citizen Knowledge Repository! 🎉
 
-First, run the development server:
+This repository is a collaborative space where enthusiasts, professionals, and contributors can share their knowledge and insights about the Ethereum ecosystem and the broader world of Web3. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Our goal is to build a comprehensive resource that helps others navigate decentralized projects and opportunities.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Share Your Knowledge
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We believe that everyone has valuable insights to contribute. Whether you’re an expert in DAOs, grants, EigenLayer, or any other aspect of the Ethereum ecosystem, your contributions are welcome here. By sharing your knowledge, you help grow the community and empower others to engage more deeply with Web3 technologies.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### How to Contribute
 
-## Learn More
+We’re currently preparing detailed instructions on how you can submit your content to the Web3 Citizen repository. These guidelines will help ensure that your contributions are well-integrated and accessible to the community.
 
-To learn more about Next.js, take a look at the following resources:
+### Coming Soon
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Detailed instructions on how to: _Submit your articles, reports, and guides and collaborate with other contributors._
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Stay tuned.
