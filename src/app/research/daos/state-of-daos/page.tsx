@@ -12,7 +12,7 @@ import BackToTop from '@/components/BackToTop';
 const StateOfDaos = () => {
         const daos = [
             { title: "Arbitrum DAO", href: "/research/daos/arbitrum-dao", icon: "/icons/arbitrum.svg" },
-            { title: "Optimism Collective", href: "/research/daos/optimism-collective", icon: "/icons/op.svg" },
+            { title: "Optimism Collective", href: "/research/daos/op-dao", icon: "/icons/op.svg" },
             { title: "The Graph", href: "/research/daos/graph-dao", icon: "/icons/the-graph.svg" },
             { title: "ENS DAO", href: "/research/daos/ens-dao", icon: "/icons/ens.png" },
             { title: "Safe DAO", href: "/research/daos/safe-dao", icon: "/icons/safe.jpeg"},

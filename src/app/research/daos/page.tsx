@@ -22,7 +22,7 @@ export default function DAOS() {
                         <h2 className={styles.cardTitle}>DAO Basics</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>Brief description of the article.</p>
+                    <p className={styles.cardDescription}>DAOs have transformed how we think about collective organization.</p>
                  
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>
@@ -34,7 +34,7 @@ export default function DAOS() {
                         <h2 className={styles.cardTitle}>The State Of DAOs</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}> Brief description of the article.</p>
+                    <p className={styles.cardDescription}>Our first guide focuses on DAO governance and the DAO Landscape.</p>
                   
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>

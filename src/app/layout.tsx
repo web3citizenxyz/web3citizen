@@ -136,6 +136,9 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta property="og:url" content="https://www.web3citizen.xyz/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Web3 Citizen" />
+
+
+        
       </Head>
       <body>
       {!introFinished && pathname === '/' && <Intro onFinish={() => setIntroFinished(true)} />}
@@ -212,10 +215,14 @@ export default function RootLayout({ children }: LayoutProps) {
             </nav>
             <div className={`${styles.menuToggle}`} onClick={toggleMenu}>
   {menuOpen ? (
+     
     <img src={"/icons/cierre.svg"} alt="Close" className={styles.closeIcon} />
   ) : (
     <img src={navDark ? "/icons/mobile-blanco.svg" : "/icons/mobile-azul.svg"} alt="Menu" className={styles.menuIcon} />
-  )}
+  
+  )
+  
+  }
 </div>
           </header>
           <main className={styles.main}>

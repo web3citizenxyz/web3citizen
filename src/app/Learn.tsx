@@ -61,7 +61,7 @@ export default function Learn () {
         <h2>GRANTS
         </h2>
         <span className={styles.dash}></span>
-        <p>Small explanation on the subject.</p>
+        <p>Find your next grant, learn how to apply.<br />See more</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
@@ -76,7 +76,7 @@ export default function Learn () {
     <a href="/research/daos" className={styles.card}>
         <h2>DAOS</h2>
         <span className={styles.dash}></span>
-        <p>Small explanation on the subject.</p>
+        <p>Guide on DAO governance and the DAO Landscape.</p>
       </a>
     </SwiperSlide>
        <SwiperSlide className={styles.swiperSlide}>
@@ -92,7 +92,7 @@ export default function Learn () {
         <h2>GRANTS
         </h2>
         <span className={styles.dash}></span>
-        <p>Small explanation on the subject.</p>
+        <p>Find your next grant, learn how to apply.See more</p>
       </a>
     </SwiperSlide>
  
@@ -100,7 +100,7 @@ export default function Learn () {
     <a href="/research/daos" className={styles.card}>
         <h2>DAOS</h2>
         <span className={styles.dash}></span>
-        <p>Small explanation on the subject.</p>
+        <p>Guide on DAO governance and the DAO Landscape.</p>
       </a>
     </SwiperSlide> 
     

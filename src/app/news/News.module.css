@@ -211,7 +211,7 @@
       padding: 8px;
       flex-direction: row;
       justify-content: space-between;
-      bottom: 450px;
+      bottom: 650px;
     }
     .newsletterCard {
         width: 100%;
@@ -219,4 +219,54 @@
         height: auto;
         margin-top: 0px;
       }
-  }
+      .newsletterCard p {
+        font-size: 0.8em;
+        margin-bottom: 30px;
+      }
+      .viewMore {
+        font-size: 0.7em;
+      }
+    }
+
+    @media (max-width:380px){
+
+      .buttons {
+          position: absolute;
+        top: 20px;
+        left: 10px;
+        right: 10px;
+        padding: 8px;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 500px;
+      }
+      .newsletterCard {
+          width: 100%;
+          padding: 15px;
+          height: auto;
+          margin-top: 0px;
+        }
+        .newsletterCard p {
+          font-size: 0.8em;
+          margin-bottom: 30px;
+        }
+        .viewMore {
+          font-size: 0.7em;
+        }
+      }
+
+      @media (max-width:370px) {
+
+        .buttons {
+          position: absolute;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        padding: 2px;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 550px;
+      }
+
+
+      }

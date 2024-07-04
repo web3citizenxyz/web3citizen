@@ -107,6 +107,7 @@
 .nav.open .navItem {
   color: #e5e5e5;
 }
+
 .header.navScrolled {
   background-color: rgba(47, 47, 47, 0.8); 
 }
@@ -171,12 +172,12 @@
   background-color: #2b2c3a;
   padding: 20px;
   position: absolute;
-  top: 50px; /* Ajusta esta posición */
-  left: 53%; /* Ajusta esta posición */
+  top: 50px; 
+  left: 53%;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   z-index: 1000;
-  transform: translate(-50%, 10px); /* Ajusta según sea necesario */
+  transform: translate(-50%, 10px); 
 }
 
 
