@@ -125,11 +125,23 @@
 }
 
 .twitterLink:hover {
+
   text-decoration: underline;
 }
   @media (max-width: 768px) {
+   .articleContainer{
+    padding: 50px 10px;
+   }
+   
+   .twitterLink{
+    margin: 0 1px;
+    font-size: 14px;
+   }
+
+
     .header h1 {
       font-size: 2rem;
+      font-weight: 500;
     }
   
     .header p,
@@ -138,7 +150,7 @@
     }
   
     .section h2 {
-      font-size: 1.5rem;
+      font-size: 2.6rem;
     }
 
   .quoteContainer {
