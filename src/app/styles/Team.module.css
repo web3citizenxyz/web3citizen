@@ -23,6 +23,7 @@
   width: 50%;
   margin-right: 300px;
 
+
 }
 
 .team h1 {
@@ -37,25 +38,27 @@
 
 .team p {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: lighter;
   font-family: 'Montserrat';
   text-align: left;
+  margin-top: 0px;
 }
 
-.btn {
+.btn  {
+  margin-top: 40px ;
   background-color: #ffffff;
   font-family: 'Montserrat';
   color: #2B2C3A;
   border: none;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px 10px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 80px;
-  width: 140px;
-  height: 67px;
+  width: 200px;
+  height: 50px;
   font-weight: bold;
-  margin-top: 50px;
+
   align-self: flex-start;
 }
 
@@ -102,6 +105,8 @@
   }
   .btn{
     font-size: 14px;
+    width: 180px;
+    height: 40px;
   }}
 
   @media (max-width: 400px) {
