@@ -1,12 +1,16 @@
+import { useEffect, useRef } from 'react';
+import * as pdfjsLib from 'pdfjs-dist/build/pdf';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import * as pdfjsLib from 'pdfjs-dist/build/pdf';
-import 'pdfjs-dist/build/pdf.worker.entry';
 import styles from './Eigen.module.css';
 
-const PdfViewer = ({ url }) => {
+// Configuración del worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+
+export default function PdfViewer({ url }: { url: string }) {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     return (
@@ -19,6 +23,4 @@ const PdfViewer = ({ url }) => {
             </Worker>
         </div>
     );
-};
-
-export default PdfViewer;
+}
