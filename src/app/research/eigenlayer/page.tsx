@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import PdfViewer from'./PdfViewer';
 import styles from './Eigen.module.css';
 import SideIcons from '@/components/SideIcons';
 import BackToTop from '@/components/BackToTop';
@@ -7,9 +7,11 @@ import BackToTop from '@/components/BackToTop';
 
 
 
-
-
+  const pdfUrl = '/path/to/your/pdf/file.pdf';
 export default function EigenLayer() {
+  
+  
+  const pdfUrl = '/EigenLayer.pdf';
   return (
     <div className={styles.articleContainer}>
   
@@ -49,11 +51,9 @@ export default function EigenLayer() {
       </section>
       <a href="/EigenLayer.pdf" download className={styles.contactButton}>Download the report</a>
       <div className={styles.pdfContainer}>
-  <object data="/EigenLayer.pdf" type="application/pdf" className={styles.pdfIframe}>
-    <embed src="/EigenLayer.pdf" type="application/pdf" />
-    <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/EigenLayer.pdf">Download PDF</a>.</p>
-  </object>
-</div>
+      <PdfViewer url={pdfUrl} />
+      </div>
+  
 
      <SideIcons />
      <BackToTop />
