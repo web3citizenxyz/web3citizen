@@ -5,9 +5,9 @@ import styles from './News.module.css';
 const News = () => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([
-    { title: 'OP Bulletin', href: '/resources/op', icon: '/icons/ade.svg', subtitle: 'Weekly news and insights on the Optimism Collective.' },
-    { title: 'EigenLayer News', href: '/resources/eigen', icon: '/icons/ade.svg', subtitle:'Weekly summaries of the most significant events in the EigenLayer ecosystem.' },
-    { title: 'Other newsletters', href: '/resources/other', icon: '/icons/ade.svg', subtitle:'Weekly news and insights on the Optimism Collective.' },
+    { title: 'OP Bulletin', href: 'https://paragraph.xyz/@web3citizenxyz/community/OP%20Bulletin', icon: '/icons/ade.svg', subtitle: 'Weekly news and insights on the Optimism Collective.' },
+    { title: 'EigenLayer News', href: 'https://paragraph.xyz/@web3citizenxyz/community/EigenLayer%20News', icon: '/icons/ade.svg', subtitle:'Weekly summaries of the most significant events in the EigenLayer ecosystem.' },
+    { title: 'Arbitrum DAO News', href: 'https://arbitrumdaonews.substack.com/', icon: '/icons/ade.svg', subtitle:'Weekly news and insights on the Optimism Collective.' },
   ]);
 
   const filteredResults = results.filter(result => result.title.toLowerCase().includes(query.toLowerCase()));
