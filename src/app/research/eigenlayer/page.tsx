@@ -17,11 +17,18 @@ export default function EigenLayer() {
       <section className={styles.section}>
      
         <h2>Understanding EigenLayer</h2>
+
+        <p>
+  Contributors: 
+     <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a> - 
+      <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a>
+</p>
+
         <p> This report includes two main sections:</p>
         <ol className={styles.list}>
        
         <li><strong>Introduction to EigenLayer:</strong> an overview of restaking, and then diving into specifics of the protocol, its mechanisms and incentives.</li>
-        <br/>gi
+        
         <li><strong>EigenLayer Ecosystem</strong>:we zoom out into a more comprehensive view of use cases with EigenLayer and expand on some protocols developing.</li>
 
       </ol> 

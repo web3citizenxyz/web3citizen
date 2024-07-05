@@ -13,7 +13,7 @@
   .section h2 {
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     font-family: 'Montserrat';
   }
   
@@ -40,7 +40,7 @@
   }
   
   .list li {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     line-height: 1.6;
   }
   
@@ -117,7 +117,16 @@
   height: 100%;
   border: none;
 }
+.twitterLink {
+  color: #F1EAE1;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
 
+.twitterLink:hover {
+  text-decoration: underline;
+}
   @media (max-width: 768px) {
     .header h1 {
       font-size: 2rem;
