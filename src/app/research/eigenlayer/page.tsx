@@ -38,13 +38,13 @@ export default function EigenLayer() {
     </div>
  
       </section>
-      <a href="/EigenLayer.pdf" target='_blank' className={styles.contactButton}>Download the report</a>
+      <a href="/EigenLayer.pdf" download className={styles.contactButton}>Download the report</a>
       <div className={styles.pdfContainer}>
         <iframe
           src="/EigenLayer.pdf"
-          width="100%"
-          height="600px"
-          style={{ border: 'none ' }}
+          width="100%" 
+          height="100%"
+          style={{ border: 'none '}}
         ></iframe>
       </div> 
 
