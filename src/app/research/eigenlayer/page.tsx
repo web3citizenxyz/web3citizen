@@ -20,8 +20,8 @@ export default function EigenLayer() {
 
         <p>
   Contributors: 
-     <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a> - 
-      <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a>
+     <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a> -
+     <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a>  
 </p>
 
         <p> This report includes two main sections:</p>
