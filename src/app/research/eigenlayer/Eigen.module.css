@@ -107,15 +107,15 @@
   padding-bottom: 10px; 
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
+position: relative;
 }
 
-.iframe {
-  display: block; 
-  margin: 0 auto;
+.pdfIframe {
   width: 100%;
   height: 100%;
   border: none;
+  overflow: auto;
 }
 .twitterLink {
   color: #F1EAE1;
@@ -178,6 +178,9 @@
 
   .toolDescription {
     font-size: 0.9em;
+  }
+  .pdfContainer {
+    height: 100vh; 
   }
   }
   

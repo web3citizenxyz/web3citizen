@@ -1,6 +1,6 @@
 "use client";
 import { useRef} from 'react';
-import Head from 'next/head';
+
 import useFadeInOnScroll from './hooks/useFadeInOnScroll';
 import styles from './styles/Home.module.css';
 import Learn from './Learn';
