@@ -116,11 +116,17 @@
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
+  
+ 
 }
 
 .twitterLink:hover {
 
   text-decoration: underline;
+}
+
+.aLinks{
+  margin-bottom: 60px !important;
 }
   @media (max-width: 768px) {
    .articleContainer{

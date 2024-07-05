@@ -20,10 +20,10 @@ export default function EigenLayer() {
      
         <h2>Understanding EigenLayer</h2>
 
-        <p>
+        <p className={styles.aLinks}>
   Contributors: 
-     <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a> -
-     <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a>  
+     <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a> - 
+      <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a>  
 </p>
 
         <p> This report includes two main sections:</p>
@@ -31,7 +31,7 @@ export default function EigenLayer() {
        
         <li><strong>Introduction to EigenLayer:</strong> an overview of restaking, and then diving into specifics of the protocol, its mechanisms and incentives.</li>
         
-        <li><strong>EigenLayer Ecosystem</strong>:we zoom out into a more comprehensive view of use cases with EigenLayer and expand on some protocols developing.</li>
+        <li><strong>EigenLayer Ecosystem</strong>: we zoom out into a more comprehensive view of use cases with EigenLayer and expand on some protocols developing.</li>
 
       </ol> 
       </section>
