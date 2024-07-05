@@ -12,7 +12,7 @@ export default function Community () {
     <h1>Community</h1>
     <p>Stay Updated with the Latest Trends</p>
     <p>Stay informed about the latest projects and DAOs in the Ethereum ecosystem.</p>
-    <a href='@web3citizenxyz' target='_blank' className={styles.btn}>Join Our Community</a>
+    <a href='https://t.me/web3citizenxyznews' target='_blank' className={styles.btn}>Join Our Community</a>
   </div>
   <div className={styles.svgcommunity}>
         <img src="/images/community-elipse.svg" alt="Semicircles" className={styles.communityelipse}/>

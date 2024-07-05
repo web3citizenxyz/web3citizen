@@ -23,10 +23,10 @@ const Footer = ({ isBlack }: FooterProps) => {
           © 2024 — All Rights Reserved
         </div>
         <div className={styles.socialIcons}>
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/web3citizenxyz?s=21" target="_blank" rel="noopener noreferrer">
             <img src="/icons/x-twitter.svg" alt="X" className={styles.icon} />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/web3citizenxyz/" target="_blank" rel="noopener noreferrer">
             <img src="/icons/in.svg" alt="LinkedIn" className={styles.icon} />
           </a>
         </div>

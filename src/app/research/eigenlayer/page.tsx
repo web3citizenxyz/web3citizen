@@ -15,11 +15,13 @@ export default function EigenLayer() {
   
       
       <section className={styles.section}>
-        <h2>EigenLayer Report</h2>
-        <h1>Understanding EigenLayer</h1>
+     
+        <h2>Understanding EigenLayer</h2>
         <p> This report includes two main sections:</p>
         <ol className={styles.list}>
-        <li><strong>Introduction to EigenLayer:</strong>an overview of restaking, and then diving into specifics of the protocol, its mechanisms and incentives.</li>
+       
+        <li><strong>Introduction to EigenLayer:</strong> an overview of restaking, and then diving into specifics of the protocol, its mechanisms and incentives.</li>
+        <br/>gi
         <li><strong>EigenLayer Ecosystem</strong>:we zoom out into a more comprehensive view of use cases with EigenLayer and expand on some protocols developing.</li>
 
       </ol> 
