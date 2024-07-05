@@ -25,20 +25,7 @@ export default function Home() {
  
   return (
     <>
-       <Head>
-        <title>Web3 Citizen</title>
-
-
-        <meta name="description" content="Your infinite garden guide" />
-           {/* Open Graph tags */}
-           <meta property="og:title" content="Web3 Citizen - Your infinite garden guide" />
-        <meta property="og:description" content="Explore our curated resources and tutorials to understand the fundamentals of the decentralized web." />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="og:url" content="https://www.web3citizen.xyz/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Web3 Citizen" />
-     
-      </Head>
+    
           <div className={styles.welcomeSection}>
             <section className={styles.welcomeIntro}>
               <div className={styles.headerContainer}>

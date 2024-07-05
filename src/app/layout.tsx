@@ -3,9 +3,8 @@
 
 import Link from 'next/link';
 import { ReactNode, useState, useEffect, useRef} from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
 import { usePathname } from 'next/navigation';
+import Head from 'next/head';
 import './styles/globals.css'; 
 import styles from './styles/Layout.module.css';
 import Intro from './intro/Intro';
@@ -115,7 +114,7 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en">
     
     <Head>
-        <title>Web3 Citizen</title>
+    <title>Web3 Citizen</title>
         <meta name="description" content="Your infinite garden guide" />
         
         {/* Favicons */}
@@ -135,7 +134,7 @@ export default function RootLayout({ children }: LayoutProps) {
         {/* Open Graph tags */}
         <meta property="og:title" content="Web3 Citizen - Your infinite garden guide" />
         <meta property="og:description" content="Explore our curated resources and tutorials to understand the fundamentals of the decentralized web." />
-        <meta property="og:image" content="https://www.web3citizen.xyz/images/og.png" />
+        <meta property="og:image" content="https://www.web3citizen.xyz/images/0g.png" />
         <meta property="og:url" content="https://www.web3citizen.xyz/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Web3 Citizen" />
