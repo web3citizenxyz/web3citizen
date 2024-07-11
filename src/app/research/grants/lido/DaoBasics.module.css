@@ -11,7 +11,7 @@
   }
   
   .section h2 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 500;
     margin-bottom: 20px;
     font-family: 'Montserrat';
@@ -131,6 +131,10 @@
 }
 
 
+.a {
+  color: grey;
+  text-decoration: underline;
+}
 
 
 

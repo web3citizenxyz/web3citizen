@@ -12,7 +12,7 @@ const filters = ["All", "Active", "DApps & tooling", "Development", "Community",
 
 const grantsData = [
   { title: <>Celo<br />RetroPGF</>, href: "/research/grants/celo", category: "Active" },
-  { title: <>Lido Ecosystem<br />Grants Program</>, href: "/research/grants/celo", category: "Governance" },
+  { title: <>Lido Ecosystem<br />Grants Program</>, href: "/research/grants/lido", category: "Governance" },
   { title: <>Optimism Foundation <br /> Missions (RFPs) </>, href: "/research/grants/op", category: "Development" },
   { title: <>Optimism<br /> Retro Funding </>, href: "/research/grants/opfund", category: "Community" },
   { title: <>Polygon<br /> zkBuilder Grants</>, href: "/research/grants/polygon", category: "Community" },
@@ -22,7 +22,7 @@ const grantsData = [
   { title: <>The Graph Fundation<br /> Grants Program</>, href: "/research/grants/thegraph-fund", category: "Community" },
   { title: <>The Graph<br />Community Grants</>, href: "/research/grants/the-graph", category: "Community" },
   { title: <>Decentraland<br /> Grants Program</>, href: "/research/grants/decentraland", category: "Community" },
-  { title: <>ENS<br />Small Grants</>, category: "Community" },
+  { title: <>ENS<br />Small Grants</>,  href: "/research/grants/ens",  category: "Community" },
   { title: <>Aleo<br />Blueprint Grants</>, href: "/research/grants/ale-blueprint", category: "Community" },
   { title: <>Aleo<br /> Launch Grants</>, href: "/research/grants/aleo-launch", category: "Community" },
   { title: <>Uniswap-Arbitrum<br /> Grants Program</>, href: "/research/grants/aleo-launch", category: "Community" },

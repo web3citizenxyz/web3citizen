@@ -11,7 +11,7 @@
   }
   
   .section h2 {
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 500;
     margin-bottom: 20px;
     font-family: 'Montserrat';
@@ -130,7 +130,10 @@
   background-color: #F1EAE1; /* Color gris claro */
 }
 
-
+.a {
+  text-decoration: none;
+  color: gray;
+}
 
 
 

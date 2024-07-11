@@ -46,7 +46,7 @@ export default function DaoBasics() {
    
       <ul className={styles.list}>
         <li>CeloRetroPGF only awards projects based on past contributions.</li>
-        <li>Projects must mint a Hypercart Mint, a digital claim about the positive impact you or your project contributed to the Celo ecosystem since the launch of its Blockchain. To mint it follow the CeloPG Hypercert Minting Guide.</li>
+        <li>Projects must mint a Hypercart Mint, a digital claim about the positive impact you or your project contributed to the Celo ecosystem since the launch of its Blockchain. To mint it follow the <a className={styles.a} href="https://hub.celopg.eco/hypercert-minting-guide" target="_blank" rel="noopener noreferrer"> CeloPG Hypercert Minting Guide.</a>  </li>
         <li>Funding is a one-time direct grant post-results announcement </li>
         <li>Receivable amount allocated has no cap.</li>
       </ul>     
@@ -61,38 +61,26 @@ export default function DaoBasics() {
      
    <p>Application (April 8th - April 30th)</p>
    <ul className={styles.list}>
-    <li><strong>Interest Registration:</strong> the broader people who use, are present in the DAO's social channels or are in contact with the DAO's purpose (be it a protocol, a grant program, among others)</li>
-    <li><strong>Hypercert Minting</strong> </li>
+    <li><strong>Interest Registration:</strong><a className={styles.a} href="https://tally.so/r/3EXBv2" target="_blank" rel="noopener noreferrer"> Open now </a>, including a form submission to join the CeloPG Community.</li>
+    <li><strong>Hypercert Minting</strong><a className={styles.a} href="https://hub.celopg.eco/hypercert-minting-guide" target="_blank" rel="noopener noreferrer">  Mint a Hypercert </a> detailing your positive impact on Celo.</li>
     <li>Submit your formal applications via the EasyRPGF app.</li>
-
-  
    </ul>
-   <img src="/images/dao-roles.avif" alt="Dao-roles" className={styles.benefitsImage} />
-    <p>Certain DAOs opt to establish decentralized structures either from the beginning or as they grow. These governance bodies perform various functions and may be involved in product development related to the DAO's mission or undertake specific tasks. These tasks can range from HR-related duties to becoming a check on other governance bodies.</p>
-    
-    <p>Most DAOs use one of the following <strong>governance bodies:</strong></p>
-    <ul className={styles.list}>
-    <li><strong>Councils and Committees </strong>with representatives to act, vote, or perform a specific task on behalf of DAO members. Representatives can be either designated through a Foundation or elected by the community. Some councils, like The Graph Council, are in charge of various functions, like overseeing the Foundation's operations, protocol upgrades, and more. While other bodies like Uniswap's accountability committee manage one task: the operational development of deployments of Uniswap V3.</li>
-    <li>Arranging into <strong>working groups or guilds</strong> according to skillset. This is the case of Gitcoin, whose contributors are set on workstreams according to tasks.</li>
-    <li>Creating <strong>subDAOs</strong> with granular permissions within the main DAO's ecosystem. These can be especially useful when the DAO has scaled:</li>
-   </ul> 
-   <div className={styles.quoteContainer}>
-        <a className={styles.quote} href='https://coopahtroopa.mirror.xyz/7bfK9st2mvhxlla4XKotRjetq5-YhaiwqRwS8DhkD-o' target='_blank'>
-        “Rather than trying to house all that activity under one roof, SubDAOs offer a medium for working groups to create their own foundation and ownership structure - all while tying value back to the originating entity.”
-        </a>
-      </div>   
-    <p>To prevent overwhelming responsibilities and ensure that each structure fulfills its role, DAOs should be structured based on their stage of development. Over the past two years, the number of scaling DAOs has increased significantly. With this growth, subDAOs and other decentralized structures within a main DAO have become more common. Nevertheless, some DAOs, like Gnosis or Compound, still operate using a simple design.</p>
-    <p>The guiding rationale behind creating structures should always be to design an efficient and effective governance ecosystem that avoids an imbalance of the main governance principles. </p>
-   <h1>Contribution pathways and incentives</h1>
-   <p className={styles.black}>In 99% of DAOs, less than 0.5% of token holders vote. </p>
-   <p>DAOs have a key issue of lack of participation. Although DAOs have the unique ability to involve communities and transfer ownership, it can be challenging to maintain the community's active commitment over time.</p>
-   <p>DAOs offer community members opportunities to contribute meaningfully to the organization's objectives. Participation can take many forms, including:</p>
+ 
+
+   <p>Review and results announcement (April 20th - May 24th)</p>
    <ul className={styles.list}>
-    <li><strong>building </strong>towards the DAO's mission through programs,</li>
-    <li> <strong>voting</strong> on improvement proposals,</li>
-    <li>becoming a <strong>delegate</strong>to represent other token holders' interests,</li>
-    <li><strong>applying for grants</strong>to fund development initiatives.</li>
-    </ul>
+    <li><strong>Steward Review (April 30th - May 13th): </strong> <a className={styles.a} href="https://hub.celopg.eco/cpg-stewards" target="_blank" rel="noopener noreferrer">Stewards</a> determine funding allocation to ensure they align with the purpose of funding based on application reviews.</li>
+    <li><strong>Community voting (May 13th - May 20th):</strong> Community Stakeholders assess projects’ impact and vote based on their experience in the category they represent.</li>
+    <li>Results Announcement (May 24th) at <a className={styles.a} href="https://www.celodao.eu/gather" target="_blank" rel="noopener noreferrer">Celo Gather </a>, followed by fund distribution.</li>
+   </ul>
+   <h1>Resources</h1> 
+   <ul className={styles.list}>
+    <li> <a className={styles.a} href="https://www.celopg.eco/" target="_blank" rel="noopener noreferrer">Celo Public Goods</a> </li>
+ 
+    <li> <a className={styles.a} href="https://hub.celopg.eco/hypercert-minting-guide" target="_blank" rel="noopener noreferrer">Hypercert Minting Guide</a></li>
+   </ul>
+
+
      </section> 
 
      <SideIcons />

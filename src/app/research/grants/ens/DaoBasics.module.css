@@ -131,7 +131,10 @@
 }
 
 
-
+.a {
+  text-decoration: underline;
+  color: gray;
+}
 
 
   @media (max-width: 768px) {
