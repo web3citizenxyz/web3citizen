@@ -23,7 +23,7 @@ const grantsData = [
   { title: <>The Graph<br />Community Grants</>, href: "/research/grants/the-graph", category: "Community" },
   { title: <>Decentraland<br /> Grants Program</>, href: "/research/grants/decentraland", category: "Community" },
   { title: <>ENS<br />Small Grants</>,  href: "/research/grants/ens",  category: "Community" },
-  { title: <>Aleo<br />Blueprint Grants</>, href: "/research/grants/ale-blueprint", category: "Community" },
+  { title: <>Aleo<br />Blueprint Grants</>, href: "/research/grants/aleo-blueprint", category: "Community" },
   { title: <>Aleo<br /> Launch Grants</>, href: "/research/grants/aleo-launch", category: "Community" },
   { title: <>Uniswap-Arbitrum<br /> Grants Program</>, href: "/research/grants/aleo-launch", category: "Community" },
   { title: <>Optimism<br /> Partner Fund</>, href: "/research/grants/op-partner", category: "Community" },

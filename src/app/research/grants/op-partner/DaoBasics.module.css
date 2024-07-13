@@ -115,22 +115,24 @@
 
 
 .toolCard:nth-child(1) {
-  background-color: #f9e6e6; /* Color lila */
+  background-color: #f9e6e6; 
 }
 
 .toolCard:nth-child(2) {
-  background-color: #F1EAE1; /* Color verde claro */
+  background-color: #F1EAE1; 
 }
 
 .toolCard:nth-child(3) {
-  background-color: #f9e6e6; /* Color rosa claro */
+  background-color: #f9e6e6; 
 }
 
 .toolCard:nth-child(4) {
-  background-color: #F1EAE1; /* Color gris claro */
+  background-color: #F1EAE1; 
 }
-
-
+.a{
+  color: grey;
+  text-decoration: underline;
+}
 
 
 

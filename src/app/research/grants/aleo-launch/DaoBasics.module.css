@@ -130,8 +130,10 @@
   background-color: #F1EAE1; /* Color gris claro */
 }
 
-
-
+.a {
+  color: grey;
+  text-decoration: underline;
+}
 
 
   @media (max-width: 768px) {
