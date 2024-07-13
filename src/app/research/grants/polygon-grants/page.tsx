@@ -9,100 +9,84 @@ import BackToTop from '@/components/BackToTop';
 
 
 
-export default function DaoBasics() {
+export default function PolygonVillageGrants() {
   return (
     <div className={styles.articleContainer}>
   
       
       <section className={styles.section}>
-        <h2>Retro Funding (RetroPGF)</h2>
+        <h2>Polygon Village Grants</h2>
        
-        <p><strong>Next round:</strong> May 2024, focusing on Onchain Builders</p>
-        <p><strong>Amount:</strong> Total amount for 2024: 850M OP. Amount per round to be announced</p>
-    <p>Each Season, RetroPGF identifies and rewards builders for the contributions they have made to the Optimism Collective. RetroPGF mechanism serves as an experiment towards achieving this goal of "impact = profit". By funding public goods in a sustainable manner, the Collective can foster a thriving ecosystem.</p>
-   <p>Since October 2022, RetroPGF has distributed 41M OP tokens across three rounds.</p>
+        <p><strong>Time frame:</strong> waiting for the next iteration of Village Grants</p>
+        <p><strong>Campaigns duration aprox. 8 weeks:</strong></p>
+        <ul className={styles.list}>
+     <li>8 weeks (BUIDL on Polygon #1);</li>
+     <li>8-10 weeks (Infra on Polygon) from application to deployment.</li>
+   </ul>
+        
+
+        
+      <p>Village Grants provides support to founders in the Polygon ecosystem. Village Community Grants (VCG) is a grant program that provides funding to projects through either quadratic funding or direct grants. The program partners with Gitcoin or Giveth to power funding rounds for quadratic funding.</p>
+      <p>So far, two grants are currently under implementation, focusing on builders and developing infrastructure on Polygon. Matching pools for each grant vary, but both have disbursed more than 100K MATIC.</p>
+      <p>The information below refers to the past iteration.
+       Additional grants are expected to be available in early 2024.</p>
       </section>
 
       <section className={styles.section}>
+        <h1>Grant Scope</h1>
+       <p>Village Community Grants funds ecosystem-centered projects focusing on specific categories.</p>
 
-      <img src="/images/retro-funding.png" alt="retro-fund" className={styles.benefitsImage} /> 
-   
+      </section>
+<h1>Funding Specifics</h1>
 
-   <p>During 2024, RetroPGF round 4 will focus on <a href='https://gov.optimism.io/t/retro-funding-moving-from-broad-to-narrow-scoped-rounds/7759' target='_blank' className={styles.a}>narrow scoped rounds.</a></p>
-   <ul className={styles.list}>
-     <li>Retro Funding 4 Onchain builders: May</li>
-     <li>Retro Funding 5 OP Stack: late July/August</li>
-     <li>Retro Funding 6 Governance: August</li>
-     <li>Retro Funding 7 Dev-tooling: October</li>
+
+<p className={styles.black}>Village Community Grants provides prospective grants.</p>
+
+
+<p>Depending on the grant type,<a href='' className={styles.a}>VCG will provide funding through either direct or quadratic funding grants.</a></p>
+
+<ul className={styles.list}>
+     <li>Direct grants are mainly intended for later-stage projects and the funding amount can be up to two million MATIC per grant. They are offered through the Polygon Foundation.</li>
+     <li>Quadratic funding grants, on the other hand, are primarily intended for early-stage projects and the funding amount is smaller.</li>
    </ul>
 
-<p className={styles.black}>Information below focuses on what is known for Retro Funding 4.<br></br>
-                            We’ll update as soon as new information becomes available.</p>
+  <p className={styles.black}>Requirements.</p>   
 
+  <ul className={styles.list}>
+     <li>Subject to round rules, grants are open to anyone building in the Polygon ecosystem.</li>
+     <li>Follow the guidelines and specifications of the campaign you wish to participate in.</li>
+     <li>Accept the Terms & Conditions of the campaign and, if selected, complete the KYC/KYB review process to become a candidate.</li>
+   </ul>
 
+<h1>Grant Process for QF rounds</h1>
+<p className={styles.black}>Application</p>   
 
+<ul className={styles.list}>
+  <p>1. Application and Screening</p>
+     <li>Teams and individuals submit their applications, including their wallet addresses, to become a candidate in the funding round.</li>
+     <li>2. Polygon Labs conducts verification of KYC/KYB review of selected projects. Once verified, participants move on to the next phase.</li>
+  
+   </ul>
+   <p className={styles.black}>Voting & Review</p>   
+   <ul className={styles.list}>
+  <p>1. Community Contest</p>
+     <li>In collaboration with Jokerace, candidates compete for votes from the community. Top projects will move on to the next phase, where they will onboard their projects to Giveth.</li>
+    <p>2. Grant Phase</p>
+      <li>Powered by Giveth, candidates will receive donations from community members over two weeks.</li>
+  <p>3. Funding</p>
+  <li>Once donations are verified, donated amounts and Quadratic Funding (QF) matching funds are distributed to participants.</li>
 
-        <h1>Grant Scope</h1>
-       <div>
-<p>Retro Funding rounds 4-7 will each award projects on a specific category:</p>
-      <ul className={styles.list}>
-        <li><strong>#4 Onchain Builders</strong></li>
-        <p>For projects that drive the adoption of Optimism. Onchain builders introduce new users to Optimism, drive protocol usage and network effects</p>
-       
-        <li><strong>#5 Op Stack</strong></li>
-<p>For projects that contributed to making the OP Stack more efficient, secure, resilient. This round is tied to Intent 1 of “Progress towards technical decentralization.”</p>
-        <li><strong>#6 Collective Governance</strong></li>
-
-        <p> For projects that benefit governance participants within the Optimism Collective, improve capture resistance and resource allocation of Optimism Governance. This round is tied to Intent 4 “Improving governance accessibility.”</p>
-        <li><strong>#7 Developer Tooling</strong></li>
-    <p>For developer tooling projects that improved the lives of developers building within the Optimism Collective. This round is tied to Intent 2 “Grow the Superchain.”</p>
-      </ul>
-<p>Projects can apply under more than one category ie. If your project is a dev tool built on the OP stack you could apply for “Dev Tooling” and “OP Stack.”</p>
-
-    </div>
-    <h1>Who can apply?</h1>
-    <p>Builders, developers artists, creators, and all contributors who make a positive impact on Optimism or the Superchain Ecosystem are able to participate.</p>
-    <h1>Funding Specifics</h1> 
-    <ul className={styles.list}>
-      <li>Funding relies on the amount of votes received by badgeholders.</li>
-      <li>There is no cap on the amount you can receive.</li>
-      <li>Funding is allocated in a one time direct-amount after results are presented.</li>
-    </ul>
-      </section>
-<h1>Grant timeline</h1>
-
-
-<p className={styles.black}> This reflects the process designed up to RetroPGF3, will be updated if a new process is unveiled for Retro Funding 4.</p>
-<img src="/images/retro-fund-2.jpg" alt="retro-fund" className={styles.benefitsImage} /> 
-<p className={styles.black}>1. Badgeholder Selection </p>
-<p>Badgeholders are selected based on their contributions.</p>
-
-<p className={styles.black}>2 Applications are open</p>
-<p>Applicants submit their projects through direct sign-up, showcasing their positive impact within the Optimism Collective.</p>
-<p>While not currently available, when applications are open you can build your Optimist Profile. In it you can provide impact details and metrics with references to external data sources to describe how the project has made a positive impact within the scope of this round.</p>
-<p>You can see the application for Round 3 <a className={styles.a}>here.</a></p>
-
-
-<p className={styles.black}>3 Votting process</p>
-<p>A select group of badgeholders in the Citizens House is responsible for determining who receives retroactive funding. Badgeholders voting directs funds to those projects who have notably benefited Optimism.</p>
-<p>Votes are cast in  accordance with each round’s Retro Funding ‘experiment’. Retro Funding for the Onchain Builder and Dev Tooling rounds will be judged according to metrics. OP Stack and Governance rounds will be judged by Impact Juries, groups of citizens which have a small amount of projects to review.</p>
-
-<p className={styles.black}>4 Results and fund allocation</p>
-<p>Projects receive rewards based on their received OP allocation votes.</p>
-
-
-
-
+   </ul>
 
 <section className={styles.section}>
 <h1>Resources</h1> 
    <ul className={styles.list}>
-    <li> <a className={styles.a} href="https://community.optimism.io/docs/governance/citizens-house/#how-retropgf-works" target="_blank" rel="noopener noreferrer">How RetroPGF works</a> </li>
+    <li> <a className={styles.a} href="https://polygon.technology/village/grants" target="_blank" rel="noopener noreferrer">Village Grants Website</a> </li>
  
-    <li> <a className={styles.a} href="https://gov.optimism.io/t/upcoming-retro-rounds-and-their-design/7861" target="_blank" rel="noopener noreferrer">Upcoming rounds post</a> </li>
+    <li> <a className={styles.a} href="https://polygon.technology/blog/introducing-polygon-village-2-0-championing-founders-with-more-than-110-million-in-matic-grants-mentoring-ecosystem-support-and-more?utm_source=twitter&utm_medium=social&utm_content=village-relaunch-blog" target="_blank" rel="noopener noreferrer">Introducing Polygon Village 2.0</a> </li>
     <li> <a className={styles.a} href="https://vote.optimism.io/retropgf/3/summary" target="_blank" rel="noopener noreferrer">Round 3 - summary and results</a> </li>
-    <li>Read the Project Manual for an overview and answers FAQs</li>
-    <li><a className={styles.a} href='https://twitter.com/OptimismGrants'>X account</a> </li>
+    <li><a className={styles.a} href='https://polygon.technology/village/grants'>FAQs</a> </li>
+    <li><a className={styles.a} href='https://polygon.technology/village/builder-houses'>Builder Houses & Co-working</a> </li>
 </ul>
      </section> 
 

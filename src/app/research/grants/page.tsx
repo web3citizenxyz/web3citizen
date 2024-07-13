@@ -25,7 +25,7 @@ const grantsData = [
   { title: <>ENS<br />Small Grants</>,  href: "/research/grants/ens",  category: "Community" },
   { title: <>Aleo<br />Blueprint Grants</>, href: "/research/grants/aleo-blueprint", category: "Community" },
   { title: <>Aleo<br /> Launch Grants</>, href: "/research/grants/aleo-launch", category: "Community" },
-  { title: <>Uniswap-Arbitrum<br /> Grants Program</>, href: "/research/grants/aleo-launch", category: "Community" },
+  { title: <>Uniswap-Arbitrum<br /> Grants Program</>, href: "/research/grants/uniswap", category: "Community" },
   { title: <>Optimism<br /> Partner Fund</>, href: "/research/grants/op-partner", category: "Community" },
   { title: <>Polygon<br /> Village Grants</>, href: "/research/grants/polygon-grants", category: "Community" },
   { title: <>Polygon Village<br /> Build Ideas</>, href: "/research/grants/polygon-build", category: "Community" },
