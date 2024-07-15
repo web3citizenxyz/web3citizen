@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './ArticleLayout.module.css';
+import { symlink } from 'fs';
 
 const Article = () => {
   return (
@@ -143,11 +144,61 @@ const Article = () => {
             </ul>
 <p>The entire AIP voting process typically takes 34 days for Constitutional or 21 days for Non-Constitutional AIPs. </p>
 <img src="/images/dao-vote.webp" alt="DAO vote" className={styles.benefitsImage} />
-
+<p className={styles.titleBlack} id='section10'>Delays and Waiting Periods</p>
+<ul className={styles.orderedList}>
+            <li className={styles.listItem}>All proposals, except those done by a 9/12 Security Council, will be subject to a series of delays: L2 timelock, withdrawal delay, and L1 timelock.</li>
+            <li className={styles.listItem}>Users can withdraw their assets from Arbitrum One or Nova before the execution of an accepted proposal. </li>
+           <li className={styles.listItem}>Anyone can monitor the execution process.</li>
+            </ul>
+            <p>This process allows for thorough consideration and voting, ensuring everyone has a fair chance to voice their opinions and concerns.</p>
+</div>
+<div id='section11' className={styles.section}>
+<h2 className={styles.sectionSubtitle}>Contribution Pathways</h2>
+<p>Any member of the community can contribute to the Arbitrum Ecosystem.</p>
+</div>
+<div id='section12' className={styles.section}>
+<p className={styles.titleBlack}>Ambassadors Program</p>
+<p>You can become an ambassador for Arbitrum by joining “fleets” and representing Arbitrum in your local community, creating content, and leading meetups.</p>
+<p>There will be two Phases to the Ambassador Program. Phase 1 is already in place and directed toward University-based Clubs and Students. Phase 2 will focus on contribution opportunities for users (Community Fleet) and developers (Technical Fleet). Phase 2 is expected before the end of the year.</p>
+<p>Learn more here, read on the Ambassadors’ contributions and apply here.</p>
 </div>
 
+<div id='section12' className={styles.section}>
+  <p className={styles.sectionSubtitle}>Grants</p>
+  <p>Different grant programs exist within the Arbitrum Ecosystem. The Arbitrum Foundation runs Foundation Grants, while Arbitrum Grants DAO runs its initiatives separately.</p>
+<p>DAO Grants</p>
+<p>A group of contributors submitted a proposal to run the Arbitrum Grants DAO through working stream domain allocators. The grant would allocate funds to teams building apps on top of Arbitrum. The grant budget will be $1M with $200k for each domain. The proposal remains pending execution. Read the submission here.</p>
+<p>Learn more about DAO grant proposals and ongoing discussions here.</p>
 
-          </div>
+<p className={styles.sectionSubtitle}>Foundation Grants</p>
+<p>Arbitrum Foundation launched a program to foster the Ecosystem’s growth and support DAO initiatives. Foundation Grants allocate funds to key Arbitrum initiatives. Current categories for this first phase of grants are dApps built across Arbitrum and Infrastructure and Tools. Learn more about Foundation Grants here.</p>
+
+<p className={styles.sectionSubtitle}>Uniswap-Arbitrum Grant Program</p>
+<p>This grant program launched in November 2023. Gitcoin's Grants Stack hosts the program as a direct grant and the program is managed by Uniswap DAO Working Group Zero.</p>
+<p>The UAGP focuses on growing and advancing projects built exclusively within the Uniswap-Arbitrum ecosystem. Projects submitted must benefit both ecosystems. </p>
+<p>5 categories are available</p>
+<ol className={styles.orderedList}>
+            <li className={styles.listItem}>Liquidity Management and Derivative Protocol</li>
+            <li className={styles.listItem}>Arbitrum testnet with EIP-1153 enabled</li>
+           <li className={styles.listItem}>Uniswap v4 Infrastructure Dev Tools</li>
+           <li className={styles.listItem}>Uniswap on Arbitrum Ecosystem tools or products </li>
+           <li className={styles.listItem}>Open Contribution, for applications not necessarily aligning with the previous four categories</li>
+            </ol>
+
+<p>The Questbook Arbitrum Grants program</p>
+<p>This program is helpful for anyone developing domain-specific projects on top of Arbitrum. It includes four categories:</p>
+<ul className={styles.orderedList}>
+            <li className={styles.listItem}>Arbitrum Gaming</li>
+            <li className={styles.listItem}>Arbitrum new Protocols and Ideas</li>
+           <li className={styles.listItem}>Arbitrum Education, Community Growth, and Events</li>
+           <li className={styles.listItem}>Arbitrum Dev Tooling on One and NOVA </li>
+            </ul>
+ <p>Through the program, you can receive milestone-based funding based on domain-specific needs outlined by the domain allocators elected by the community.</p>
+<p>Learn more here</p>
+<img src="/images/arbitrum-daos-grants.png" alt="Arbitrum-grants" className={styles.benefitsImage} />
+
+  </div>
+      </div>
       </div>
   );
 };

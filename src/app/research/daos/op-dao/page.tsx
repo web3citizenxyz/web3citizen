@@ -8,9 +8,9 @@ const Article = () => {
       <div className={styles.articleContainer}>
           <div className={styles.menuContainer}>
               <ul className={styles.menu}>
-                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Optimisim DAO</a></li>
-                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>AIP-1</a></li>
-                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Arbitrum DAO Governance</a></li>
+                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Optimism</a></li>
+                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>The Optimism Colective</a></li>
+                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Optimism Collective Governance</a></li>
                   <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
                   <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
                   <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
