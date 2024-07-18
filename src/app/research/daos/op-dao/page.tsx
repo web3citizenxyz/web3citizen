@@ -12,15 +12,20 @@ const Article = () => {
                   <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>The Optimism Colective</a></li>
                   <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Optimism Collective Governance</a></li>
                   <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
-                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
-                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
-                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Voting Power</a></li>
-                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Process</a></li>
-                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Delays and Waiting Periods</a></li>
-                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Contribution Pathways</a></li>
-                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Ambassadors Program</a></li>
-                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Grants</a></li>
+                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>The Token House</a></li>
+                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>The Citizen House</a></li>
+                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Token House Governance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
+                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Voting Power</a></li>
+                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>The Token House Governance & Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>The Citizen House Governance & Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Season 5</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Intents</a></li>
+                  
+ 
+ 
               </ul>
           </div>
           <div className={styles.contentContainer}>
