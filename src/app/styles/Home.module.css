@@ -186,7 +186,7 @@ body.whiteBackground {
   position: relative;
   z-index: 1;
   text-align: left;
-  margin-top: -100px;
+  margin-top: 80px;
 }
 
 
@@ -246,7 +246,7 @@ body.whiteBackground {
 .communityelipse {
 
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 0px;
   right: 0%;
 }
@@ -259,12 +259,14 @@ body.whiteBackground {
     margin-top: 0px;
     padding-bottom: 50px;
     overflow: hidden;
+
   }
 
   .community {
     flex-direction: column;
     text-align: center;
     padding: 20px 0px;
+    margin-top: 0;
 
   }
 
@@ -376,6 +378,7 @@ display: none;
 
   .main {
     margin-top: 0px;
+    padding: 60px 0;
   }
 
 
@@ -411,7 +414,10 @@ display: none;
 display: none;
 }
 
-
+.community{
+  margin-top: 0;
+  padding: 60px 0;
+}
 
 } 
 @media (min-width: 1900px) {
@@ -442,3 +448,8 @@ display: none;
   width: 1900px;
 }}
 
+@media (min-width: 900px) and (max-width: 1200px){
+  .main {
+    padding: 40px 0;
+  }
+}
