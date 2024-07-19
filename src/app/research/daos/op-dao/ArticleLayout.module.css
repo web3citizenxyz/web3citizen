@@ -112,3 +112,7 @@
   text-decoration: none; 
   font-weight: bold;
 }
+.a {
+  color: gray;
+  text-decoration: underline;
+}
