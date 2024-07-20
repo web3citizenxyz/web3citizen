@@ -120,7 +120,7 @@ const Article = () => {
         
         
         
-            <div id="section7" className={styles.section}> 
+ <div id="section7" className={styles.section}> 
             <h1 className={styles.sectionSubtitle}>Governance Proposals</h1>
             <p className={styles.titleBlack}>Token House Governance Proposals</p>
             <p>The Token Voting House accepts different proposal types following its various responsibilities:</p>
@@ -145,9 +145,6 @@ const Article = () => {
           <p>Depending on the Proposal Type, exact quorum and approval threshold requirements may vary. For more information, refer to the proposal types below.</p>
           <img src="/images/op4.jpg" alt="Op" className={styles.benefitsImage} /> 
 </div>
-
-
-
 
 
 <div id="section7" className={styles.section}> 
@@ -213,9 +210,55 @@ const Article = () => {
 <p>These structures evidence the growth of Optimism and a move further away from centralized decision-making.</p>
 <p>To further this Intent, the Collective voted on a <Link href="https://vote.optimism.io/proposals/112047914448178129124907599845371359974256142096707624346739203514792263033877" className={styles.a}>Law of Chains</Link>, an open neutrality framework, and a core governing document of the Superchain. For more information on sequencer governance and its relationship to chain, user, and platform governance, please refer to these resources: <Link href="https://optimism.mirror.xyz/JfVOJ1Ng2l5H6JbIAtfOcYBKa4i9DyRTUJUuOqDpjIs" className={styles.a}>here </Link> and <Link href='https://gov.optimism.io/t/guide-to-season-5/6894#intent-1-progress-towards-technical-decentralization-4' className={styles.a}> here.</Link></p>
 
+
+<p ><strong>Growing the Superchain</strong></p>
+<p>Season 5 will introduce the <Link href="https://vote.optimism.io/proposals/23645858735980247449510302520189443998369792603230659191221949690963680987113" className={styles.a} target='_blank'> Chain Delegation Program</Link>, allowing OP Chains to receive temporary delegation from the Governance Fund. Learn more about this initiative <Link href="https://gov.optimism.io/t/chain-delegation-program/6896" target='_blank' className={styles.a}>here.</Link></p>
+<p><strong>Improve the consumer experience</strong></p>
+<p>The Token House delegates chose this intent to increase user adoption of the Optimism network by simplifying engagement with practical use cases. Read more about this intent <Link href='https://gov.optimism.io/t/collective-intents-season-5/6883?u=launamu#intent-3-improve-the-consumer-experience-4' className={styles.a}>here.</Link></p>
+<p><strong>Improve governance accessibility</strong></p>
+<p>Initiatives include the creation of an Anticapture Commission, developing a Code of Conduct, updating Trust Tiers, and granting attestation to high-impact contributors. Learn more <Link href='https://gov.optimism.io/t/guide-to-season-5/6894#intent-4-improve-governance-accessibility-7' className={styles.a}>here.</Link></p>
+<p><strong>Joint-House voting</strong></p>
+<p>The Collective will fully bring the Citizens' House online and execute its first joint-house votes. After performing three rounds of RetroPGF, this milestone will mark the next stage of maturity for the Citizens' House as they participate in Optimism's Governance beyond grant allocations.</p>
+<p><strong>Please keep in mind these initiatives might change. Stay updated on the <Link href='https://gov.optimism.io/' className={styles.a} target='_blank'>Optimism's Governance forum.</Link></strong></p>
+
 </div>
+<div id="section13" className={styles.section}> 
+<p className={styles.sectionSubtitle}>Season 6</p>
+<p>Season 6 Intents and initiatives will be developed and ratified in 2024. This is what we know so far:</p>
+<ol>
+<li className={styles.listItem}>Protocol Revenue Allocation</li>
+<p>Season 6 will introduce a voting process to allocate Protocol Revenue. It will include the introduction of a Treasury Council responsible for making high-level proposals to governance about allocating resources. Proposals for revenue allocation protocol will be submitted for approval by the Token House and for veto by the Citizens' House.</p>
+ <li className={styles.listItem}>On-chain treasury execution</li>  
+ <p>During Season 6, parts of the Optimism Treasury will move on-chain. Governance will be able to initiate transactions that carry tokens from the OP Token Treasury entirely on-chain. This on-chain execution will begin with an emergency safeguard that will be removed in future seasons.</p>
+</ol>
 
-
+</div>
+<div id="section14" className={styles.section}> 
+<p className={styles.sectionSubtitle}>Contribution Pathways</p>
+<p>Optimism has various ways to contribute to the Collective.</p>
+</div>
+<div id="section15" className={styles.section}> 
+<p><strong>Delegation</strong></p>
+<p>The Collective encourages the active involvement of delegates in the Token House governance. It requires understanding the Collective's vision and being up to date on documents, proposals, and discussions. You can learn more about <Link href='https://community.optimism.io/docs/governance/delegate/#ready-to-be-a-delegate' className={styles.a} target='_blank'>how to become a delegate here.</Link></p>
+<p>In a past season, the Foundation provided token-based incentives to active delegates and Grant Council members for their contributions. It did so through a one-time compensation with <Link href='https://gov.optimism.io/t/retroactive-delegate-rewards-season-3/5871' className={styles.a} target='_blank'>retroactive rewards.</Link> This reward was also given to Grant Council members to acknowledge that their contributions exceeded expectations.</p>
+<p>During Season 4, delegates received <Link href='https://gov.optimism.io/t/retro-delegate-rewards-season-4/6878' className={styles.a}>Retro Delegate Rewards </Link> between 3K and 10K OP tokens each according to different participating criteria. Meanwhile, Grant Council reviewers will receive between 25 and 30K <Link href='https://gov.optimism.io/t/season-5-grants-council-operating-budget/6941' className={styles.a}>during Season 5</Link>.</p>
+</div>
+<div id="section16" className={styles.section}> 
+<p><strong>Ambassadors program and accessibility</strong></p>
+<p>To spread the Optimistic vision, get involved with the Ambassadors program. Ambassadors create content, actively engage with the community, answer questions, and help onboard people into the Collective.</p>
+<p>Optimism also invites people to get involved with making all content more accessible by translating content through CrowdIn and improving documentation.</p>
+</div>
+<div id="section17" className={styles.section}> 
+<p><strong>Developers</strong></p>
+<p>Develop OP goals! If you want to develop Optimism's Ecosystem, you can check out <Link href='https://github.com/orgs/ethereum-optimism/projects/31/views/3' target='_blank' className={styles.a}>Ideas to develop </Link> and contribute to building different projects. Learn about other ways developers can participate <Link href='https://community.optimism.io/docs/contribute/#%F0%9F%92%BB-developers' className={styles.a}>here.</Link></p>
+</div>
+<div id="section18" className={styles.section}>
+ <p><strong>Grants</strong></p>
+ <p>Optimism funds projects to be developed with various grants.</p>
+ <ul>
+  
+ </ul>
+  </div> 
         </div>
       </div>
   );
