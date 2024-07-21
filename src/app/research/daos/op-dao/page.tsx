@@ -256,9 +256,18 @@ const Article = () => {
  <p><strong>Grants</strong></p>
  <p>Optimism funds projects to be developed with various grants.</p>
  <ul>
-  
- </ul>
+ <li className={styles.listItem}>Proposed Mission</li> 
+ <p>Under each Intent, contributors can apply for Proposed Missions, which are specific projects or areas of focus that the Governance Fund is willing to support by allocating funds from that Intent Budget to develop that particular Intent. For example, you can propose a Mission under Intent #2 (Growing the Superchain) to get funds and develop projects deploying on OP Mainnet.  Read more about each Intent in the <Link href='https://gov.optimism.io/t/guide-to-season-5/6894' target='_blank' className={styles.a}>Guide to Season 5</Link>.</p>
+ <li className={styles.listItem}>Grant Council</li>
+ <p>Grants Council role in Season 5 is still being developed. The Grant Council is currently under <Link href='https://gov.optimism.io/t/council-election-info-season-5/6881' target='_blank' className={styles.a}>election</Link> until November 15. In the meantime, you can read the Request for Grant Process and Projects elected for Season 4 <Link href='https://app.charmverse.io/op-grants/season-4-grants-rfg-roundup-8181665437517922' target='_blank' className={styles.a}>here</Link>.</p>
+<p>If you plan on submitting for a grant, stay up to date about grants with the <Link href='https://optimismgrants.io/' className='styles.a'>Optimism Grants Changelog</Link> and in the <Link href='https://discord.com/invite/optimism' className={styles.a}>Optimism Discord.</Link></p>
+  </ul>
   </div> 
+  <div id="section19" className={styles.section}> 
+  <p><strong>NumbaNERDs</strong></p> 
+  <p>Boost transparency in the Ecosystem by helping the analytics team. NumbaNERDs "ensure that there is always high-quality analytics and transparency around grant spending for delegates." Learn how to join the program <Link href='https://community.optimism.io/docs/contribute/contribution-path/numbanerds/' className={styles.a} target='_blank'>here</Link>.</p>
+  </div>
+  <p>Learn more about how to contribute in <Link href='https://community.optimism.io/docs/contribute/#' target='_blank' className={styles.a}>Optimism Docs.</Link></p>
         </div>
       </div>
   );
