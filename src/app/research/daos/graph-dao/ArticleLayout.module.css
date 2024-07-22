@@ -102,3 +102,8 @@
     display: none;
   }
 }
+
+.a {
+  color: gray;
+  text-decoration: underline;
+}
