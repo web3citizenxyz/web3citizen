@@ -47,7 +47,6 @@ const Article = () => {
         It's especially useful for Web 3 protocols, as it allows for easy and efficient querying large amounts of data without relying on a centralized service provider. Many protocols, including Aave and Uniswap, currently utilize subgraphs through The Graph.</p></p>
               </div>
 
-
               <div id="section2" className={styles.section}>
                   <h2 className={styles.sectionSubtitle}>The Graph Ecosystem</h2>
                   <p className={styles.paragraph}>There is no ‘central’ DAO, however there is an ecosystem that allows the protocol to operate in a decentralized manner. The ecosystem is made up by Network Participants, core developer teams, The Graph Council and includes two DAOs.</p>
@@ -114,8 +113,7 @@ const Article = () => {
               <p><strong>The Ops Committee </strong></p>
               <p>The Committee oversees and enhances the efficiency of DAO operations. It's an opportunity for those interested in shaping and improving the Advocates DAO's operations, potentially setting standards for the wider Web 3 ecosystem.</p>
             
-              </div>
-              <div id="section10" className={styles.section}> 
+            
               <ul>
               <li className={styles.listItem}><strong>Advocates Program</strong></li>  
               </ul>
@@ -123,9 +121,7 @@ const Article = () => {
              <p>Once you pass the application process, advocates can fulfill the following roles: Event Evangelist, content creator, text translator, community care, technical teacher and Web 3 Welcomer. Each Advocate role contributes to the growth and success of The Graph by fulfilling specific responsibilities aligned with their interests and abilities.</p>
              <p><strong>Advocate Committee</strong></p>
              <p>The Committee consists of DAO members who oversee the Advocates Program end-to-end.</p>
-              </div>
-
-              <div id="section11" className={styles.section}> 
+         
               <ul>
               <li className={styles.listItem}><strong>Community Grants</strong></li>  
               </ul>
@@ -135,21 +131,21 @@ const Article = () => {
              <p>Learn more about Advocates DAO <Link href='https://thegraph.com/blog/graph-advocates/' target='_blank' className={styles.a} >here</Link>  and join their server <Link href='https://discord.gg/EhEQwj7H8f' target='_blank' className={styles.a}>here.</Link></p>
               </div>
 
-            <div id="section12" className={styles.section}>
+            <div id="section10" className={styles.section}>
                 <h1 className={styles.sectionSubtitle}>Builders DAO</h1>
                 <p>Recently a group of developers re-launched the Builders DAO. Members have a proven track record of building subgraphs for various smart contracts.</p>
                 <p><strong>The Graph BuildersDAO works with a Bounty System - this means that any member in our ecosystem has the chance to build and earn. All members are vetted on their skills and assigned unique tokens, which give them access to different levels of bounties.</strong></p>
                 <p>Learn more <Link href='https://www.buildersdao.tech/' target='blank' className={styles.a}>here</Link> and join their server <Link href='https://discord.gg/gu4X3WkJ' className={styles.a} target='_blank'>here.</Link></p>
                 <img src="/images/graph-builders.jpg" alt="The Graph Builders" className={styles.benefitsImage} />
           </div>
-          <div id="section13" className={styles.section}>  
+          <div id="section11" className={styles.section}>  
           <h1 className={styles.sectionSubtitle}>Governance Proposals</h1>
           </div>
-          <div id="section14" className={styles.section}> 
+          <div id="section12" className={styles.section}> 
           <p><strong>The Graph Improvement Proposal (GIP) </strong></p>
           <p>Not all GIPs need to move through the GIP process. GIPs labeled with a ‘Protocol Gov’ tag follow the structured Protocol Governance process because they enact changes to the protocol and smart contracts. GIPs without such a tag may be released by developers outside of the Governance process (changes to the Explorer UI, integrating with another blockchain, etc.).</p>
           </div>  
-          <div id="section15" className={styles.section}> 
+          <div id="section13" className={styles.section}> 
           <p><strong>Advocates DAO proposals</strong></p>
           <p>The Graph AdvocatesDAO uses the following on-chain proposals on the DAOHaus platform passing through simple majority.</p>
         <ul>
@@ -162,8 +158,10 @@ const Article = () => {
         </ul>
           </div>
 
- .    <div id="section16" className={styles.section}> 
+ .    <div id="section14" className={styles.section}> 
       <h1 className={styles.sectionSubtitle}>Governance Process and Mechanisms</h1> 
+      </div>
+      <div id="section15" className={styles.section}>  
       <p><strong>Proposal Process for Protocol Upgrades</strong></p>
       <p>The protocol upgrade process is divided into three components to best streamline community feedback and proposal specification:</p>
       <ol>
@@ -171,13 +169,63 @@ const Article = () => {
       <li className={styles.listItem}>Graph Request for Proposals (GRP) - Formalizes a problem or opportunity for the protocol to address without putting forth a specific solution.</li>
       <li className={styles.listItem}>Graph Request for Comment (GRC) - Specifies an application-level community standard, a common way of designing subgraphs for specific use cases or to support better composability between applications.</li>
       </ol>
-      </div>
+
       <img src="/images/community.jpg" alt="Community Decisions" className={styles.benefitsImage} />
 
       <p>The GIP Process is the suggested workflow for improvements to The Graph protocol, subgraphs and application standards that The Graph Council can use to support decision making. The entire workflow is hosted on Radicle where each proposal is a repo that goes through each phase as it becomes more refined. GIP supporters should share ideas on The Graph Forum, discuss, and solicit feedback from the community and use tools like Snapshot Voting to gauge sentiment. </p>
       <img src="/images/process-gov.png" alt="Governance Process" className={styles.benefitsImage} /> 
       <p><Link href='https://thegraph.academy/ecosystem/voting-power-on-snapshot/' target='_blank' className={styles.a}>Community support </Link> is important and then once GIPs reach the candidate stage, The Graph Council may choose to vote on inclusion of the GIP into the protocol.</p>
-      
+     
+      </div>
+      <div id="section16" className={styles.section}>   
+      <p><strong>Advocates DAO proposal process </strong></p> 
+      <p>The DAO undergoes voting following a specific cadence. As described <Link href='https://drive.google.com/file/d/1CEO3hurmAhOIHvvGo9SAtiy31NyFW4n7/view' className={styles.a} target='_blank'>in the DAO’s Charter</Link>:</p>
+      <img src="/images/tabla-the-graph.png" alt="Table" className={styles.benefitsImage} />
+      <p>Voting follows a 10 days period and those proposals that obtained a simple majority are approved after a 4 day-period</p>
+      </div>
+    <div id="section17" className={styles.section}>    
+    <h1 className={styles.sectionSubtitle}>Contribution Pathways</h1>  
+    <p>The Graph has various ways to contribute within its ecosystem.</p>
+   <p>These include contributing to Core Developer Teams on their specific missions, becoming a Network Participant, or applying for a Community Grant.</p>
+    </div>
+
+    <div id="section18" className={styles.section}>
+      <p><strong>Core Developer Teams</strong></p>
+      <p>These teams develop infrastructure, querying automation, GraphQL tooling, and more. Learn about each one <Link href='https://docs.thegraph.academy/the-graph-ecosystem/organizational-structure/core-developer-teams' className={styles.a} target='_blank'>here.</Link></p>
+<ul>
+<li className={styles.listItem}><strong>StreamingFast</strong> is a protocol infrastructure company. They specialize in cross-chain architecture for streaming blockchain data.</li>
+<li className={styles.listItem}><strong>Semiotic Labs.</strong> This team contributes to The Graph core research by automating query negotiations through reinforcement learning, determining query costs with AI, and predicting query latency.</li>
+<li className={styles.listItem}><strong>The Guild</strong> consists of open-source developers who focus on sustainable open-source development. Explore The Guild <Link href='https://the-guild.dev/' className={styles.a}>here</Link>.</li>
+<li className={styles.listItem}><strong>Messari</strong> has awarded Messari a grant to become the first Core Subgraph Developer. Messari’s developers work on maintaining high-quality, accurate, complex, and standardized protocol subgraphs.</li>
+<li className={styles.listItem}><strong>Edge & Node</strong> (Prev: Graph Protocol, Inc.): This team focuses on creating and supporting protocols and dApps that empower individuals and move humanity forward.</li>
+<li className={styles.listItem}><strong>GraphOps</strong> focuses on developing open data standards and protocols to enable a new generation of institutions and applications. Learn about Graph Ops <Link href='https://graphops.xyz/' className={styles.a}>here.</Link></li>
+<li className={styles.listItem}><strong>Pinax</strong> is a team of open-source collaborators who aim to build data streaming solutions.</li>
+<li className={styles.listItem}><strong>Geo</strong> is a Web 3 browser built on Graph Protocol for creating, publishing, and voting on graph pages.</li>
+</ul>
+    </div>
+    <div id="section19" className={styles.section}>
+    <p><strong><Link href='https://thegraph.com/docs/en/tokenomics/'>Network Participants</Link></strong></p>
+    <p>There are four primary network participants, and these roles vary in the amount of technical background required.</p>
+    <ol>
+    <li className={styles.listItem}>Delegators - They delegate GRT to existing Indexers to secure the network. As a delegator, you can earn a portion of query fees and indexing rewards in GRT depending on the performance of the chosen Indexer. </li>
+    <li className={styles.listItem}>Curators - Subgraph developers, data consumers, or community members who find the best subgraphs for Indexers to dedicate their resources.</li>
+    <li className={styles.listItem}>Developers - They build and pay fees to query subgraphs.</li>
+    <li className={styles.listItem}>Indexers - Node operators that stake GRT to provide indexing and query processing services.</li>
+    <p><Link href='https://www.bankless.com/how-to-make-bank-with-the-graph' className={styles.a} target='_blank'>Indexers are rewarded in GRT network Inflation and Query fees.</Link></p>
+    </ol>
+    <p><Link href='https://thegraph.com/blog/the-graph-grt-token-economics/' target='_blank' >→ “Rewards are collected by both Curators and Indexers in the form of GRT distributed proportional to Curator signal and allocated stake. Indexing rewards will start at 3% annually.”</Link></p>
+    <img src="/images/curator.png" alt="Curator" className={styles.benefitsImage} /> 
+    </div>
+
+
+
+    <div id="section20" className={styles.section}>
+    <h1 className={styles.sectionSubtitle}>Community Grants</h1>
+    <p>The Advocates DAO awards <Link href='https://www.notion.so/The-Graph-b4ba7a4e7a7d48d8963c124953eec8a8?pvs=4' className={styles.a} target='_blank'>Community Grants</Link> with a maximum value of $20,000 GRT per individual grant proposal. Proposals aim to incentivize the development of Network Participant's projects and The Graph's initiatives, such as events and products. The Graph has awarded <Link href='https://forum.graphadvocates.com/tag/completed' className={styles.a} target='_blank'>19 grants</Link> since September 2022 and <Link href='https://forum.graphadvocates.com/' className={styles.a}>more grants</Link> are in process of evaluation and payment.</p>
+
+    </div>
+
+
           </div>
       </div>
   );
