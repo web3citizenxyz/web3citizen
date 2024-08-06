@@ -133,7 +133,8 @@
 
 .a {
   color: grey;
-  text-decoration: underlines;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -183,4 +184,8 @@
 
  .subtitle {
   font-size: 25px !important;
+ }
+
+ .decentraland {
+  font-size: 48px !important;
  }
