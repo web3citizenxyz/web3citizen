@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from './DaoBasics.module.css';
+import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
 import BackToTop from '@/components/BackToTop';
 
