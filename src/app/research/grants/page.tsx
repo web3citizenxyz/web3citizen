@@ -18,7 +18,7 @@ const grantsData = [
  { title: <>Decentraland<br /> Grants Program</>, href: "/research/grants/decentraland", category: ["Active", "Development", "Other", "Community"]  },
  { title: <>Ecosystem<br /> Support Program</>, href: "/research/grants/ecosystem", category:["Active", "Development", "Other", "DApps & tooling", "Community"] },
  { title: <>ENS<br />Small Grants</>,  href: "/research/grants/ens",  category: [ "Development", "Other", "Community"] },
- { title: <>Lido Ecosystem<br />Grants Program</>, href: "/research/grants/lido", category:["Active", "Development", "Other", "Dapps & tooling"]},
+ { title: <>Lido's LEGO</>, href: "/research/grants/lido", category:["Active", "Development", "Other", "Dapps & tooling"]},
 
  { title: <>Optimism Foundation <br /> Missions (RFPs) </>, href: "/research/grants/op", category:["Active", "Other"]},
   { title: <>Optimism<br /> Partner Fund</>, href: "/research/grants/op-partner", category: ["Active", "Development"]},
