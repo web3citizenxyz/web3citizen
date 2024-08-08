@@ -22,6 +22,7 @@ const grantsData = [
 
  { title: <>Optimism Foundation <br /> Missions (RFPs) </>, href: "/research/grants/op", category:["Active", "Other"]},
   { title: <>Optimism<br /> Partner Fund</>, href: "/research/grants/op-partner", category: ["Active", "Development"]},
+  { title: <>Optimism<br /> Delegate Missions</>, href: "/research/grants/delegate", category: ["Active", "Development"]},
  /* { title: <>Polygon<br /> zkBuilder Grants</>, href: "/research/grants/polygon", category: ["Active", "Development", "Dapps & tooling"]},*/
   { title: <>Retro<br />Funding 5</>, href: "/research/grants/opfund", category:["Active", "Development", "Dapps & tooling" ]},
   
