@@ -11,7 +11,7 @@
   }
   
   .section h2 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 500;
     margin-bottom: 20px;
     font-family: 'Montserrat';
@@ -135,7 +135,6 @@
 .toolCard:nth-child(4) {
   background-color: #F1EAE1; /* Color gris claro */
 }
-
 
 
 

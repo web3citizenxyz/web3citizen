@@ -15,6 +15,8 @@
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "katex": "^0.16.11",
     "next": "14.2.3",
     "next-mdx-remote": "^5.0.0",
