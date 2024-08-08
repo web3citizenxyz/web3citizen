@@ -139,8 +139,7 @@ export default function DaoBasics() {
     <p>The number <code>b</code> is called the multiplicative inverse of <code>a</code> modulo <code>N</code>, and it exists if and only if <code>a</code> and <code>N</code> are coprime (i.e., their greatest common divisor is 1). This is like having a secret code that when combined with another number brings you back to the identity element (which is 1 in multiplication).</p>
 
     <h4>Example:</h4>
-    <p>Consider the modulus <code>N = 7</code>. In this case, the integers <code>{0, 1, 2, 3, 4, 5, 6}</code> form a complete set of residues modulo 7. If we compute <code>3 + 5</code> modulo 7, we get:</p>
-
+    <p>Consider the modulus <code>N = 7</code>. In this case, the integers <code>&#123;0, 1, 2, 3, 4, 5, 6&#125;</code> form a complete set of residues modulo 7. If we compute <code>3 + 5</code> modulo 7, we get:</p>
     <p className={styles.quote}><code>3 + 5 = 8</code></p>
 
     <p className={styles.quote}><code>8 ≡ 1 (mod 7)</code></p>
