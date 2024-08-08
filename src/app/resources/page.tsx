@@ -51,6 +51,18 @@ export default function Resources() {
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                     </Link>
                 </div>
+                <div className={styles.card}>
+                <Link href="/resources/zk">
+                    <div className={styles.cardHeader}>
+                        <img src="/icons/zk_logo.png" alt="ZK Logo" className={styles.cardHubIcon} />
+                        <h2 className={styles.cardTitle}>ZK Hub</h2>
+                    </div>
+                    <div className={styles.cardLine}></div>
+                    <p className={styles.cardDescription}>Your initial guide to Zero Knowledge Proofs</p>
+                 
+                    <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
+                    </Link>
+                </div>
             </div>
         </div>
     );
