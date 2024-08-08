@@ -17,28 +17,41 @@ export default function DaoBasics() {
         <h2>ZK 101</h2>
         <p>Privacy is <b>cool again</b>, but it comes with its own set of puzzles to solve. The buzz around zero-knowledge proofs (ZKPs) is proof (pun intended) that these cryptographic marvels have serious potential. But what exactly are ZKPs, and why should we care? To get our minds around this, we need to take a little detour into the world of number theory and cryptography. <br></br><br></br>
 
-        We'll kick things off by wrapping our heads around some number theory basics—think of it as the secret sauce that makes cryptography tick. We’ll explore concepts like groups, modular arithmetic, and the Chinese remainder theorem (which is as cool as it sounds). After that, we'll dive into cryptographic primitives and some algebraic goodies. This math-y appetizer will set us up nicely to tackle the main course: the core principles of zero-knowledge proofs (which are not going to be address in this article).</p>
+        We'll kick things off by wrapping our heads around some number theory basics—think of it as the secret sauce that makes cryptography tick. We’ll explore concepts like groups, modular arithmetic, and the Chinese remainder theorem (which is as cool as it sounds). After that, we'll dive into cryptographic primitives. This math-y appetizer will set us up nicely to tackle the main course: the core principles of zero-knowledge proofs (which are not going to be address in this article).</p>
       
         <img src="/images/aim.svg" alt="Aims" className={styles.benefitsImage} />
 
-      </section>
+        <p><strong>REALLY IMPORTANT:</strong> we strongly recommend you to learn the basics of polynomials --which are not going to be covered in this article. A good video to start with is embedded below:</p>
+        <div className={styles.videoContainer}>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YdXcRY9A9HI"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>  
+        
+        </section>
 
       <section className={styles.section}>
         <h1>Number Theory</h1>
-        <p>Understanding the principles of number theory is relevant for anyone interested in cryptography and zk. It provides the mathematical foundation that underpins much of modern cryptographic practice. Concepts such as group theory and modular arithmetic form the building blocks for more advanced topics. By exploring these ideas, we can better appreciate how they contribute to the security and efficiency of cryptographic algorithms, and ultimately, to the implementation of ZKPs.
+        <p>Understanding the principles of number theory is relevant for anyone interested in cryptography. It provides the mathematical foundation that underpins much of modern cryptographic practice. Concepts such as group theory and modular arithmetic form the building blocks for more advanced topics. By exploring these ideas, we can better appreciate how they contribute to the security and efficiency of cryptographic algorithms, and ultimately, to the implementation of ZKPs.
         </p>
         <h3>Groups and Group Theory</h3>
-        <p>A group is like the ultimate math playground. Let's think that you have a bunch of objects (that’s your set), and a way to mix and match them (that’s your operation). The cool part? No matter how you combine these objects, they always stay within the playground—no one sneaks out! There's also a "do nothing" element (called the identity element) that just hangs out and doesn’t change anything when you combine it with other objects. And just like in a well-structured playground, there’s always a way to "undo" any action (that’s the inverse element), making sure things can go back to how they were. 
+        <p>A group is the ultimate math playground. Let's think that you have a bunch of objects (that’s your set), and a way to mix and match them (that’s your operation). The cool part? No matter how you combine these objects, they always stay within the playground—no one sneaks out! There's also a "do nothing" element (called the identity element) that just hangs out and doesn’t change anything when you combine it with other objects. And just like in a well-structured playground, there’s always a way to "undo" any action (that’s the inverse element), making sure things can go back to how they were. 
         <br></br><br></br>
-
-        In cryptography, we often play with abelian groups—where the order of operations doesn’t matter, just like how it doesn’t matter whether you put on your socks or shoes first (okay, maybe it does, but you get the idea).  <br></br><br></br>
+        <img src="/images/groups.svg" alt="Aims" className={styles.benefitsImage} /> 
+        <br></br><br></br>
         </p>   
         <h3>Definition:</h3>
-    <p>A group is a set <code>G</code> paired with a binary operation (think of it as a special way to combine any two elements) that satisfies four key rules, or axioms:</p>
+    <p>A group is a set <code>G</code> paired with a binary operation (think of it as a way to combine any two elements) that satisfies four axioms:</p>
 
     <ol className={styles.list}>
         <li>
-            <strong>Closure:</strong> If you take any two members <code>a</code> and <code>b</code> from our group <code>G</code> and combine them using our special operation (let’s call it <code>*</code>), the result will always be another member of the group. In other words, no one leaves the club! 
+            <strong>Closure:</strong> If you take any two members <code>a</code> and <code>b</code> from our group <code>G</code> and combine them using our operation (let’s call it <code>*</code>), the result will always be another member of the group. In other words, no one leaves the club! 
             <br />
             <code>a * b ∈ G</code> for all <code>a</code>, <code>b</code> in <code>G</code>
         </li>
@@ -58,33 +71,25 @@ export default function DaoBasics() {
             <code>a * b = b * a = e</code> where <code>b</code> is the inverse of <code>a</code>
         </li>
     </ol>
-
-    <p>In cryptography, we often hang out in groups where the order of operations doesn’t matter—these are called <strong>abelian groups</strong>. They make our lives easier, much like how it’s easier to enjoy a pizza whether you start with the crust or the toppings (okay, maybe that one’s debatable).</p>
     <h3>Example: The Additive Group <code>Z<sub>N</sub></code></h3>
-    <p>Let’s jump into a concrete example to see a group in action! Meet the <strong>additive group</strong> <code>Z<sub>N</sub></code>, which is about adding numbers together. This group consists of integers from <code>0</code> to <code>N-1</code> and uses addition as its operation. But here’s the twist—it’s all done <strong>modulo</strong> <code>N</code>. Let's think it as a boardgame where once you reach <code>N</code>, you wrap around back to zero (like starting over on a clock). The identity element here is <code>0</code> (because adding 0 doesn’t change anything), and for any number <code>x</code>, its inverse is <code>N - x</code>, which brings the sum back to 0 under modulo <code>N</code>.</p>
+    <p>Let’s jump into a concrete example to see a group in action! Meet the <strong>additive group</strong> <code>Z<sub>N</sub></code>, which is about adding numbers together. This group consists of integers from <code>0</code> to <code>N-1</code> and uses addition as its operation. But here’s the twist—it’s all done <strong>modulo</strong> <code>N</code>. The identity element here is <code>0</code> (because adding 0 doesn’t change anything), and for any number <code>x</code>, its inverse is <code>N - x</code>, which brings the sum back to 0 under modulo <code>N</code>.</p>
 </section>
 
 <section className={styles.section}>
     <h3>Abelian (Commutative) Groups</h3>
-    <p>Next up, we’ve got <strong>abelian groups</strong>—the chill, go-with-the-flow type of groups. In an abelian group, the order of combining elements doesn’t matter. This means <code>a * b</code> is the same as <code>b * a</code> for any elements <code>a</code> and <code>b</code> in the group. This property is super handy in cryptography because it simplifies many operations. You can think of abelian groups as the math equivalent of “no fuss, no muss.”</p>
+    <p>Next up, we’ve got <strong>abelian groups</strong>—the chill, go-with-the-flow type of groups. In these groups, the order of combining elements doesn’t matter. This means <code>a * b</code> is the same as <code>b * a</code> for any elements <code>a</code> and <code>b</code> in the group. This property is super handy in cryptography because it simplifies many operations. You can think of abelian groups as the math equivalent of “no fuss, no muss.”</p>
 </section>
 
 <section className={styles.section}>
     <h3>Cyclic Groups</h3>
-    <p>Now, let’s talk about <strong>cyclic groups</strong>. These groups are like the ultimate one-hit-wonder band because everything in the group can be generated by just one element! This special element, called the <strong>generator</strong>, can be combined with itself (repeatedly, like powers) to produce every other element in the group.</p>
-
-    <h4>Formal Definition</h4>
     <p>Formally, a group <code>G</code> is called cyclic if there exists an element <code>g</code> in <code>G</code> such that every element <code>h</code> in <code>G</code> can be written as <code>h = g^k</code> for some integer <code>k</code>. The element <code>g</code> is the generator of the group, and we often denote the group as <code>⟨g⟩</code>.</p>
     <h3>Discrete Logarithms</h3>
-    <p>Now, let's talk about discrete logarithms—a concept that makes our digital lives a lot safer.</p>
-
-    <h4>Definition:</h4>
     <p>Given a cyclic group <code>G</code> with a generator <code>g</code> and an element <code>h</code> in <code>G</code>, the discrete logarithm of <code>h</code> to the base <code>g</code> is the integer <code>x</code> such that:</p>
 
     <p className={styles.quote}><code>h = g^x</code></p>
     <p>This is denoted as <code>x = log<sub>g</sub>(h)</code>.</p>
 
-    <h4>Computational Complexity:</h4>
+    <h4>Computational Complexity</h4>
     <p>Computing discrete logarithms isn’t just hard—it’s <em>cryptographically</em> hard, meaning it's tough enough to keep your secrets safe. This difficulty is the backbone of many secure communication protocols, like the Diffie-Hellman key exchange and digital signatures.</p>
 
     <h4>Example in <code>Z*<sub>N</sub></code></h4>
@@ -99,14 +104,23 @@ export default function DaoBasics() {
 
         <section className={styles.section}>
         <h1>Modular Arithmetic</h1>
-        <p>Imagine you’re playing a game where numbers “wrap around” once they reach a certain value—like a clock where after hitting 12, you start back at 1. This is the essence of <strong>modular arithmetic</strong>, a key player in number theory and cryptography that helps us perform operations within a finite set of numbers.</p>
+        <p>When we think about modular arithmetic, we shift our perspective from an infinite set of numbers to a finite set of the first <code>n</code> natural numbers. If any given integer falls outside this range, we 'wrap it around' to fit within these bounds. A helpful analogy is to think of it like a clock:</p>
 
-    <h4>Definition:</h4>
-    <p>For integers <code>a</code> and <code>b</code>, and a positive integer <code>N</code> (our modulus), we say that <code>a</code> is <strong>congruent</strong> to <code>b</code> modulo <code>N</code>, written as:</p>
+        <img src="/images/modulo.svg" alt="Modulo" className={styles.benefitsImage2} style={{ display: 'block', margin: '0 auto' }} />
+        
+        <p>For example, in this clock we choose 6 first numbers. Now, let us see where the number 10 will land. We can think of it as a rope, the length of which is ten units:</p>
+        <img src="/images/rope.svg" alt="Aims" className={styles.benefitsImage} /> 
+
+        <p>If we attach the rope to the beggining of the circle, we will see that after one rotation we still have a portion of the rope left, if we continue, it will land in the number 4:</p>
+
+        <img src="/images/modulo_5_from_10.svg" alt="Modulo" className={styles.benefitsImage2} style={{ display: 'block', margin: '0 auto' }} />
+
+    <p>So, for a more formal definition, we would say that for integers <code>a</code> and <code>b</code>, and a positive integer <code>N</code> (our modulus), we say that <code>a</code> is <strong>congruent</strong> to <code>b</code> modulo <code>N</code>, written as:</p>
 
     <p className={styles.quote}><code>a ≡ b (mod N)</code></p>
     <p>if <code>N</code> divides the difference <code>a - b</code>. In other words, <code>a</code> and <code>b</code> leave the same remainder when divided by <code>N</code>.</p>
 
+    <p>Basically, one number is congruent to another if they have the same reminder when you divide them with the same number.</p>
     <h4>Addition and Multiplication:</h4>
     <p>In modular arithmetic, addition, subtraction, and multiplication are performed as usual, but the result is then taken modulo <code>N</code>. Think of it as doing regular math, but whenever you hit the “modulus,” you start counting from zero again.</p>
 
@@ -151,7 +165,8 @@ export default function DaoBasics() {
 
     <p>Now, you might be thinking, "That sounds like it could involve a lot of math!" And you’d be right—if it weren’t for a nifty shortcut called <strong>repeated squaring</strong>. This method significantly reduces the number of operations required, making it much more efficient, especially when dealing with large numbers.</p>
 
-    <p>In the world of cryptography, where we often work with huge numbers, this efficiency is golden. Modular exponentiation is the backbone of many cryptographic algorithms, helping us keep data secure without needing a supercomputer for every calculation.</p>
+    <p>In cryptography, where we often work with huge numbers, this efficiency is golden. Modular exponentiation is the backbone of many cryptographic algorithms, helping us keep data secure without needing a supercomputer for every calculation.</p>
+    
         </section>
 
         <section className={styles.section}>
@@ -211,7 +226,7 @@ export default function DaoBasics() {
 
     <p className={styles.quote}><code>gcd(a, b) = ax + by</code></p>
 
-    <p>where <code>x</code> and <code>y</code> are integers. This extra step is super useful for finding multiplicative inverses in modular arithmetic.</p>
+    <p>where <code>x</code> and <code>y</code> are integers. This extra step is useful for finding multiplicative inverses in modular arithmetic.</p>
 </section>
 
 <section className={styles.section}>
@@ -222,7 +237,7 @@ export default function DaoBasics() {
     <p>The <strong>Chinese Remainder Theorem (CRT)</strong> simplifies computations by breaking them down into smaller, more manageable parts. This is especially useful in cryptography, where you often need to juggle several modular equations at the same time.</p>
 
     <h4>Statement of the Theorem</h4>
-    <p>The Chinese Remainder Theorem states that if you have a set of integers <code>n<sub>1</sub>, n<sub>2</sub>, \dots, n<sub>k</sub></code> that are pairwise coprime (meaning the greatest common divisor of any pair is 1), and any integers <code>a<sub>1</sub>, a<sub>2</sub>, \dots, a<sub>k</sub></code>, then there exists a unique integer <code>x</code> modulo <code>N</code>, where <code>N</code> is the product of the <code>n<sub>i</sub></code>'s, such that:</p>
+    <p>The Chinese Remainder Theorem states that if you have a set of integers <code>n<sub>1</sub>, n<sub>2</sub>, &hellip;, n<sub>k</sub></code> that are pairwise coprime (meaning the greatest common divisor of any pair is 1), and any integers <code>a<sub>1</sub>, a<sub>2</sub>, &hellip;, a<sub>k</sub></code>, then there exists a unique integer <code>x</code> modulo <code>N</code>, where <code>N</code> is the product of the <code>n<sub>i</sub></code>'s, such that:</p>
 
     <p className={styles.quote}><code>x ≡ a<sub>1</sub> (mod n<sub>1</sub>)</code></p>
     <p className={styles.quote}><code>x ≡ a<sub>2</sub> (mod n<sub>2</sub>)</code></p>
@@ -230,27 +245,6 @@ export default function DaoBasics() {
     <p className={styles.quote}><code>x ≡ a<sub>k</sub> (mod n<sub>k</sub>)</code></p>
 
     <p>In other words, CRT guarantees there’s a unique solution modulo <code>N</code> for this system of congruences.</p>
-    <h3>Chinese Remainder Theorem</h3>
-    <p>The <strong>Chinese Remainder Theorem (CRT)</strong> is like a magic trick for solving multiple modular arithmetic equations at once. It simplifies computations by breaking them down into smaller, more manageable parts. This is especially useful in cryptography, where you often need to juggle several modular equations at the same time.</p>
-    <h4>Statement of the Theorem</h4>
-    <p>The Chinese Remainder Theorem states that if you have a set of integers <code>n<sub>1</sub>, n<sub>2</sub>, \dots, n<sub>k</sub></code> that are pairwise coprime (meaning the greatest common divisor of any pair is 1), and any integers <code>a<sub>1</sub>, a<sub>2</sub>, \dots, a<sub>k</sub></code>, then there exists a unique integer <code>x</code> modulo <code>N</code>, where <code>N</code> is the product of the <code>n<sub>i</sub></code>'s, such that:</p>
-    <p className={styles.quote}><code>x ≡ a<sub>1</sub> (mod n<sub>1</sub>)</code></p>
-    <p className={styles.quote}><code>x ≡ a<sub>2</sub> (mod n<sub>2</sub>)</code></p>
-    <p className={styles.quote}><code>\vdots</code></p>
-    <p className={styles.quote}><code>x ≡ a<sub>k</sub> (mod n<sub>k</sub>)</code></p>
-    <p>In other words, CRT guarantees there’s a unique solution modulo <code>N</code> for this system of congruences.</p>
-
-    <h4>Construction of the Solution</h4>
-    <p>To find the solution <code>x</code>, follow these steps:</p>
-
-    <ol className={styles.list}>
-    <li><strong>Compute the product <code>N</code></strong> of all the moduli:
-        <p className={styles.quote}><code>N = n<sub>1</sub> × n<sub>2</sub> × ... × n<sub>k</sub></code></p>
-    </li>
-    <li><strong>Compute the partial product <code>N<sub>i</sub></code></strong> by dividing <code>N</code> by each <code>n<sub>i</sub></code>:
-        <p className={styles.quote}><code>N<sub>i</sub> = N / n<sub>i</sub></code></p>
-    </li>
-</ol>
 <h4>Example</h4>
     <p>Consider the system of congruences:</p>
 
@@ -292,10 +286,6 @@ export default function DaoBasics() {
         </li>
     </ol>
     <p>So, the solution is <code>x ≡ 23 (mod 105)</code>.</p>
-    <h3>Applications</h3>
-
-    <p>The Chinese Remainder Theorem is used in various cryptographic algorithms to boost efficiency. For example, in RSA decryption, CRT can be used to perform computations modulo smaller primes instead of a large composite number, significantly speeding up the process.</p>
-
 </section>
 <section className={styles.section}>
     <h3>The Multiplicative Group <code>Z<sub>N</sub><sup>*</sup></code></h3>
@@ -341,10 +331,6 @@ export default function DaoBasics() {
     <p className={styles.quote}><code>φ(N) = N (1 - 1/p<sub>1</sub>) (1 - 1/p<sub>2</sub>) ... (1 - 1/p<sub>m</sub>)</code></p>
 </section>
 
-<section className={styles.section}>
-    <h4>Applications</h4>
-    <p>The multiplicative group <code>Z<sub>N</sub><sup>*</sup></code> is at the heart of many cryptographic algorithms, particularly those involving modular arithmetic, such as RSA. The security of these algorithms often hinges on the properties of <code>Z<sub>N</sub><sup>*</sup></code> and the difficulty of solving certain problems within this group, like the discrete logarithm problem.</p>
-</section>
 <section className={styles.section}>
     <h3>Primes and Primality Testing</h3>
     <p>Prime numbers are the building blocks of number theory and play a crucial role in cryptography. A prime number is an integer greater than 1 that has no positive divisors other than 1 and itself.</p>
@@ -399,13 +385,8 @@ export default function DaoBasics() {
 </section>
 
 <section className={styles.section}>
-    <h4>Applications</h4>
-    <p>Primality testing is a critical component in the generation of cryptographic keys. For example, in RSA, large prime numbers are essential for creating the public and private keys. Efficient and reliable primality testing ensures that these primes are indeed suitable for cryptographic use.</p>
-</section>
-
-<section className={styles.section}>
     <h3>Discrete Logarithms and the Discrete Log Problem</h3>
-    <p>The concept of <strong>discrete logarithms</strong> is a cornerstone in cryptography, particularly in the construction of secure communication protocols. The difficulty of solving the discrete log problem is what provides the security in many cryptographic systems.</p>
+    <p>The concept of <strong>discrete logarithms</strong> is a cornerstone in the construction of secure communication protocols. The difficulty of solving the discrete log problem is what provides the security in many cryptographic systems.</p>
 
     <h4>Definition of Discrete Logarithm</h4>
     <p>Given a cyclic group <code>G</code> with a generator <code>g</code> and an element <code>h ∈ G</code>, the discrete logarithm of <code>h</code> to the base <code>g</code> is the integer <code>x</code> such that:</p>
@@ -443,7 +424,7 @@ export default function DaoBasics() {
 </section>
 
 <section className={styles.section}>
-    <h4>Applications in Cryptography</h4>
+    <h4>Applications</h4>
     <p>The security of several cryptographic systems relies on the hardness of the discrete logarithm problem. For example:</p>
     <ul className={styles.list}>
         <li><strong>Diffie-Hellman Key Exchange:</strong> The security of this protocol is based on the difficulty of computing the discrete logarithm in a large prime modulus.</li>
@@ -509,16 +490,6 @@ export default function DaoBasics() {
 </section>
 
 <section className={styles.section}>
-    <h4>Applications</h4>
-    <p>Quadratic residues are used in various cryptographic protocols, such as:</p>
-    <ul className={styles.list}>
-        <li><strong>Quadratic Residue Encryption:</strong> A cryptographic scheme that relies on the hardness of distinguishing quadratic residues from non-residues.</li>
-        <li><strong>Blum-Blum-Shub (BBS) Pseudorandom Generator:</strong> A cryptographic pseudorandom number generator based on quadratic residues. The security of the BBS generator relies on the difficulty of predicting quadratic residues.</li>
-        <li><strong>Zero-Knowledge Proofs:</strong> Quadratic residues are often used in zero-knowledge proof systems, where a prover demonstrates knowledge of a square root modulo <code>n</code> without revealing the root itself.</li>
-    </ul>
-</section>
-
-<section className={styles.section}>
     <h4>Example of Application</h4>
     <p>In the context of the BBS generator, given a modulus <code>n = pq</code>, where <code>p</code> and <code>q</code> are large primes, and a seed <code>x<sub>0</sub></code>, the sequence is generated by:</p>
 
@@ -529,14 +500,16 @@ export default function DaoBasics() {
 </section>
 <section className={styles.section}>
     <h1>Cryptographic Primitives</h1>
-    <p>Cryptographic primitives are the fundamental building blocks of cryptographic systems, forming the basis for secure communication, data integrity, and authentication. These essential tools are the foundation upon which more complex cryptographic protocols and algorithms are built. Let's explore some key cryptographic primitives, including hash functions, symmetric and asymmetric encryption, and digital signatures, which are crucial for implementing secure cryptographic systems.</p>
+    <p>Cryptographic primitives are the building blocks of cryptographic systems, forming the basis for secure communication, data integrity, and authentication. Let's explore some key cryptographic primitives, including hash functions, symmetric and asymmetric encryption, and digital signatures.</p>
 </section>
 
 <section className={styles.section}>
     <h4>Hash Functions</h4>
-    <p>In the world of cryptography, hash functions play a pivotal role. They are mathematical algorithms that take an input (or 'message') and return a fixed-size string of bytes. This output, typically a digest, appears random and is unique to the input provided.</p>
+    <p>Hash functions play a pivotal role. They are mathematical algorithms that take an input (or 'message') and return a fixed-size string of bytes. This output, typically a digest, appears random and is unique to the input provided.</p>
+    
+    <img src="/images/hashfunc.svg" alt="hash" className={styles.benefitsImage} style={{ display: 'block', margin: '0 auto' }} />
 
-    <h5>Technical Breakdown:</h5>
+    <h4>Technical Breakdown</h4>
     <ul className={styles.list}>
         <li><strong>Determinism:</strong> A hash function is deterministic, meaning the same input will always produce the same output.</li>
         <li><strong>Fixed Output Size:</strong> Regardless of the input size, the hash output will always have a fixed length, making it predictable and consistent.</li>
@@ -544,6 +517,21 @@ export default function DaoBasics() {
         <li><strong>Collision Resistance:</strong> It is hard to find two different inputs <code>m<sub>1</sub></code> and <code>m<sub>2</sub></code> such that <code>H(m<sub>1</sub>) = H(m<sub>2</sub>)</code>. This ensures that each unique input has a unique hash.</li>
         <li><strong>Avalanche Effect:</strong> A small change in the input (even a single bit) should produce a significantly different hash, ensuring the hash is sensitive to input variations.</li>
     </ul>
+
+    <section className={styles.section}>
+    <h4>Technically speaking...</h4>
+    <p><strong>Technically speaking...</strong> A hash function <code>H</code> maps an input of arbitrary size <code>m</code> to a fixed-size output <code>h</code>, represented as:</p>
+
+    <p className={styles.quote}><code>h = H(m)</code></p>
+
+    <p>where:</p>
+    <ul className={styles.list}>
+        <li><code>H</code> is the hash function,</li>
+        <li><code>m</code> is the input data,</li>
+        <li><code>h</code> is the resulting hash or digest.</li>
+    </ul>
+</section>
+
 
     <h5>Common Hash Functions:</h5>
     <ul className={styles.list}>
@@ -553,7 +541,7 @@ export default function DaoBasics() {
         <li><strong>SHA-3:</strong> A newer hash function with different design principles, offering strong security levels.</li>
     </ul>
 
-    <h5>Applications:</h5>
+    <h4>Applications</h4>
     <ul className={styles.list}>
         <li><strong>Data Integrity:</strong> Hash functions ensure data hasn't been altered during transmission or storage. For example, comparing the hash of a downloaded file with a known value can verify the file's integrity.</li>
         <li><strong>Digital Signatures:</strong> Hash functions are used to create a hash of a message, which can then be signed with a private key to ensure the message has not been tampered with.</li>
@@ -561,7 +549,151 @@ export default function DaoBasics() {
         <li><strong>Proof of Work:</strong> In blockchain systems like Bitcoin, hash functions generate cryptographic puzzles that miners must solve to add new blocks to the chain.</li>
         <li><strong>Message Authentication Codes (MACs):</strong> Hash functions are used with a secret key to create a MAC, ensuring the integrity and authenticity of a message.</li>
     </ul>
+
+
 </section>
+
+
+<section className={styles.section}>
+    <h3>Encryption and Signature Schemes</h3>
+    <p>When learning about digital signatures, a common narrative is presented: Alice, a user with a secret (private) key, can sign a message that can be verified by anyone using her corresponding public key.</p>
+    
+    <p>However, the underlying mechanisms are often overlooked. Implicitly, it is understood that deriving a private key from a public key should be impossible. This is crucial because it prevents anyone who possesses Alice's public key from producing signatures in her name (hence the term "private").</p>
+    
+    <p>Now, suppose Alice and another individual, Bob, agree on a generator point <code>G</code> on the elliptic curve. Alice then chooses a random number <code>d</code> from the set of integers modulo <code>q</code>, so <code>d &lt; q</code>. Also, let’s assume <code>d</code> is a large number, not just 12 or 35. This will be her private key.</p>
+
+    <p>Alice proceeds to calculate <code>Q = [d]G</code>, leveraging the power of point doubling, and obtains another point in the group — this will be her public key, which she can safely share with Bob.</p>
+
+    <p>Evidently, <code>Q</code> encodes information about the private key. Bob could try to calculate a number <code>d</code> such that <code>Q = [d]G</code>, but the problem is that if our elliptic curve group is “large enough,” it would take Bob a really, really long time. And this is precisely the secret sauce: finding <code>d</code>, even when knowing <code>Q</code> and <code>G</code>, should be nearly impossible. This is known as a version of the discrete logarithm problem (DLP).</p>
+
+    <p>Of course, if our group happens to have 1,000 elements, or if the number Alice chooses is “small,” trying possible values of <code>d</code> is a manageable task. You can probably write a script that solves the problem in under 10 minutes — this is called brute forcing. The DLP problem really shines when we have massive groups. For instance, the curve 25519 has subgroups of order around <code>2^{250}</code>. That’s quite a large number. Good luck trying to brute-force <code>d</code>.</p>
+</section>
+<section className={styles.section}>
+    <h3>Encryption</h3>
+    <p>Alice now holds a number <code>d</code> as her private key, and Bob holds the corresponding public key <code>Q</code>, which is a point on the elliptic curve. What can they do with this?</p>
+    
+    <p>With these cryptographic tools, they’re ready to start building some cool stuff — like encrypting data!</p>
+    
+    <p>Imagine Bob wants to protect a message so that only Alice can read it. If they were teenagers in school, they might exchange a secret message written in code that only they can understand. Since they both know the secret code, they can both decrypt the message — this process is called symmetric encryption. Sounds straightforward, right?</p>
+        
+    <p>So, how does this work in real-world applications? Think about it like this: any message is just a sequence of zeros and ones — a binary number. If we modify this number, it turns into a seemingly random string of data, commonly known as ciphertext. The key here is that the transformation is reversible, meaning the original message can be recovered.</p>
+    
+    <p>To clarify, the reversibility is handled by the logical XOR operation. But don’t worry about that detail — the important part is that with a shared secret key, we can securely mask the original message.</p>
+</section>
+
+<section className={styles.section}>
+    <h3>Cryptographic Accumulators</h3>
+    <p>A cryptographic accumulator is a primitive with several advanced properties that can be used to build various zero-knowledge proof systems. Let’s explore the concept, the underlying mathematics, and an example application.</p>
+    <p>A recent development in this area is that proof verifications can now be implemented in Ethereum smart contracts. Notably, the main type of accumulators is similar to RSA and is based on modular exponentiation, supported since the Byzantium fork (EIP-198).</p>
+    <p>We can think of a cryptographic accumulator as a supercharged hash function that operates on sets. A standard hash function, like SHA-3, takes a single message and outputs a fixed-size hash. An accumulator, however, takes a set of values and compresses them into a single, constant-size number. In a sense, accumulators are the asymmetric cryptography counterpart to Merkle trees and Bloom filters.</p>
+    <p>Consider the simplest commit-reveal protocol: Alice has a secret message and publishes its hash, called a commitment. Later, she reveals the whole message to Bob, who can verify that it matches the commitment. If Alice used an accumulator instead of a hash, she could choose to reveal only one, some, or all parts of the message.</p>
+</section>
+
+<section className={styles.section}>
+    <h4>Proof of Membership</h4>
+    <p>Accumulators work with sets of values. Later, we'll see examples of encoding data as set memberships. For now, assume Alice turned her message into a set of words and published the associated accumulator (which resembles a hash).</p>
+    <p>She can select some of the words and produce a proof, which is another constant-size number. This proof allows Bob to verify the integrity of the revealed words, confirming that they belong to the committed set. However, Bob does not learn anything about the other parts that were kept secret—this property is known as zero-knowledge.</p>
+</section>
+
+<section className={styles.section}>
+    <h4>Proof of Nonmembership</h4>
+    <p>Interestingly, the opposite operation is also possible: Alice can prove to Bob that some words were not part of the committed set.</p>
+    <p>For example, Bob asks whether the first word was "cat" or perhaps "dog." Alice can provide proof that it was neither, and Bob can verify this. Yet, Bob still has no clue about what the actual word could be.</p>
+    <p>This is a unique property. Compare this with hash functions and Merkle trees: a hash of a value is not zero-knowledge—one can take any guess and check its hash. Or the value is protected by an unguessable salt, in which case one cannot prove the non-equality or nonmembership of a particular guess.</p>
+    <p>Accumulators resolve this paradox. Note that this type of proof does grow in size with the amount of data needed to disprove something.</p>
+</section>
+
+<section className={styles.section}>
+    <h4>The Mathematics</h4>
+    <p>There are many variants of accumulators and formal studies on them. Let’s focus on one based on RSA. I’ll assume some familiarity with RSA (you can check Wikipedia for a primer) and present the basic ideas.</p>
+    <p>The first idea is to work with sets by computing the product of all values in a set. If we map the input data to prime numbers, their product will uniquely represent the set. Otherwise, there could be confusion: <code>&#123;2, 6&#125;</code> would give the same product (12) as <code>&#123;3, 4&#125;</code>. Sets will be written with curly braces like <code>&#123;x&#125;</code> and their product with capital letters like <code>X</code>.</p>
+
+    <p>Let’s pick a modulus <code>N</code> (the product of two large primes) and a generator <code>G</code> (any other prime). We’ll come back to this below.</p>
+    <p>For a set of secret values <code>&#123;u&#125;</code> and their product <code>U</code>, the accumulator <code>C</code> is computed by modular exponentiation. <code>C</code> is a number roughly the same size as <code>N</code>.</p>
+    <p className={styles.quote}><code>C = G<sup>U</sup> mod N</code></p>
+    <p>Next, let’s take a subset <code>&#123;r&#125;</code> of values from <code>&#123;u&#125;</code> to be revealed. To compute a proof, we actually need all the other values of <code>&#123;u&#125;</code> that remain secret, noted as <code>&#123;s&#125;</code>. In product form, we have <code>R &times; S = U</code>. The proof <code>P</code> is:</p>
+    <p className={styles.quote}><code>P = G<sup>S</sup> mod N</code></p>
+    <p>Then Alice reveals <code>&#123;r&#125;</code> and <code>P</code> to Bob. He will compute <code>C'</code> and verify that it equals the commitment <code>C</code>:</p>
+    <p className={styles.quote}><code>C' = P<sup>R</sup> mod N</code></p>
+    <p>By replacing <code>P</code>, we see that <code>C'</code> must equal <code>C</code>:</p>
+    <p className={styles.quote}><code>C' = G<sup>(S &times; R)</sup> = G<sup>U</sup> mod N</code></p>
+    <p>The system relies on the same assumptions as RSA:</p>
+    <ul className={styles.list}>
+        <li>The hardness of the discrete logarithm (Bob finding <code>U</code> from <code>C</code>, or <code>S</code> from <code>P</code>)</li>
+        <li>The RSA problem (Alice forging a false proof <code>P</code>)</li>
+        <li>The hardness of integer factorization (finding the factors of <code>N</code>)</li>
+    </ul>
+    <p>This also assumes that <code>S</code> is very large; otherwise, Bob could brute-force it. To prevent this, Alice can add a large random prime into <code>&#123;u&#125;</code>, which we could call a salt.</p>
+    <p>Proofs of non-memberships are a bit trickier, but here's the idea: take a set <code>&#123;x&#125;</code> that contains some elements not in the committed <code>&#123;u&#125;</code>, in addition to those that are (the set <code>&#123;r&#125;</code> above). The GCD (greatest common divisor) of <code>X</code> and <code>U</code> will be <code>R</code>. Alice will use the extended Euclidean algorithm to provide the coefficients that allow Bob to verify this fact.</p>
+</section>
+
+<section className={styles.section}>
+    <h4>Trusted Setup</h4>
+    <p>A drawback of this system is that it requires the modulus <code>N</code> to be the product of two primes, but Alice must not know those factors. There are two approaches to this:</p>
+    <ul className={styles.list}>
+        <li>Bob can generate <code>N</code> and ask Alice to make her proofs with it, and he will trust them. But Bob can use his factors to forge accumulators and proofs, so others will not trust them, and Alice has deniability.</li>
+        <li>For public use, we need a trusted setup. This means that a computer must generate <code>N</code> from random factors and forget the factors. If it is believed that no one saved the factors, the system can be trusted.</li>
+    </ul>
+</section>
+
+<section className={styles.section}>
+    <h3>Why Do We Need Off-Chain Computation?</h3>
+    <p>As blockchain technology continues to evolve, off-chain computation is becoming increasingly crucial for enhancing the performance and scalability of blockchain networks. But why is this shift necessary?</p>
+
+    <h4>Scalability</h4>
+    <p>Blockchains are great, but they have their limits, especially when it comes to scalability. The decentralized nature of blockchain networks creates inherent challenges, particularly when too many on-chain computations start clogging up the system. Think of on-chain operations as the main stage at a concert—too many people trying to get on stage at once, and the show grinds to a halt. By offloading complex calculations and data storage to off-chain systems, we can keep the show running smoothly. Off-chain computation handles the heavy lifting, letting the blockchain focus on what it does best: secure, decentralized transaction validation. It’s like having a backstage crew working behind the scenes to ensure the performance goes off without a hitch.</p>
+
+    <h4>Cost Efficiency</h4>
+    <p>Let’s face it—on-chain transactions can get expensive, especially when the network is busy. It’s like trying to catch an Uber during surge pricing; the cost can skyrocket when everyone’s trying to use the service at once. Off-chain computation, however, offers a budget-friendly alternative. By taking care of the computational heavy lifting off-chain, developers can significantly reduce the gas fees associated with executing smart contracts. This makes blockchain applications not just scalable, but also more economically viable, especially for businesses watching their bottom line.</p>
+
+    <h4>Enhanced Functionality</h4>
+    <p>Not all data is created equal, and not all data belongs on the blockchain. Some applications require access to large volumes of data or need to perform real-time analysis—tasks that are just too heavy for the blockchain alone. Off-chain computation steps in here, enabling smart contracts to handle more complex, sophisticated tasks. Whether it’s crunching numbers for financial derivatives or running predictive analytics, off-chain resources open up a world of possibilities for what blockchain applications can do.</p>
+
+    <h4>Privacy and Security</h4>
+    <p>Privacy matters, especially when dealing with sensitive data. You wouldn’t want your private emails broadcasted on a public billboard, so why would you store sensitive data on a public blockchain? Off-chain computation offers a secure alternative, processing data in environments where privacy can be maintained. With tools like zero-knowledge proofs (zk-proofs), it’s possible to verify computations without exposing the underlying data, ensuring compliance with privacy regulations like GDPR. It’s like having a secret vault where your sensitive information is safe, but still accessible when you need to prove it’s there.</p>
+
+    <h4>Flexibility and Interoperability</h4>
+    <p>In today’s interconnected world, no blockchain is an island. Off-chain computation makes it easier for different blockchain systems, and even traditional databases, to talk to each other. By using decentralized oracles, off-chain data can be pulled into the blockchain, allowing for more complex and meaningful interactions across various platforms. This flexibility is key for integrating blockchain technology into existing business processes, making it not just a cool new tool, but a practical one too.</p>
+
+    <p>In short, off-chain computation isn’t just a nice-to-have—it’s a must-have for tackling the challenges of scalability, cost, functionality, privacy, and interoperability in blockchain networks. By shifting some of the workload off-chain, we can unlock the full potential of blockchain technology, paving the way for wider adoption across various industries.</p>
+</section>
+<section className={styles.section}>
+    <h3>What on Earth is Zero-Knowledge Proofs?</h3>
+    <p>Zero-knowledge proofs (ZKPs) sound like something straight out of a sci-fi movie, but they're a fascinating and powerful concept in cryptography. In essence, a zero-knowledge proof allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing what that information is. It’s like showing someone you know the password to a secret door without ever saying the password itself.</p>
+    
+    <p>Imagine you want to prove to a friend that you can solve a particular puzzle, but you don’t want to give away the solution. A zero-knowledge proof is a way to convince your friend that you can indeed solve the puzzle, without them ever knowing how you did it.</p>
+</section>
+
+<section className={styles.section}>
+    <h4>How Do ZKPs Work?</h4>
+    <p>The magic behind zero-knowledge proofs lies in a few core properties:</p>
+    <ul className={styles.list}>
+        <li><strong>Completeness:</strong> If the statement is true and the prover follows the protocol, the verifier will be convinced.</li>
+        <li><strong>Soundness:</strong> If the statement is false, no dishonest prover can convince the verifier that it’s true, except with some negligible probability.</li>
+        <li><strong>Zero-Knowledge:</strong> If the statement is true, the verifier learns nothing other than the fact that the statement is true.</li>
+    </ul>
+</section>
+
+<section className={styles.section}>
+    <p>Let’s take an example from everyday life. Say you’re colorblind and your friend isn’t. You have two balls that look identical to you, but your friend says they are different colors. How can your friend prove they’re different without showing you the colors?</p>
+    
+    <p>Here’s the idea: Your friend can show you one ball and then hide it behind their back, randomly swapping the balls or not. They then show you the ball again and ask if it’s the same one or the other one. If you can’t tell the difference, you’ll guess right only half the time. But if your friend repeats this many times and you still guess right every time, they’ve convinced you that the balls are indeed different, without ever revealing which is which. This is a very simplified version of how zero-knowledge proofs work.
+    </p>
+    <p>Want to learn more? Stay tuned to Web3Citizen! 😊</p></section>
+
+<section className={styles.section}>
+    <h4>References</h4>
+    <ul className={styles.list}>
+        <li><a href="https://mit6875.github.io/HANDOUTS/numbertheory.pdf" target="_blank" rel="noopener noreferrer">MIT - Number Theory in Cryptography</a></li>
+        <li><a href="https://zeroknowledge.fm/" target="_blank" rel="noopener noreferrer">Zero Knowledge Podcast</a></li>
+        <li><a href="https://zk-learning.org/" target="_blank" rel="noopener noreferrer">ZK-Learning Platform</a></li>
+        <li><a href="https://zkhack.dev/whiteboard/" target="_blank" rel="noopener noreferrer">ZK Hack - Whiteboard Sessions</a></li>
+        <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank" rel="noopener noreferrer">Matter Labs - Awesome Zero-Knowledge Proofs</a></li>
+        <li><a href="https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production" target="_blank" rel="noopener noreferrer">How to Create a Zero-Knowledge Dapp - Hashnode Blog</a></li>
+        <li><a href="https://crypto.stanford.edu/pbc/notes/crypto/zk.html" target="_blank" rel="noopener noreferrer">Stanford - Zero-Knowledge Proofs Notes</a></li>
+    </ul>
+</section>
+
 
 
 
