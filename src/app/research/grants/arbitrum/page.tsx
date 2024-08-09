@@ -15,62 +15,101 @@ export default function Arbitrum() {
   
       
       <section className={styles.section}>
-        <h2>Arbitrum Foundation Grants</h2>
-      
-        <p><strong>Timeline: </strong>Rolling Basis</p>
-        <p><strong>Grant Amount:</strong>Growth Grant receive up to $50k and Advanced Growth Grant up to $150k in ARB tokens.</p>
-    <p>The Foundation Grants Program is aimed at projects working in, assisting with, or supporting the Arbitrum ecosystem.</p>
-    <p>All grants issued aid in improving the adoption of Arbitrum chains, creating more robust technical structures, and building sustainable communities in the Arbitrum ecosystem.</p>
+      <h2>Arbitrum Questbook Grants</h2>
+      <br></br>
+      <img src="/images/questbook.svg" alt="Questbook" className={styles.benefitsImage} />
+       <br></br>
+       <br></br>
+       <h1 className={styles.subtitle}>What are Questbook DDA 2.0 Grants?</h1>
+
+    <p>The Questbook Arbitrum Grants program is useful for anyone developing domain specific projects on top of Arbitrum. Projects can receive milestone-based funding based on domain-specific needs outlined by the domain allocators, which are elected by the community.</p>
+    <p>Communities, developers, builders, founders, creators, researchers, Web3 projects, gaming projects, and more.</p>
+
+    <p> Questbook manages 2 grants within the program:</p>
+    <ul>
+      <li>Delegated Domain Allocation 2.0  (DDA 2.0)</li>
+      <li>Reclaim Grants</li>
+    </ul>
+    <p>This guide only covers DDA 2.0 grants.</p>
     </section>
 
+     <br></br>
+
+
     <section className={styles.section}>
-     <p className={styles.black}>Grant Scope</p>
-     <p>The program progresses through phases, dedicated to specific areas of interest. The <a href='https://www.notion.so/Current-Phase-Categories-a0108619966148b4a9189ecda1a59ef3?pvs=4' className={styles.a}>current phase</a> is receiving applications from dApps (and Appchains).</p>
-
+     <h1 > Scope</h1>
+     <p className={styles.black}>Education, Community Growth, and Events</p>
+     <p>This domain focuses on projects looking to organize hackathons, projects to strengthen the Arbitrum community in an academic context (universities and educational institutions), projects building Arbitrum-focused educational resources, and IRL educational events.</p>
    <ul className={styles.list}>
-     <li>Stylus: Projects must integrate this new programming paradigm to build on Arbitrum from traditional programming languages such as Rust, C++, among others. Examples such as math-heavy finance algorithms, on-chain generative art, and complex cryptography classify under this category.</li>
+     <li><a href='https://www.notion.so/Domain-Allocator-info-0b00ff3a2ec4436f8fb5298c60c57b32?pvs=21' className={styles.a} target='_blank' >Domain Allocator Info & Template</a></li>
+     <li><a href='https://arbitrum.questbook.app/dashboard/?grantId=662f30eb1c1eb9145098a15e&chainId=10&role=community' className={styles.a} target='_blank' >Apply for the domain: Education, Community Growth, and Events
+</a></li>
 
-   <li>dApps: Applications from Gaming, DePin, Social, and NFTs are welcome to apply under this category, but any innovative idea that adds value to the Arbitrum ecosystem is also encouraged.
-   </li>
 
    </ul>
+   <p className={styles.black}>Gaming</p>
+   <p>This domain focuses on distribution and discoverability for existing games, bringing awareness and users to the Arbitrum gaming ecosystem. This includes protocols or infrastructure focused on game discoverability or distribution, publishers or multi-game studios looking to run events or campaigns to attract new users to arbitrum, content creators and KOLs with an established presence, among others</p>
    
-     <h1>Funding Specifics</h1>
-       <div>
+   <ul className={styles.list}>
+     <li><a href='https://docs.google.com/document/d/1UIQA_kGeLsXQOZsIiGaNzE35TRTbqXBl5JauNt4LECQ/edit#heading=h.ig7e612gb5vt' className={styles.a} target='_blank' >Template</a></li>
+     <li><a href='https://arbitrum.questbook.app/dashboard/?grantId=662f323d5488d5000f055e6d&chainId=10&role=community&proposalId=665dd4b0e497248ecfaabc68' className={styles.a} target='_blank' >Apply for the domain: Gaming</a></li>
+   </ul> 
+   
+   
+   <p className={styles.black}>Developer Tooling</p>
+   <p>This domain focuses on projects that develop toolkits, open-source dApps and documentation. Projects in-scope include infrastructure to facilitate asset visualization and interaction with the network, bring projects to the Arbitrum chain, tooling or documentation to address centralization, ecosystem development, security or other challenges, and DevRel projects.</p>
+   
+   <ul className={styles.list}>
+     <li><a href='https://docs.google.com/document/d/144gTfeKKXOtPxMTEB9d73wELepJ9mNPjMJHjvCSy3uE/edit' className={styles.a} target='_blank' >Developer Tooling Template</a></li>
+     <li><a href='https://arbitrum.questbook.app/dashboard/?grantId=662f32a15488d5000f0562b3&chainId=10&role=community&proposalId=665d344e3bfd43a8c1f9f7a8' className={styles.a} target='_blank' >Apply for the domain: Dev Tooling</a></li>
+   </ul> 
+   <p className={styles.black}>New Protocol Ideas</p>
+   <p>This domain focuses on those projects looking to build fully functional protocols or products. This includes, but is not limited to, new protocols from scratch, projects that introduce new functionalities and ideas to new or existing protocols in the Arbitrum chain, infrastructure or services to enhance user experience, migrating existing products or protocols to Arbitrum</p>
+   
+   <ul className={styles.list}>
+     <li><a href='https://docs.google.com/document/d/120s88WVycDyP2pUfgcT0eE8ILuribuayHDnd5aeZxbM/edit#heading=h.4th1bgre9sv4' className={styles.a} target='_blank' >New Protocol Ideas Template</a></li>
+     <li><a href='https://arbitrum.questbook.app/dashboard/?grantId=662f31c25488d5000f055a54&chainId=10&role=community&proposalId=664d3a6257b1cedd43e8f540' className={styles.a} target='_blank' >Apply to the domain: New Protocol Ideas </a></li>
+   </ul> 
+     
+   <br></br>
 
-        <p>The Arbitrum Foundation grants program offers milestone-based funding for projects in development.</p>
-        <p>Projects looking to launch on Arbitrum can apply for two types of grants:</p>
+     <h1>Funding</h1>
+      <div>
+     <p>Each domain includes a soft-cap amount for individual proposals set at $25,000 ARB. If the application requires a review by two domains the soft cap is set at $50,000 ARB. </p>
+      </div>
 
 
-      <ul className={styles.list}>
-        <li><strong>Growth Grant (up to $50k):</strong> For small and medium teams with proven experience in writing smart contracts and building Web3 products.</li>
-        <li><strong>Advanced Growth Grant (up to $150k):</strong> For large teams with experience and previous success in building Web2 or Web3 products.</li>  
-      </ul>
-      <p>Learn more about the <a href='https://www.notion.so/Grant-Tracks-b8d304453e804deba3a9abd058ed6daf?pvs=4' className={styles.a}>Grant Types.</a></p>
-</div>
-<p className={styles.black}>Grant Requirements</p>
+<br></br>
+<h1>Requirements</h1>
 
     <ol className={styles.list}>
-      <li>Phase two only considers submissions building out decentralized applications using the Arbitrum stack.</li>
-      <li>Projects applying for growth grants must include up to 2 milestones, while advanced growth grants must include 3 to 5. Refer to milestone guidance here.</li>
-      <li>Make sure to comply with the Submission Guidelines.</li>
-     <li>KYC is required to receive milestone payments.</li>
+      <li>Projects must include well-defined milestones. Each template includes milestone guidelines for each respective domain.</li>
+      <li>For the New Protocol Ideas domain allocator: If a new product is being built from scratch, planning for an audit is a requirement</li>
      </ol>
      </section>
+<br></br>
 
+      <h1 >Grant Process</h1>
 
-      <p className={styles.black}>Grant Process</p>
-    
+    <h1 className={styles.subtitle}>Application</h1>
       <ol className={styles.list}>
-      <li>1. Navigate to the Foundation Grants Notion Page and <a href='https://esp.ethereum.foundation/applicants/small-grants' className={styles.a} target='_blank'>apply here.</a></li>
-      <li>2. Applications are reviewed on a rolling basis.</li>
-      <li>3. If the submission is approved, the team will contact the project to conduct a KYC process.</li>
+      <p>1. Read the domains of DDA 2.0 to find where your project is eligible</p>
+      <p>2. Create and apply with a RFP Template following the links in the “Scope” section</p>
     </ol>
-
+   <h1 className={styles.subtitle}>Review</h1>
+      <ol className={styles.list}>
+      <p>1. Upon review, you will be required to follow up on questions made by the team to clarify and complete your proposal if needed.</p>
+      <p>2. Wait for an answer in the Questbook Portal and follow up with advances.</p>
+    </ol>
+    <br></br>
 <section className={styles.section}>
+
 <h1>Resources</h1> 
    <ul className={styles.list}>
-    <li> <a className={styles.a} href="https://www.notion.so/53ad99f665d946adb58bf92e82438fd5?pvs=4" target="_blank" rel="noopener noreferrer">Arbitrum Foundation Grants Notion Hub</a> </li>
+   <li> <a className={styles.a} href="https://arbitrumfoundation.notion.site/Questbook-6b2d1486dce34ad1a48466340fe0aa89" target="_blank" rel="noopener noreferrer">Learn more: notion site</a> </li>
+   <li> <a className={styles.a} href="https://arbitrum.questbook.app/" target="_blank" rel="noopener noreferrer">Arbitrum Grants Portal</a> </li>
+   <li>If no domain fits your project, check out other <a className={styles.a} href="https://arbitrum.foundation/grants" target="_blank" rel="noopener noreferrer"> Arbitrum Grant Opportunities</a> </li>
+
 </ul>
      </section> 
 
