@@ -34,7 +34,7 @@ export default function DAOS() {
                         <h2 className={styles.cardTitle}>The State Of DAOs 2023</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>A comprehensive report on the current trends, challenges, and innovations within DAOs in 2023.</p>
+                    <p className={styles.cardDescription}>Understand the 2023 DAO landscape and how to contribute.</p>
                   
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>

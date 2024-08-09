@@ -175,4 +175,30 @@
     font-size: 0.9em;
   }
   }
+  .contactButton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration:none;
+    border-radius: 20px;
+    color: #2B2C3A;
+    background-color: #ffffff; 
+    font-family: 'Roboto Mono';
+    font-weight: lighter;
+    font-size: 20px;
+   
+    
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px auto; 
   
+  }
+  
+   .contactButton:hover {
+    background-color: #99979778;
+    color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .a {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+  }
