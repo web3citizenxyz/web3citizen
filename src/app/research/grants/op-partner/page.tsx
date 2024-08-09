@@ -16,23 +16,33 @@ export default function OpPartnerFund() {
       
       <section className={styles.section}>
         <h2>Optimisim Partner Fund</h2>
-      
-        <p><strong>Time frame: </strong> Rolling Basis</p>
-        <p><strong>Amount:</strong>Negotiated on a case-by-case basis</p>
-<p>The Partner Fund’s mission is to grow Optimism’s ecosystem for the benefit of the entire Collective.</p> 
-  </section>
+      <br></br>
+        <img src="/images/partner-grant.svg" alt="OP Partner" className={styles.benefitsImage} />
 
+  </section>
+  <br></br>
+  <h1 className={styles.subtitle}>What is a Partner Fund grant?</h1>
+<p>The Optimism Foundation awards Partner Fund grants to teams working to grow Optimism’s ecosystem for the benefit of the entire Collective. The Partner Fund is designed for strategic grants aimed at partners who have already found their product-market fit. Their scope is broader and amounts are negotiated on a case-by-case basis. </p>
  
+ <br></br>
+
   <section className={styles.section}>
     
-   <h1>Grant Scope</h1>   
-   <p>Most projects considered for the Partner Fund are live and looking at deploying and/or scaling on Optimism. The Partner Fund is designed for strategic grants aimed at partners who have already found their product-market fit</p>
-   <p>Partner Fund grants are negotiated on a case-by-case basis and support the overarching goal to build a thriving ecosystem for developers. Areas of work include DeFi, NFTs, DAOs, as well as large-scale usage growth for the ecosystem..</p>
-   <p><a href='' className={styles.a}>“The Partner Fund may make grants used to provide tooling to the Optimism community, bring applications to OP Mainnet, promote education, experiment with liquidity mining programs, drive consumer usage, and/or support Optimism’s governance system.”</a></p>
- 
+   <h1>Scope</h1>   
+   <p>Most projects considered for the Partner Fund are live and looking at deploying and/or scaling on Optimism. Areas of work include </p>
+   <ul className={styles.list}>
+<li>Education and community tooling</li>
+<li>DAOs and tooling to support Optimism’s governance system </li>
+<li>Projects to drive large-scale usage growth for the ecosystem.</li>
+<li>DeFi, NFTs, among other projects.</li>
+</ul> 
 </section>
+<br></br>
 
-<h1>Funding Specifics</h1>
+
+
+<section className={styles.section}>
+<h1>Funding</h1>
 
 <p>Grants are structured in one of two days.</p>
 <ul className={styles.list}>
@@ -42,13 +52,14 @@ export default function OpPartnerFund() {
 </ul>
 
 
-
-
+</section>
+<br></br>
+<section className={styles.section}>
 <h1>Grant Process</h1>
-<p>Apply <a href='https://forms.monday.com/forms/89675838770f70674de78da3e20b8155?r=use1' className={styles.a}>here.</a>  Partner Fund applications will be reviewed on a rolling basis.</p>
+<p>Apply <a href='https://forms.monday.com/forms/89675838770f70674de78da3e20b8155?r=use1' className={styles.a}>here.</a>  Partner Fund applications will be reviewed on a rolling basis. The Foundation may also choose to award a <a href='https://gov.optimism.io/t/introducing-backstop-grants/8031' className={styles.a}>backstop grant</a> instead.</p>
 
 
-
+</section>
 
 <h1>Resources</h1>
       <ul className={styles.list}>
