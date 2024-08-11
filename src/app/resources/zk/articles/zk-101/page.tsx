@@ -23,16 +23,16 @@ export default function DaoBasics() {
 
         <p><strong>REALLY IMPORTANT:</strong> we strongly recommend you to learn the basics of polynomials --which are not going to be covered in this article. A good video to start with is embedded below:</p>
         <div className={styles.videoContainer}>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YdXcRY9A9HI"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>  
+  <div className={styles.videoWrapper}>
+    <iframe
+      src="https://www.youtube.com/embed/YdXcRY9A9HI"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
         
         </section>
 

@@ -17,7 +17,7 @@
     align-self: flex-start;
   }
   .headerContainer h1 {
-    font-size: 70px;
+    font-size: 80px !important;
     font-family: 'Montserrat';
     font-weight: 500;
 
@@ -37,11 +37,11 @@
   
   .line {
     flex-grow: 1;
-    width:800px;
+    width:650px !important; 
     height: 0.5px;
     background-color: #F1EAE1;
     margin-left: 0px;
-    margin-top: 45px;
+    margin-top: 45px !important;
   }
 
 

@@ -52,7 +52,7 @@ export default function Resources() {
                     </Link>
                 </div>
                 <div className={styles.card}>
-                <Link href="/resources/zk-101">
+                <Link href="/resources/zk">
                     <div className={styles.cardHeader}>
                         <img src="/icons/zk_logo.png" alt="ZK Logo" className={styles.cardHubIcon} />
                         <h2 className={styles.cardTitle}>ZK Hub</h2>

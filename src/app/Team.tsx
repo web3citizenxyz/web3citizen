@@ -6,14 +6,11 @@ import styles from './styles/Team.module.css';
 export default function Team() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const items = [
-    "/images/profile-1.jpg",
-    "/images/profile-2.png",
-    "/images/profile-3.jpeg",
-    "/images/profile-1.jpg",
-    "/images/profile-2.png",
-    "/images/profile-3.jpeg",
+    { src: "/images/profile-1.jpg", twitter: "https://twitter.com/eugelikeeugenia" },
+    { src: "/images/profile-2.png", twitter: "https://twitter.com/ocandocrypto" },
+    { src: "/images/profile-3.jpeg", twitter: "https://twitter.com/0xpili_" },
+   
   ];
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -39,8 +36,10 @@ export default function Team() {
               key={index}
               className={`${styles.carouselItem} ${index === currentIndex ? styles.active : ''}`}
             >
-              <img src={item} alt={`User ${index + 1}`} />
-            </div>
+            <a href={item.twitter} target="_blank" rel="noopener noreferrer">
+              <img src={item.src} alt={`User ${index + 1}`} />
+            </a>
+          </div>
           ))}
         </div>
         <img src="/images/elipse-team.svg" alt="Semicircles" className={styles.elipseTeam} />
