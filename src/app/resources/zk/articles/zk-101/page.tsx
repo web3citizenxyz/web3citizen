@@ -682,20 +682,17 @@ export default function DaoBasics() {
 
 <section className={styles.section}>
     <h4>References</h4>
-    <ul className={styles.list}>
-        <li><a href="https://mit6875.github.io/HANDOUTS/numbertheory.pdf" target="_blank" rel="noopener noreferrer">MIT - Number Theory in Cryptography</a></li>
-        <li><a href="https://zeroknowledge.fm/" target="_blank" rel="noopener noreferrer">Zero Knowledge Podcast</a></li>
-        <li><a href="https://zk-learning.org/" target="_blank" rel="noopener noreferrer">ZK-Learning Platform</a></li>
-        <li><a href="https://zkhack.dev/whiteboard/" target="_blank" rel="noopener noreferrer">ZK Hack - Whiteboard Sessions</a></li>
-        <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank" rel="noopener noreferrer">Matter Labs - Awesome Zero-Knowledge Proofs</a></li>
-        <li><a href="https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production" target="_blank" rel="noopener noreferrer">How to Create a Zero-Knowledge Dapp - Hashnode Blog</a></li>
-        <li><a href="https://crypto.stanford.edu/pbc/notes/crypto/zk.html" target="_blank" rel="noopener noreferrer">Stanford - Zero-Knowledge Proofs Notes</a></li>
-    </ul>
+    <ul className="resource-list">
+    <li><a href="https://mit6875.github.io/HANDOUTS/numbertheory.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>MIT - Number Theory in Cryptography</a></li>
+    <li><a href="https://zeroknowledge.fm/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Zero Knowledge Podcast</a></li>
+    <li><a href="https://zk-learning.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>ZK-Learning Platform</a></li>
+    <li><a href="https://zkhack.dev/whiteboard/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>ZK Hack - Whiteboard Sessions</a></li>
+    <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Matter Labs - Awesome Zero-Knowledge Proofs</a></li>
+    <li><a href="https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>How to Create a Zero-Knowledge Dapp - Hashnode Blog</a></li>
+    <li><a href="https://crypto.stanford.edu/pbc/notes/crypto/zk.html" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Stanford - Zero-Knowledge Proofs Notes</a></li>
+
+  </ul>
 </section>
-
-
-
-
 
      <SideIcons />
      <BackToTop />
