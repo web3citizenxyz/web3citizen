@@ -146,7 +146,7 @@ export default function DaoBasics() {
 
     <p>So,</p>
 
-    <p className={styles.quote}><code>3 + 5 ≡ 1 (mod 7)</code></p>
+    <p className={styles.quote}><code>3 * 5 ≡ 1 (mod 7)</code></p>
 
     <p>This means that 3 and 5 are multiplicative inverses of each other modulo 7.</p>
 </section>
@@ -258,9 +258,9 @@ export default function DaoBasics() {
             <p className={styles.quote}><code>N = 3 × 5 × 7 = 105</code></p>
         </li>
         <li><strong>Compute the partial products <code>N<sub>i</sub></code></strong>:
-            <p className={styles.quote}><code>N<sub>1</sub> = \frac{105}{3} = 35</code></p>
-            <p className={styles.quote}><code>N<sub>2</sub> = \frac{105}{5} = 21</code></p>
-            <p className={styles.quote}><code>N<sub>3</sub> = \frac{105}{7} = 15</code></p>
+            <p className={styles.quote}><code>N<sub>1</sub> = 105/3 = 35</code></p>
+            <p className={styles.quote}><code>N<sub>2</sub> = 105/5} = 21</code></p>
+            <p className={styles.quote}><code>N<sub>3</sub> = 105/7 = 15</code></p>
         </li>
         <li><strong>Compute the multiplicative inverses <code>M<sub>i</sub></code></strong>:
             <ul className={styles.list}>
