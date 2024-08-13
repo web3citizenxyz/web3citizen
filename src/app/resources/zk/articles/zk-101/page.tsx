@@ -259,7 +259,7 @@ export default function DaoBasics() {
         </li>
         <li><strong>Compute the partial products <code>N<sub>i</sub></code></strong>:
             <p className={styles.quote}><code>N<sub>1</sub> = 105/3 = 35</code></p>
-            <p className={styles.quote}><code>N<sub>2</sub> = 105/5} = 21</code></p>
+            <p className={styles.quote}><code>N<sub>2</sub> = 105/5 = 21</code></p>
             <p className={styles.quote}><code>N<sub>3</sub> = 105/7 = 15</code></p>
         </li>
         <li><strong>Compute the multiplicative inverses <code>M<sub>i</sub></code></strong>:
@@ -270,10 +270,10 @@ export default function DaoBasics() {
 </p>
                 </li>
                 <li><code>M<sub>2</sub></code> such that <code>21 × M<sub>2</sub> ≡ 1 (mod 5)</code>:
-                    <p className={styles.quote}><code>21 ≡ 1 (mod 5) \quad \Rightarrow \quad M<sub>2</sub> = 1</code></p>
+                    <p className={styles.quote}><code>21 ≡ 1 (mod 5) <span className="spacing">{'\u00A0'.repeat(4)}</span> ⇒ <span className="spacing">{'\u00A0'.repeat(4)}</span> M<sub>2</sub> = 1</code></p>
                 </li>
                 <li><code>M<sub>3</sub></code> such that <code>15 × M<sub>3</sub> ≡ 1 (mod 7)</code>:
-                    <p className={styles.quote}><code>15 ≡ 1 (mod 7) \quad \Rightarrow \quad M<sub>3</sub> = 1</code></p>
+                    <p className={styles.quote}><code>15 ≡ 1 (mod 7) <span className="spacing">{'\u00A0'.repeat(4)}</span> ⇒ <span className="spacing">{'\u00A0'.repeat(4)}</span> M<sub>3</sub> = 1</code></p>
                 </li>
             </ul>
         </li>
