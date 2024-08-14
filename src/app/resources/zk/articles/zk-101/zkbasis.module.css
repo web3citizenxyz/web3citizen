@@ -9,7 +9,21 @@
   .section {
     margin-bottom: 40px;
   }
-  
+
+
+.underlined-link {
+  text-decoration: underline;
+}
+
+
+.resource-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resource-list li {
+  margin-bottom: 10px;
+}
   .section h2 {
     font-size: 60px;
     font-weight: 500;
