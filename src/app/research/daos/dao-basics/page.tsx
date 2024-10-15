@@ -27,7 +27,7 @@ export default function DaoBasics() {
           <li>A brief introduction to contribution pathways and incentives in DAOs</li>
         </ul>
       </div>
-      <a href="/public/DAO-Basics-full-report.pdf" download className={styles.contactButton}>Download PDF</a>
+      <a href="/DAO-Basics-full-report.pdf" download className={styles.contactButton}>Download PDF</a>
 <br></br>
 <br></br>
 

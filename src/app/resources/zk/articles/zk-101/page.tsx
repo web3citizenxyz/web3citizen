@@ -146,7 +146,7 @@ export default function DaoBasics() {
 
     <p>So,</p>
 
-    <p className={styles.quote}><code>3 + 5 ≡ 1 (mod 7)</code></p>
+    <p className={styles.quote}><code>3 * 5 ≡ 1 (mod 7)</code></p>
 
     <p>This means that 3 and 5 are multiplicative inverses of each other modulo 7.</p>
 </section>
@@ -258,9 +258,9 @@ export default function DaoBasics() {
             <p className={styles.quote}><code>N = 3 × 5 × 7 = 105</code></p>
         </li>
         <li><strong>Compute the partial products <code>N<sub>i</sub></code></strong>:
-            <p className={styles.quote}><code>N<sub>1</sub> = \frac{105}{3} = 35</code></p>
-            <p className={styles.quote}><code>N<sub>2</sub> = \frac{105}{5} = 21</code></p>
-            <p className={styles.quote}><code>N<sub>3</sub> = \frac{105}{7} = 15</code></p>
+            <p className={styles.quote}><code>N<sub>1</sub> = 105/3 = 35</code></p>
+            <p className={styles.quote}><code>N<sub>2</sub> = 105/5 = 21</code></p>
+            <p className={styles.quote}><code>N<sub>3</sub> = 105/7 = 15</code></p>
         </li>
         <li><strong>Compute the multiplicative inverses <code>M<sub>i</sub></code></strong>:
             <ul className={styles.list}>
@@ -270,10 +270,10 @@ export default function DaoBasics() {
 </p>
                 </li>
                 <li><code>M<sub>2</sub></code> such that <code>21 × M<sub>2</sub> ≡ 1 (mod 5)</code>:
-                    <p className={styles.quote}><code>21 ≡ 1 (mod 5) \quad \Rightarrow \quad M<sub>2</sub> = 1</code></p>
+                    <p className={styles.quote}><code>21 ≡ 1 (mod 5) <span className="spacing">{'\u00A0'.repeat(4)}</span> ⇒ <span className="spacing">{'\u00A0'.repeat(4)}</span> M<sub>2</sub> = 1</code></p>
                 </li>
                 <li><code>M<sub>3</sub></code> such that <code>15 × M<sub>3</sub> ≡ 1 (mod 7)</code>:
-                    <p className={styles.quote}><code>15 ≡ 1 (mod 7) \quad \Rightarrow \quad M<sub>3</sub> = 1</code></p>
+                    <p className={styles.quote}><code>15 ≡ 1 (mod 7) <span className="spacing">{'\u00A0'.repeat(4)}</span> ⇒ <span className="spacing">{'\u00A0'.repeat(4)}</span> M<sub>3</sub> = 1</code></p>
                 </li>
             </ul>
         </li>
@@ -682,20 +682,17 @@ export default function DaoBasics() {
 
 <section className={styles.section}>
     <h4>References</h4>
-    <ul className={styles.list}>
-        <li><a href="https://mit6875.github.io/HANDOUTS/numbertheory.pdf" target="_blank" rel="noopener noreferrer">MIT - Number Theory in Cryptography</a></li>
-        <li><a href="https://zeroknowledge.fm/" target="_blank" rel="noopener noreferrer">Zero Knowledge Podcast</a></li>
-        <li><a href="https://zk-learning.org/" target="_blank" rel="noopener noreferrer">ZK-Learning Platform</a></li>
-        <li><a href="https://zkhack.dev/whiteboard/" target="_blank" rel="noopener noreferrer">ZK Hack - Whiteboard Sessions</a></li>
-        <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank" rel="noopener noreferrer">Matter Labs - Awesome Zero-Knowledge Proofs</a></li>
-        <li><a href="https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production" target="_blank" rel="noopener noreferrer">How to Create a Zero-Knowledge Dapp - Hashnode Blog</a></li>
-        <li><a href="https://crypto.stanford.edu/pbc/notes/crypto/zk.html" target="_blank" rel="noopener noreferrer">Stanford - Zero-Knowledge Proofs Notes</a></li>
-    </ul>
+    <ul className="resource-list">
+    <li><a href="https://mit6875.github.io/HANDOUTS/numbertheory.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>MIT - Number Theory in Cryptography</a></li>
+    <li><a href="https://zeroknowledge.fm/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Zero Knowledge Podcast</a></li>
+    <li><a href="https://zk-learning.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>ZK-Learning Platform</a></li>
+    <li><a href="https://zkhack.dev/whiteboard/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>ZK Hack - Whiteboard Sessions</a></li>
+    <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Matter Labs - Awesome Zero-Knowledge Proofs</a></li>
+    <li><a href="https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>How to Create a Zero-Knowledge Dapp - Hashnode Blog</a></li>
+    <li><a href="https://crypto.stanford.edu/pbc/notes/crypto/zk.html" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Stanford - Zero-Knowledge Proofs Notes</a></li>
+
+  </ul>
 </section>
-
-
-
-
 
      <SideIcons />
      <BackToTop />
