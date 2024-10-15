@@ -8,143 +8,125 @@ const Article = () => {
       <div className={styles.articleContainer}>
           <div className={styles.menuContainer}>
               <ul className={styles.menu}>
-                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Maker DAO</a></li>
-                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>AIP-1</a></li>
-                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Arbitrum DAO Governance</a></li>
-                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
-                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
-                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
-                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Voting Power</a></li>
-                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Process</a></li>
-                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Delays and Waiting Periods</a></li>
-                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Contribution Pathways</a></li>
-                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Ambassadors Program</a></li>
-                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Grants</a></li>
-              </ul>
+                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Maker</a></li>
+                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>The Foundation</a></li>
+                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Challenges</a></li>
+                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>EndGame</a></li>
+                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Governance</a></li>
+                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Governance Framework</a></li>
+                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Token Holders</a></li>
+                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Governance Facilitators</a></li>
+                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Endgame Governance Framework</a></li>
+                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>SubDAOs</a></li>
+                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Aligned Voted Committee</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Aligned Delegates</a></li>
+                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Scope Advisory Councils</a></li>
+                  <li className={styles.menuItem}><a href="#section14" className={styles.menuLink}>Governance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section15" className={styles.menuLink}>Endgame MIP</a></li>
+                  <li className={styles.menuItem}><a href="#section16" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
+                  <li className={styles.menuItem}><a href="#section17" className={styles.menuLink}>Voting Power</a></li>
+                  <li className={styles.menuItem}><a href="#section18" className={styles.menuLink}>Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section19" className={styles.menuLink}>Governance Participation</a></li>
+                  <li className={styles.menuItem}><a href="#section20" className={styles.menuLink}>The future steps of Endgame via Rune Christensen</a></li>
+                  <li className={styles.menuItem}><a href="#section21" className={styles.menuLink}>Endgame's Tokenomics updates</a></li>
+                  <li className={styles.menuItem}><a href="#section22" className={styles.menuLink}>Contribution Pathways</a></li>
+             </ul>
           </div>
+
+
+
+
           <div className={styles.contentContainer}>
               <div id="section1" className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Maker DAO</h2>
+                  <h2 className={styles.sectionTitle}>Maker</h2>
                   <div className={styles.quoteContainer}>
         <p className={styles.quote}>
-        <strong>Offchain</strong>Labs is a New York-based company building <strong>Arbitrum, Arbitrum One, and Nova</strong>, Layer 2 scaling solutions for Ethereum. Arbitrum launched on Mainnet on August 31, 2021, and on August 31, 2022, Arbitrum One and Nova upgraded to Nitro tech stack.
-        </p>
+        <strong>Maker DAO</strong>  remains one of the key players in DeFi. Its community governs Maker Protocol. 
+        Maker Protocol's main components include: </p>
+        <ul>
+          <li><strong>DAI:</strong> A decentralized, collateral-backed currency that maintains a stable value relative to the US Dollar.</li>
+          <li><strong>Vaults:</strong>  Smart contracts that lock collateral assets and issue DAI against them.</li>
+          <li><strong>Stability fee:</strong> The interest rate Vault users pay to maintain their positions and stabilize the DAI peg.</li>
+          
+          </ul>
       </div>
       <p>
-      In 2023, ArbitrumDAO was launched by airdropping $ARB, the ERC-20 governance token for Arbitrum Nova and Arbitrum One. The $ARB token allows holders to participate in the Arbitrum DAO's on-chain governance protocol by controlling protocol updates, funds and electing ArbitrumDAO’s Security Council.
+      Maker's governance structure, framework, and processes are significantly restructuring.
    </p>
-   <p>This transfer of power included:</p>
-   <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Control of the upgradeability and technical future of the chains</strong></li>
-            <li className={styles.listItem}><strong>Control over the DAO treasury and net fee revenue - i.e., the net difference between fees collected by on-chain operations and L1 fees paid by the Sequencer</strong></li>
-            <li className={styles.listItem}><strong>All Arbitrum social media platforms and accounts</strong></li>
-        
-            <li className={styles.listItem}><strong>Ability to elect and, if deemed appropriate, remove the Security Council and Directors</strong></li>
-            </ul> 
-
-
-
+   <p>We aim to provide a clear understanding of Maker DAO’s current governance, and Endgame's plan to restructure it. 
+   </p>
+   <p>This report reflects the state of the DAO until November 2023. Please note that this analysis may change in the following months.</p>
               </div>
 
 
               <div id="section2" className={styles.section}>
-                  <h2 className={styles.sectionSubtitle}>AIP-1</h2>
-                  <p className={styles.paragraph}>The Arbitrum Foundation submitted the AIP-1 proposal to delineate ArbitrumDAO's structure and governance rules. The community raised several transparency, accountability, and decentralization concerns. </p>
-                  <p className={styles.paragraph}>Most importantly:</p>
-                  <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>The allocation of 1B dollars worth of tokens (7.5% of the total supply) to the Foundation's Administrative Budget Wallet. The Foundation needed to clarify who would sign for that wallet and how its money would be spent.</strong></li>
-            <li className={styles.listItem}><strong>The Security Council establishment did not clarify any election process.</strong></li>
-            </ul> 
-             <p className={styles.paragraph}>The Foundation had begun selling $ARB tokens for stablecoins before its governance community of token holders had "ratified" the organization's nearly $1 billion budget.</p>
-             <p className={styles.paragraph}>AIP-1 did not pass. After AIP-1’s communication received negative feedback, the Foundation rectified decisions through AIP-1.1 Lockup, Budget, Transparency, where they clarified their processes and the next steps in the governance journey to the community.</p>
-            <p className={styles.paragraph}>ArbitrumDAO has quickly become one of the most engaged communities, with more than 633.43k token holders and 137.02k voters.</p>
-           
+                  <p className={styles.titleBlack}>The Foundation</p>
+                  <p className={styles.paragraph}>The Foundation was formed in 2015 by Rune Christensen. It built and launched the Maker Protocol.  </p>
+                  <p className={styles.paragraph}>Its primary purpose was to provide funding and leadership to boost the development of the Protocol and promote its adoption before delegating complete control to the community in 2017.</p>
+       
               </div>
            
               <div id="section3" className={styles.section}>
-                  <h2 className={styles.sectionSubtitle}>Arbitrum DAO Governance</h2>
-                  </div>
+                  <p className={styles.titleBlack}>Challenges</p>
+                <p>MakerDAO faced new and complex challenges during this bear market.</p>
+              <ul className={styles.orderedList}>
+             <li className={styles.listItem}> Governance Scalability: as the largest DAO large-scale alignment has become too complex.</li>
+              <li className={styles.listItem}>the DAO has more expenses than revenue:</li>
+              <p>- Headcount (115 associates)</p>
+              <p>- Annual cash burn rate (43.6M)</p>
+              <p>- MKR compensation in DAI terms is estimated at 17.3M</p>
+              <p>- Makerburn stability fees: 51.4M</p>
+
+              <p>It was operating at a 9.4M loss. The DAO was no longer profitable.</p>
+               </ul> 
+               </div>
                   <div id="section4" className={styles.section}> 
-                  <p className={styles.titleBlack}>Governance Framework </p>
-                  <img src="/images/gob-frame-arb.avif" alt="Benefits of DAO frameworks" className={styles.benefitsImage} />
+                  <p className={styles.titleBlack}>Endgame </p>
+                  <p><strong>“The Endgame Plan aims to overhaul and improve the Maker Protocol, its governance, and its ecosystem so it can reach a self-sustainable equilibrium called an Endgame State.” - Rune via MakerDAO Forum.</strong></p>
+                  <Link href="https://forum.makerdao.com/t/endgame-plan-v3-complete-overview/17427" target='_blank'>
+          <p className={styles.link}>Rune via MakerDAO Forum.</p>
+        </Link>  
+                  <img src="/images/maker-endgame.png" alt="AIP-1" className={styles.benefitsImage} />
                   <p className={styles.paragraph}>
-        <Link href="https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup" target='_blank'>
-          <p className={styles.link}>ArbitrumDAO's governance has three main bodies:</p>
-        </Link> 
+                  Endgame aims to simplify MakerDAO's focus by minimizing its scope and solely focusing Maker on supporting DAI. The main DAO will delegate other responsibilities to SubDAOs specializing in specific products.
     </p>
-    <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>The DAO</strong>is comprised of $ARB holders who vote to pass proposals.</li>
-            <li className={styles.listItem}><strong>The Security Council</strong>  can take action in two ways:
-            <ul className={styles.orderedList}>
-                
-            <li className={styles.listItem}>Emergency actions: 9 of 12 multisig enables fast action in an emergency.</li>  
-            <li className={styles.listItem}>Non-emergency actions:  7 of 12 multisig enables action for routine upgrades that bypass the need for DAO member voting</li> 
-            <li className={styles.listItem}>The Security Council has the power to cancel or block proposals.</li></ul> 
-            </li>
-            <li>Data Availability Committee: This committee stores data batches for transactions on the Arbitrum Nova chain on a specific server  <Link href="https://developer.arbitrum.io/das/daserver-instructions" target='_blank'>
-          <p className={styles.link}>(Data Availability Server)</p>
-        </Link> </li>
-            </ul> 
-           <p className={styles.paragraph}>Establishing the Arbitrum Foundation marked the initial phase of launching the DAO. Its primary objective is to serve the ArbitrumDAO community by guiding and facilitating the DAO’s decision-making. It also fosters the ecosystem development.</p>
-           <p className={styles.paragraph}>Governance is responsible for the following assets:</p>
-           <ul className={styles.orderedList}>
-                
-                <li className={styles.listItem}>Treasury - DAO holds and is responsible for a portion of $ARB tokens.</li>  
-                <li className={styles.listItem}>Arb One Contracts and Arb Nova Contracts - Governance holds upgradability rights over these contracts on these contracts deployed on Ethereum Mainnet.</li> 
-                <li className={styles.listItem}>Arb One and Arb Nova L2 parameters - All Arbitrum chains have a chain "owner" that can set specific parameters. Read more here. Governance has control over the chain owner.</li>
-                <li className={styles.listItem}>Governance contracts - Governance can upgrade and modify itself.</li>
-                <Link href="https://github.com/ArbitrumFoundation/governance/blob/main/docs/foundation-vesting-wallet.md" target='_blank'>
-                <li className={styles.link}>Arbitrum Foundation Administrative Budget Wallet — See here for more info.</li>
-             </Link>
-                </ul> 
- 
-                <p className={styles.paragraph}>Governance specifications and details can be found in the
-                <Link href="https://docs.arbitrum.foundation/dao-constitution" target='_blank'>
-                <span className={styles.link}>   Constitution.</span>
-                </Link>
-                </p> 
+          <p>Endgame will develop over several stages:</p>
+          <img src="/images/endgame-develop.png" alt="Develop" className={styles.benefitsImage} /> 
+
+
                   </div>
 
                   <div id="section5" className={styles.section}> 
-                  <h2 className={styles.sectionSubtitle}>Governance Proposals</h2> 
-                  <p className={styles.titleBlack}>Arbitrum Improvement Proposals</p>
-                  <p>An <strong> Arbitrum Improvement Proposal (AIP)</strong>is submitted by a member of the Arbitrum DAO to modify to the Arbitrum ecosystem</p>
-                  <p>There are two types of AIPs:</p>
-                  <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Constitutional AIPs</strong> change the text or procedures of the Constitution or AIP-1, install or modify the software on any chain, or take any action that requires "chain owner" permission.</li>
-            <li className={styles.listItem}><strong>Non-constitutional AIPs</strong> are all other AIPs, such as those that request funds/grants or provide general guidelines or information to the community.</li>
-            </ul>
-    
+                  <h2 className={styles.sectionSubtitle}>Governance</h2> 
+                  <p>MakerDAO governance is facilitated through the MKR token, which allows holders to vote on proposals and influence the platform's future.</p>
+                  <p id="section6" className={styles.titleBlack}>Governance Framework</p>
+                  <div className={styles.quoteContainer}>
+                  <p className={styles.quote}>Learn about pre- and Endgame governance structures and roles. </p> 
+                  </div>
+                  <p id="section7" className={styles.titleBlack}>Token holders</p>
+                  <p>MKR Holders can approve Maker Protocol Stability fees, debt ceilings, or Collateral On and off-boarding changes. There is no other way to deploy changes to the protocol.</p>
+                  <p id="section8" className={styles.titleBlack}>Governance Facilitators</p>
+                  <p>These individuals are responsible for executing on-chain governance votes and implementing the decisions made by the community. They help facilitate the governance process.</p>
               </div>
-              <div id="section6" className={styles.section}> 
-              <p className={styles.titleBlack}>Security Council Actions</p>
-            <p>The<strong> Security Council</strong> has the power to execute emergency actions and non-emergency actions. These differ from traditional AIPs because the Security Council can approve them without going through the above process</p>
-</div>
-<div id="section7" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Governance Process and Mechanisms</h2> 
-</div>
-<div id="section8" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Voting Power</h2> 
-<p>The Arbitrum DAO may be new, but it has already gained a large and active community. With over 633.43k token holders and 137.02k voters, members are dedicated to advancing the goals of the Arbitrum Mission and the Ethereum ecosystem.</p>
-</div>
-<div id="section9" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Voting Process</h2> 
-<p>For proposals not enacted by The Security Council:</p>
-<p className={styles.titleBlack}>Step 1: Temperature check using Snapshot Poll</p>
-<p>This preliminary vote gauges the community's interest in a proposal before it moves on to the next stage.</p>
-<p className={styles.titleBlack}>Step 2: Submit your on-chain proposal using Tally</p>
-<p>To submit a proposal you need to have an Ethereum Wallet Address representing at least 1,000,000 tokens. </p>
-<p>Today, 19 delegates can submit on-chain proposals to the Arbitrum DAO ecosystem. </p>
-<p>To be approved, more than 50% of tokens must have voted in favor of the proposal:</p>
-<ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Constitutional AIPs</strong> must receive votes from at least 5% of all votable tokens; </li>
-            <li className={styles.listItem}><strong>Non-constitutional</strong> AIPs must receive votes from at least 3% of all votable tokens.</li>
-            </ul>
-<p>The entire AIP voting process typically takes 34 days for Constitutional or 21 days for Non-Constitutional AIPs. </p>
-<img src="/images/dao-vote.webp" alt="DAO vote" className={styles.benefitsImage} />
+
+
+              <div id="section9" className={styles.section}> 
+              <h2 className={styles.sectionSubtitle}>Endgame Governance Framework</h2>
+            <p>The new framework functions within The Scope Artifact, a designed mechanism to align actions and incentives of participants within a specific scope defined by the Atlas - a constitution-like foundational set of rules.</p>
+           <p>Voting will be arranged by committees of voters, with delegates representing their interests, strategies, and Endgame's "universal alignment."</p>
 
 </div>
+
+<div id="section10" className={styles.section}>
+  <p className={styles.titleBlack}>SubDAOs</p>
+  <p>SubDAOs will enable to test new products and project insulated from the main DAO.</p>
+  <p>As defined in MIP101, subDAOs create a "second layer of the ecosystem to foster fast-moving, risk-adjusted innovation, growth, and experimentation."</p>
+  <p><strong>Only the members of these SubDAOs will have complete control over decision-making by using the subDAO-specific token.</strong></p>
+  <p>Each DAO will have its own tokenomics, vault and will be in charge of its front end. Thus, MakerDAO will transition into a multi-token system. SubDAOs may pursue any objective they wish and hunt down profit-generating activity.</p>
+  <img src="/images/subdaos-maker.jpg" alt="SubDAOs" className={styles.benefitsImage} /> 
+   </div>
+<p>Endgame will introduce two types of SubDAOs: FacilitatorDAOs and AllocatorDAOs. </p>
+
 
 
           </div>
