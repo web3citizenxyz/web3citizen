@@ -112,3 +112,31 @@
   text-decoration: none; 
   font-weight: bold;
 }
+
+
+
+.cycleSection {
+  margin-top: 20px;
+}
+
+.toggleText {
+  cursor: pointer;
+  font-size: 16px;
+
+  margin: 10px 0;
+  color: #F1EAE1;
+  transition: color 0.3s;
+}
+
+.toggleText:hover {
+  color: #555;
+}
+
+.cycleImage {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}

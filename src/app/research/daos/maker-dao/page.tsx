@@ -1,9 +1,14 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './ArticleLayout.module.css';
 
 const Article = () => {
+  const [showWeekly, setShowWeekly] = useState(false);
+  const [showMonthly, setShowMonthly] = useState(false);
+
+  const toggleWeekly = () => setShowWeekly(!showWeekly);
+  const toggleMonthly = () => setShowMonthly(!showMonthly);
   return (
       <div className={styles.articleContainer}>
           <div className={styles.menuContainer}>
@@ -115,7 +120,7 @@ const Article = () => {
             <p>The new framework functions within The Scope Artifact, a designed mechanism to align actions and incentives of participants within a specific scope defined by the Atlas - a constitution-like foundational set of rules.</p>
            <p>Voting will be arranged by committees of voters, with delegates representing their interests, strategies, and Endgame's "universal alignment."</p>
 
-</div>
+             </div>
 
 <div id="section10" className={styles.section}>
   <p className={styles.titleBlack}>SubDAOs</p>
@@ -124,14 +129,159 @@ const Article = () => {
   <p><strong>Only the members of these SubDAOs will have complete control over decision-making by using the subDAO-specific token.</strong></p>
   <p>Each DAO will have its own tokenomics, vault and will be in charge of its front end. Thus, MakerDAO will transition into a multi-token system. SubDAOs may pursue any objective they wish and hunt down profit-generating activity.</p>
   <img src="/images/subdaos-maker.jpg" alt="SubDAOs" className={styles.benefitsImage} /> 
-   </div>
-<p>Endgame will introduce two types of SubDAOs: FacilitatorDAOs and AllocatorDAOs. </p>
+  
+  <p>Endgame will introduce two types of SubDAOs: FacilitatorDAOs and AllocatorDAOs. </p>
+<ul>
+  <li><strong>FacilitatorDAOs:</strong> Internal process executors in charge of the administrative side and organize MakerDAO, AllocatorDAOs, and MiniDAOs.</li>
+  <p></p>
+<li><strong>AllocatorDAOs:</strong> A DAO focused on product and growth. They can generate DAI, operate decentralized frontends, and incubate MiniDAOs - groups working on an innovative project or idea. SparkDAO is the most developed Maker Allocator subDAO, which owns and manages Spark protocol.</li>
+</ul>
+<p>So far Spark, Sakura, Qualitative and the Quantitative SubDAOs are in their final stages of establishment. In October 16 2023, the Spark subDAO began airdropping two billion SPK, the governance token for SparkDAO, to eligible holders of $DAI. You can learn more about Spark and how to get involved  <Link href="https://app.spark.fi/" target='_blank'>
+      <span className={styles.link}  >here.</span>
+        </Link></p>
+        <Link href="https://docs.spark.fi/governance/sparkdao" target='_blank'>
+      <p className={styles.link}  >All subDAOs are expected to launch around May 2024.</p>
+        </Link>
+  
+  
+  </div>
+  <div id="section11" className={styles.section}>
+  <p className={styles.titleBlack}>Aligned Voter Committee</p>
+  <p>The voter committee is made up of a group of MKR holders who coordinate to analyze the best voting behavior following a particular strategy. They:</p>
+  <ul>
+    <li>Publicly coordinate political positioning with other Voter Committees and voting blocs to reach compromises.</li>
+    <li>Ensure day-to-day rules align with the spirit of regulations.</li>
+  </ul>
+<p>AVCs are subject to specific requirements enforced by the Governance Scope and receive various benefits, resources, and support from the Support Scope.</p>
+    </div>
 
+    <div id="section12" className={styles.section}>
+    <p className={styles.titleBlack}>Aligned Delegates</p>
+    <p>Aligned Delegates use the Protocol Delegation System to represent MKR holders through their MKR voting power while earning Governance Participation Rewards. Delegates may be part of a AVC.</p>
+    <p>The most essential task of ADs is to use their power to protect the spirit of the Atlas and maintain the Universal Alignment of the Maker Ecosystem.</p>
+      </div>
 
+      <div id="section13" className={styles.section}>
+      <h2 className={styles.sectionSubtitle}>Governance Proposals</h2> 
+      </div>
+      <div id="section14" className={styles.section}>
+    <p className={styles.titleBlack}>Endgame MIP</p>
+    <p>MIPs regulate the behavior of Maker Governance and the Maker Protocol. As established in MIP0c2, all MIPs except Endgame MIPs were made obsolete.</p>
+    <p>Endgame MIPs are designated explicitly in MIP0c2 to remain active after the Maker Constitution has come into effect. Endgame MIPs follow the same monthly governance process as regular MIPs.</p>
+    <p><strong>MIPs phases</strong></p>  
+    <ol>
+      <li>Request For Comments submission.</li>
+      <li>Inclusion and Governance Poll - week 2 and 3 are dedicated to polls and their reviews.</li>
+      <li>Executive Vote - seven-day voting period.</li>
+    </ol>
+      </div>
+
+      <div id="section15" className={styles.section}>
+      <h2 className={styles.sectionSubtitle}>Governance Process and Mechanisms</h2>  
+      <p>The monthly governance cycle framework allows for both active and less active token holders to participate. Active participants can engage in discussions at the proposal submission stage, while those who are less active can review the discussion after it closes at the end of the month.</p>
+       <p>Token holders directly manage the system by:</p>
+       
+      <ul>
+        <li><strong>Governance Polling:</strong> Governance Polls establish a soft consensus and measure community sentiment through time-based voting.</li>
+       <p></p>
+        <li><strong>Executive Voting</strong> enacts hard changes to the Protocol when passed through continuous approval voting.</li>
+      </ul>
+
+      <img src="/images/approved.png" alt="Approved Governance" className={styles.benefitsImage} /> 
+        </div>
+         
+        <div id="section16" className={styles.section}>
+        <p className={styles.titleBlack}>Voting Power</p>
+        <p>Voting power 1 MKR token = 1 vote</p>
+        <ul>
+          <li>As delineated in MakerDAO's <Link href="https://makerdao.com/en/whitepaper/#abstract" target='_blank' className={styles.link} >white paper</Link>, MKR voting weight is proportional to the amount of MKR a voter stakes in the voting contract. In other words, the more MKR tokens locked in the contract, the greater the voter's decision-making power.</li>
+         <p></p>
+          <li>More than 300 addresses delegate 15.16% of MKR.</li>
+         <p></p>
+          <li><Link href="https://makerburn.com/#/expenses/core-units/DELEGATES" target='_blank' className={styles.link} >The current payout</Link> is about $120k per month in total.</li>
+       
+        </ul>
+        <img src="/images/system-maker.png" alt="System Info" className={styles.benefitsImage} /> 
 
           </div>
+         
+
+         <div id="section17" className={styles.section}>
+        <p className={styles.titleBlack}>Voting Process</p> 
+        <p>Both weekly and monthly cycles are expected to still be in place after Endgame.</p>
+        <div className={styles.cycleSection}>
+        <p onClick={toggleWeekly} className={styles.toggleText}>
+          {showWeekly ? "▼ Weekly Governance Cycle" : "▶ Weekly Governance Cycle"}
+        </p>
+        {showWeekly && (
+          <img 
+            src="/images/weekly.png" 
+            alt="Weekly Governance Cycle" 
+            className={styles.cycleImage} 
+          />
+        )}
+
+        <p onClick={toggleMonthly} className={styles.toggleText}>
+          {showMonthly ? "▼ Monthly Governance Cycle" : "▶ Monthly Governance Cycle"}
+        </p>
+        {showMonthly && (
+          <img 
+            src="/images/montly.png" 
+            alt="Monthly Governance Cycle" 
+            className={styles.cycleImage} 
+          />
+        )}
+      </div> 
+      </div>
+        
+
+      <div id="section18" className={styles.section}>
+      <p className={styles.titleBlack}>Governance Participation</p>
+      <p>The participation in $MKR has decreased from 198,842 in January 2023 to 166,810 MRK at present.</p>
+      <img src="/images/participation-maker.png" alt="Governance participation" className={styles.benefitsImage} /> 
+      <p>Learn the voting process and keep track of the current delegates here.</p>
+
+      </div>
+      <div id="section19" className={styles.section}>
+      <h2 className={styles.titleBlack}>The future steps of Endgame via Rune Christensen</h2> 
+      <p ><strong>Phase 1: Beta Launch (EOY)</strong></p>
+      <p>A new unified brand will be established, together with a new stablecoin and governance token separate from DAI and MKR. This phase will lay the groundwork for the future growth of Maker.</p> 
+      <p><strong>Phase 2: SubDAO Launch</strong></p>
+      <p>Six Maker subDAOs will be established, each with its own governance tokens. 
+      These subDAOs have been designed to operate autonomously from Maker. Their mission is linked to the protocol, but they will explore and focus on specific products or services. This aims to encourage participation through gamification.</p>
+      <p ><strong>Phase 3: Governance AI tools launch</strong></p>
+      <p>These open source tools will improve "Alignment Artifacts," guiding the governance experience and enhancing processes over time without needing a centralized leadership.
+      AI tooling will enable making decisions quicker, and if things turn dire, subDAOs insulate impact from the rest of the governance framework.</p>
+      <p ><strong>Phase 4: Governance participation incentive launch</strong></p>
+      <p>Phase 4 addresses voter apathy by implementing voting incentives through the Sagittarius Lockstake Engine.
+      Token holders can lock their tokens behind a high exit fee without a specific time frame. Lockstaking provides value to the user through token rewards and to Maker, generating long-term incentivized alignment. Lockstaking also requires delegating governance tokens, choosing a delegate and a strategy.</p>
+
+
+        </div>
+
+
+        <div id="section20" className={styles.section}>
+        <p className={styles.titleBlack}>Endgame’s Tokenomics updates</p>
+        <p>The Endgame Plan has several major tokenomics updates.</p>
+        <ul>
+          <li>It modifies the MKR burn mechanism. The protocol uses profits to purchase liquidity pool tokens, representing liquidity pools holding various combinations of MKR, Dai, and SubDAO governance tokens. These token purchases aim to ensure the alignment of interests between Maker Core and SubDAOs. The accumulated liquidity pool tokens are used to buy and burn MKR at suitable opportunities.</li>
+          <li>Annual MKR minting will be used to incubate SubDAOs, fund AVCs, and incentivize the workforce. These emissions counteract the burn mechanism and reduce the likelihood of MKR becoming concentrated in the hands of large holders.</li>
+          <li>Users may lock up their MKR in a new module but continue to use it to participate in governance. Such locked-up MKR is eligible for Dai and SubDAO token farming rewards. When users wish to unlock their MKR from this module, a percentage of their initial deposit is burned.</li>
+        </ul>
+        <p>With tokenomics updates, Maker Governance no longer guarantees that MKR will function as a backstop if Maker becomes insolvent. Governance may instead choose to adjust the Target Price of Dai, which would result in a loss in value for DAI holders.</p>
+          </div>
+
+
+          <div id="section21" className={styles.section}>
+          <h2 className={styles.sectionSubtitle}>Contribution Pathways</h2>  
+          <p>As Endgame continues to develop, the ways to be able to contribute to MakerDAO will be clarified.</p>
+          <p>Once sub-DAOs are fully launched, governance bodies and representatives are established, and Governance AI tools are developed, Phase 4 will introduce compensation and voting incentives for token holders through Lockstaking.</p>
+          <p>More details about these incentives are still developing.</p>
+            </div>
+         </div>
       </div>
   );
 };
+
 
 export default Article;
