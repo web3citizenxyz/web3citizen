@@ -92,7 +92,7 @@
   align-items: center;
   position: relative;
   height: 700px; 
- margin-top: 300px;
+ margin-top: 100px;
   margin-left: 110px;
   overflow: hidden;
   z-index: 1000; 
@@ -125,7 +125,7 @@
 }
 
 .carousel {
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 

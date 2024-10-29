@@ -57,11 +57,11 @@ export default function Learn () {
             >
 
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/research/grants" className={styles.card}>
-        <h2>Grants
+    <a href="/research/zk/articles/zk-101" className={styles.card}>
+        <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Find grants to fund your projects within Ethereum</p>
+        <p>Your initial guide to Zero Knowledge Proofs</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
@@ -88,11 +88,11 @@ export default function Learn () {
     </SwiperSlide>
    
     <SwiperSlide className={styles.swiperSlide}>
-    <a href="/research/grants" className={styles.card}>
-        <h2>Grants
+    <a href="/research/zk/articles/zk-101"className={styles.card}>
+        <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Find grants to fund your projects within Ethereum</p>
+        <p>Your initial guide to Zero Knowledge Proofs</p>
       </a>
     </SwiperSlide>
  

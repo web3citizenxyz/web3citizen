@@ -11,14 +11,14 @@ const researchTopics = [
     slug: "daos"
   },
   {
-    title: "Grants",
+    title: "EigenLayer",
     imgSrc: "/icons/category-2.svg",
-    slug: "grants"
+    slug: "eigenlayer",
   },
   {
-    title: "EigenLayer",
+    title: "ZK 101",
     imgSrc: "/icons/category-3.svg",
-    slug: "eigenlayer",
+    slug: "zk/articles/zk-101",
    
   },
  /*

@@ -16,7 +16,6 @@ import Footer from './Footer';
 type LayoutProps = {
   children: ReactNode;
 };
-
 export default function RootLayout({ children }: LayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -25,14 +24,7 @@ export default function RootLayout({ children }: LayoutProps) {
   const [introFinished, setIntroFinished] = useState(false);
   const [navScrolled, setNavScrolled] = useState(false);
 
-
-
-
   const pathname = usePathname();
-
-
-   
-  
   const isBlackFooter = pathname === '/about';
 
   const toggleMenu = () => {
@@ -42,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps) {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
   };
@@ -51,65 +44,37 @@ export default function RootLayout({ children }: LayoutProps) {
     setSubmenuOpen(!submenuOpen);
   };
 
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+   
+      if (pathname === '/' && window.scrollY > 0) {
         setNavScrolled(true);
-      } else {
+        setNavDark(true); 
+      } else if (pathname === '/') {
         setNavScrolled(false);
-      }
-
-      if (pathname === '/' && window.scrollY < window.innerHeight) {
-        setNavDark(false);
+        setNavDark(false); 
       } else {
-        setNavDark(true);
+        
+        setNavScrolled(window.scrollY > 0);
       }
     };
-
+  
 
     window.addEventListener('scroll', handleScroll);
-
-
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setNavDark(true);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const observerLight = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setNavDark(false);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-    
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
-
     };
   }, [pathname]);
-
+  
   useEffect(() => {
     if (pathname === '/') {
-      setNavDark(false);
+      setNavDark(false); // Estado inicial claro en el home
     } else {
-      setNavDark(true);
+      setNavDark(true); // Estado oscuro en todas las otras páginas
     }
   }, [pathname]);
-
-
+  
   return (
   <html lang="en">
     <head>
@@ -170,7 +135,7 @@ export default function RootLayout({ children }: LayoutProps) {
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
   */}
               </Link>
-              <a href="/news" className={styles.navItem} onClick={closeMenu}>NEWS 
+              <a href="/research/grants" className={styles.navItem} onClick={closeMenu}>GRANTS
 
                {/*
               <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
