@@ -9,8 +9,9 @@ export default function Team() {
     { src: "/images/profile-1.jpg", twitter: "https://twitter.com/eugelikeeugenia" },
     { src: "/images/profile-2.png", twitter: "https://twitter.com/ocandocrypto" },
     { src: "/images/profile-3.jpeg", twitter: "https://twitter.com/0xpili_" },
-    { src: "/images/javi-profile.jpg", twitter: "https://x.com/Javibufon" },
+ 
     { src: "/images/perfil-4.jpg", twitter: "https://x.com/oxlumi" },
+    { src: "/images/javi-profile.jpg", twitter: "https://x.com/Javibufon" },
  
   ];
   useEffect(() => {

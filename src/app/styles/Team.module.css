@@ -92,8 +92,6 @@
   position: relative;
   height: 850px; 
   margin-right: 150px;
-
-
   z-index: 1;
   perspective: 1000px; 
 
@@ -119,7 +117,7 @@
 
 .carouselItem.active {
   opacity: 1;
-  transform: scale(1) rotateX(0); /* Imagen activa sin rotación para resaltar */
+  transform: scale(1) rotateX(0);
   filter: blur(0);
 }
 
