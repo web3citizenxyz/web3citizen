@@ -4,7 +4,7 @@
 
 .gradientLine {
   width: 100%;
-  height: 20px; /* Ajusta la altura según sea necesario */
+  height: 20px; 
   background: linear-gradient(to top, 
                               rgba(43, 44, 58, 1) 0%, 
                               rgba(43, 44, 58, 0.75) 25%, 
@@ -452,4 +452,80 @@ display: none;
   .main {
     padding: 40px 0;
   }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1450px){
+
+  .welcomeIntro h1 {
+    font-family: 'Montserrat';
+    font-size: 90px ;
+    width: 70%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  
+  }
+  .line { 
+    position: relative;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2B2C3A;
+    margin-left:0px;
+    margin-top: 12.3%;
+  
+    width: 1020px;
+  }
+
+
+}
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación vertical */
+@media only screen and (min-width: 811px) and (max-width: 1024px) and (orientation: portrait) {
+  .welcomeIntro h1 {
+    font-family: 'Montserrat';
+    font-size: 80px ;
+    width: 70%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  
+  }
+
+  .line { 
+    position: relative;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2B2C3A;
+    margin-left:-15px;
+    margin-top: 12%;
+  
+    width: 935px;
+  }
+}
+
+
+
+
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación horizontal */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  
+  .welcomeIntro h1 {
+    font-family: 'Montserrat';
+    font-size: 80px ;
+    width: 70%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  
+  }
+  .line { 
+    position: relative;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2B2C3A;
+    margin-left:-15px;
+    margin-top: 12%;
+  
+    width: 935px;
+  }
+
 }

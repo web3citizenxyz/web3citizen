@@ -77,11 +77,11 @@
   .card {
     background-image: url('/images/cards-gradients.png'); 
     background-size: cover; 
-    background-position: center; /* Centra la imagen en la tarjeta */
+    background-position: center; 
     background-repeat: no-repeat;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px 1px; 
+    padding: 10px;  
     width: 275px;
     height: 300px;
     margin: 5px;
@@ -93,18 +93,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+ 
   
   }
   .card h2 {
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 22px;
+
 
   }
   .card p {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px ;
   }
 
 
@@ -113,7 +114,7 @@
     width: 10px;
     height: 2px; 
     background-color: #e5e5e5; 
-    margin-bottom:  -15px; 
+    margin-bottom:  0px; 
   }
 
 
@@ -216,6 +217,10 @@
         height: 300px;
       
       }
+
+      .card p {
+        font-size: 18px;
+      }
     
       .buttonWrapper {
         bottom: 50px;
@@ -286,6 +291,10 @@
       height: 300px; 
     
     }
+
+    .card p {
+      font-size: 18px;
+    }
   
     .buttonWrapper {
     
@@ -337,3 +346,38 @@
         right: 20px;
       } 
     }
+
+
+
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación vertical */
+@media only screen and (min-width: 820px) and (max-width: 1024px) and (orientation: portrait) {
+  
+  .learnelipse {
+  
+    width: 100%;
+   max-width: 700px;
+   margin-left: 0px;
+    margin-top: 30%;
+    
+  } 
+
+  .rightSection {
+    width: 70%;
+  
+  }
+
+  .card {
+  
+    width: 205px;
+    height: 220px;
+  
+  } 
+
+
+}
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación horizontal */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+}

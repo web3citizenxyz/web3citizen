@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from './ArticleLayout.module.css';
+import styles from '../ArticleLayout.module.css';
 import Link from 'next/link';
 const Article = () => {
   return (

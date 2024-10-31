@@ -105,15 +105,17 @@
 
 .link {
   color: inherit; 
-  text-decoration: underline; 
+  font-weight: 700;
+
 }
 
 .link:hover {
-  text-decoration: none; 
-  font-weight: bold;
+  text-decoration: underline; 
+ 
 }
+
 
 .a {
   color: gray;
-  text-decoration: underline;
+
 }

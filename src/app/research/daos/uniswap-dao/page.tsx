@@ -1,152 +1,186 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import styles from './ArticleLayout.module.css';
+import styles from '../ArticleLayout.module.css';
 
 const Article = () => {
   return (
       <div className={styles.articleContainer}>
           <div className={styles.menuContainer}>
               <ul className={styles.menu}>
-                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Arbitrum</a></li>
-                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>AIP-1</a></li>
-                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Arbitrum DAO Governance</a></li>
-                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
-                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
-                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
-                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Voting Power</a></li>
-                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Process</a></li>
-                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Delays and Waiting Periods</a></li>
+                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Uniswap</a></li>
+                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>Uniswap Labs</a></li>
+                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Uniswap Foundation</a></li>
+                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Uniswap Governance</a></li>
+                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Governance Framework</a></li>
+                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Token-Holders</a></li>
+                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Governance Process</a></li>
+                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Metrics and Insights</a></li>
+                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Voting Process</a></li>
                   <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Contribution Pathways</a></li>
-                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Ambassadors Program</a></li>
-                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Grants</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Uniswap-Arbitrum Grant Program</a></li>
+                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Uniswap Grants</a></li>
+                  <li className={styles.menuItem}><a href="#section14" className={styles.menuLink}>Build on Uniswap</a></li>
+                  <li className={styles.menuItem}><a href="#section15" className={styles.menuLink}>Keep informed</a></li>
+
+
               </ul>
           </div>
           <div className={styles.contentContainer}>
               <div id="section1" className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Arbitrum</h2>
+                  <h2 className={styles.sectionTitle}>Uniswap</h2>
                   <div className={styles.quoteContainer}>
         <p className={styles.quote}>
-        <strong>Offchain</strong>Labs is a New York-based company building <strong>Arbitrum, Arbitrum One, and Nova</strong>, Layer 2 scaling solutions for Ethereum. Arbitrum launched on Mainnet on August 31, 2021, and on August 31, 2022, Arbitrum One and Nova upgraded to Nitro tech stack.
+          The <strong>Uniswap Protocol</strong>is a decentralized exchange and public good owned and governed by UNI token holders through Uniswap DAO.
         </p>
       </div>
-      <p>
-      In 2023, ArbitrumDAO was launched by airdropping $ARB, the ERC-20 governance token for Arbitrum Nova and Arbitrum One. The $ARB token allows holders to participate in the Arbitrum DAO's on-chain governance protocol by controlling protocol updates, funds and electing ArbitrumDAO’s Security Council.
-   </p>
-   <p>This transfer of power included:</p>
-   <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Control of the upgradeability and technical future of the chains</strong></li>
-            <li className={styles.listItem}><strong>Control over the DAO treasury and net fee revenue - i.e., the net difference between fees collected by on-chain operations and L1 fees paid by the Sequencer</strong></li>
-            <li className={styles.listItem}><strong>All Arbitrum social media platforms and accounts</strong></li>
-        
-            <li className={styles.listItem}><strong>Ability to elect and, if deemed appropriate, remove the Security Council and Directors</strong></li>
-            </ul> 
+         </div>
 
 
+         <div id="section2" className={styles.section}>
+                  <p className={styles.titleBlack
 
-              </div>
-
-
-              <div id="section2" className={styles.section}>
-                  <h2 className={styles.sectionSubtitle}>AIP-1</h2>
-                  <p className={styles.paragraph}>The Arbitrum Foundation submitted the AIP-1 proposal to delineate ArbitrumDAO's structure and governance rules. The community raised several transparency, accountability, and decentralization concerns. </p>
-                  <p className={styles.paragraph}>Most importantly:</p>
-                  <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>The allocation of 1B dollars worth of tokens (7.5% of the total supply) to the Foundation's Administrative Budget Wallet. The Foundation needed to clarify who would sign for that wallet and how its money would be spent.</strong></li>
-            <li className={styles.listItem}><strong>The Security Council establishment did not clarify any election process.</strong></li>
-            </ul> 
-             <p className={styles.paragraph}>The Foundation had begun selling $ARB tokens for stablecoins before its governance community of token holders had "ratified" the organization's nearly $1 billion budget.</p>
-             <p className={styles.paragraph}>AIP-1 did not pass. After AIP-1’s communication received negative feedback, the Foundation rectified decisions through AIP-1.1 Lockup, Budget, Transparency, where they clarified their processes and the next steps in the governance journey to the community.</p>
-            <p className={styles.paragraph}>ArbitrumDAO has quickly become one of the most engaged communities, with more than 633.43k token holders and 137.02k voters.</p>
+                  }>Uniswap Labs</p>
+             
+             <p className={styles.paragraph}>Uniswap Labs initially developed the Uniswap Protocol and the Uniswap Interface. The Uniswap Protocol is an open-source protocol that provides liquidity and trading ERC20 tokens on Ethereum. The DEX is available on multiple blockchains.</p>
+            <p className={styles.paragraph}>After delegating governance to the DAO, it now focuses on building products to support the Uniswap Ecosystem, such as <Link href="https://blog.uniswap.org/uniswapx-protocol" target='_blank' className={styles.link}>
+            Uniswap X. </Link> </p>
            
-              </div>
+         </div>
            
-              <div id="section3" className={styles.section}>
-                  <h2 className={styles.sectionSubtitle}>Arbitrum DAO Governance</h2>
-                  </div>
-                  <div id="section4" className={styles.section}> 
-                  <p className={styles.titleBlack}>Governance Framework </p>
-                  <img src="/images/gob-frame-arb.avif" alt="Benefits of DAO frameworks" className={styles.benefitsImage} />
-                  <p className={styles.paragraph}>
-        <Link href="https://docs.arbitrum.foundation/foundational-documents/transparency-report-initial-foundation-setup" target='_blank'>
-          <p className={styles.link}>ArbitrumDAO's governance has three main bodies:</p>
-        </Link> 
-    </p>
-    <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>The DAO</strong>is comprised of $ARB holders who vote to pass proposals.</li>
-            <li className={styles.listItem}><strong>The Security Council</strong>  can take action in two ways:
-            <ul className={styles.orderedList}>
-                
-            <li className={styles.listItem}>Emergency actions: 9 of 12 multisig enables fast action in an emergency.</li>  
-            <li className={styles.listItem}>Non-emergency actions:  7 of 12 multisig enables action for routine upgrades that bypass the need for DAO member voting</li> 
-            <li className={styles.listItem}>The Security Council has the power to cancel or block proposals.</li></ul> 
-            </li>
-            <li>Data Availability Committee: This committee stores data batches for transactions on the Arbitrum Nova chain on a specific server  <Link href="https://developer.arbitrum.io/das/daserver-instructions" target='_blank'>
-          <p className={styles.link}>(Data Availability Server)</p>
-        </Link> </li>
-            </ul> 
-           <p className={styles.paragraph}>Establishing the Arbitrum Foundation marked the initial phase of launching the DAO. Its primary objective is to serve the ArbitrumDAO community by guiding and facilitating the DAO’s decision-making. It also fosters the ecosystem development.</p>
-           <p className={styles.paragraph}>Governance is responsible for the following assets:</p>
-           <ul className={styles.orderedList}>
-                
-                <li className={styles.listItem}>Treasury - DAO holds and is responsible for a portion of $ARB tokens.</li>  
-                <li className={styles.listItem}>Arb One Contracts and Arb Nova Contracts - Governance holds upgradability rights over these contracts on these contracts deployed on Ethereum Mainnet.</li> 
-                <li className={styles.listItem}>Arb One and Arb Nova L2 parameters - All Arbitrum chains have a chain "owner" that can set specific parameters. Read more here. Governance has control over the chain owner.</li>
-                <li className={styles.listItem}>Governance contracts - Governance can upgrade and modify itself.</li>
-                <Link href="https://github.com/ArbitrumFoundation/governance/blob/main/docs/foundation-vesting-wallet.md" target='_blank'>
-                <li className={styles.link}>Arbitrum Foundation Administrative Budget Wallet — See here for more info.</li>
-             </Link>
-                </ul> 
+         <div id="section3" className={styles.section}>
+                  <p className={styles.titleBlack}>Uniswap Foundation</p>
+                  <p>The Uniswap Foundation is a non-profit organization established in 2022. Its primary objective is to promote the expansion, decentralization, and longevity of DeFi. The Uniswap community (DAO) granted funding for the Foundation after endorsing a community [governance proposal](https://app.uniswap.org/#/vote/2/24).
+                  The Uniswap Foundation operates independently from other entities within the Uniswap ecosystem, including Uniswap Labs.</p>
+         </div>
+
+        <div id="section4" className={styles.section}> 
+                  <h2 className={styles.sectionSubtitle}>Uniswap Governance </h2>
+                  <p>The Uniswap DAO is responsible for managing the development of Uniswap and its ecosystem. Its governance is facilitated through the UNI token.</p>
+                  <img src="/images/uniswap-dao.jpg" alt="Wniswap DAO" className={styles.benefitsImage} />
  
-                <p className={styles.paragraph}>Governance specifications and details can be found in the
-                <Link href="https://docs.arbitrum.foundation/dao-constitution" target='_blank'>
-                <span className={styles.link}>   Constitution.</span>
-                </Link>
-                </p> 
                   </div>
 
-                  <div id="section5" className={styles.section}> 
-                  <h2 className={styles.sectionSubtitle}>Governance Proposals</h2> 
-                  <p className={styles.titleBlack}>Arbitrum Improvement Proposals</p>
-                  <p>An <strong> Arbitrum Improvement Proposal (AIP)</strong>is submitted by a member of the Arbitrum DAO to modify to the Arbitrum ecosystem</p>
-                  <p>There are two types of AIPs:</p>
-                  <ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Constitutional AIPs</strong> change the text or procedures of the Constitution or AIP-1, install or modify the software on any chain, or take any action that requires "chain owner" permission.</li>
-            <li className={styles.listItem}><strong>Non-constitutional AIPs</strong> are all other AIPs, such as those that request funds/grants or provide general guidelines or information to the community.</li>
-            </ul>
-    
-              </div>
-              <div id="section6" className={styles.section}> 
-              <p className={styles.titleBlack}>Security Council Actions</p>
-            <p>The<strong> Security Council</strong> has the power to execute emergency actions and non-emergency actions. These differ from traditional AIPs because the Security Council can approve them without going through the above process</p>
+         <div id="section5" className={styles.section}> 
+         <p className={styles.titleBlack}>Governance Framework</p> 
+         <p>The DAO operates on a simple framework, where the token holders cast their votes on the proposals submitted to them. Token-holders are the only essential players in the governance structure.</p>
+           </div>
+
+       <div id="section6" className={styles.section}> 
+       <p className={styles.titleBlack}>Token-Holders</p>
+       <p>UNI holders ensure that governance decisions comply with applicable laws and regulations.</p>
+       <p>They have ownership of:</p>
+       <ul className={styles.orderedList}>
+            <li className={styles.listItem}>Uniswap governance</li>
+            <li className={styles.listItem}>UNI community treasury</li>
+            <li className={styles.listItem}>The protocol fee switch</li>
+            <li className={styles.listItem}>All subnames</li>
+            <li className={styles.listItem}>Uniswap Default List (tokens.uniswap.eth)</li>
+            <li className={styles.listItem}><Link href="https://twitter.com/Uniswap/status/1126506339075641344?s=20" target='_blank' className={styles.link}>SOCKS</Link> liquidity tokens</li> 
+                   </ul>
+       </div>
+
+
+      <div id="section7" className={styles.section}> 
+      <p className={styles.titleBlack}>Governance Proposals</p>
+      <p>The Uniswap DAO executes decisions on-chain through a Compound Governor Bravo smart contract. Any addresses with over 2.5M UNI (0.25% of total supply) delegated to it may propose governance actions containing executable code</p>
+      <p>Proposals within Uniswap DAO can include:</p>
+      <ul>
+  <li>Deployments of the Protocol onto new chains</li>
+  <p></p>
+  <li>Funding programs</li>
+  <p></p>
+  <li>Creating new governance bodies</li>
+  <p></p>
+  <li>Modifying governance mechanisms</li>
+</ul>
+
+
+<p>A proposal is approved if it obtains the following:</p>
+<ul>
+  <li>Simple Majority (i.e., more 'for' votes than 'against.')</li>
+  <p></p>
+  <li>Quorum, measured as a fixed amount of positive votes. In V3 governance, the quorum amount was increased to require proposals obtaining over 40M 'for' votes.</li>
+</ul>
+
+
+<p>Current proposals can be found on <Link href="https://www.tally.xyz/gov/uniswap" target='_blank' className={styles.link}>Tally </Link> and   <Link href="https://vote.uniswapfoundation.org/" target='_blank' className={styles.link}>Uniswap Agora.</Link></p>
 </div>
-<div id="section7" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Governance Process and Mechanisms</h2> 
-</div>
+
+
+
 <div id="section8" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Voting Power</h2> 
-<p>The Arbitrum DAO may be new, but it has already gained a large and active community. With over 633.43k token holders and 137.02k voters, members are dedicated to advancing the goals of the Arbitrum Mission and the Ethereum ecosystem.</p>
+<p className={styles.titleBlack}>Governance Process</p>
+<p><strong>Voting Metrics an Insights</strong></p>
+<ul>
+  <li>19% participation in on chain voting and a 97% on chain proposal passing rate. </li>
+  <p></p>
+  <li>The amount of voter participation on proposals has <Link href="https://dune.com/butterd/uniswap-governance-power-structurel" target='_blank' className={styles.link}> rarely surpassed 5K since April 2023.</Link></li>
+  <p></p>
+  <li>Voting power cast per proposal shows that <Link href="https://dune.com/butterd/uniswap-governance-power-structure" target='_blank' className={styles.link}>voting power participation per proposal is fairly consistent.</Link></li>
+  <p></p>
+  <li>Currently, <Link href="https://sybil.org/#/delegates/uniswap" target='_blank' className={styles.link}> 33 addresses</Link> hold enough voting power delegated to create governance proposals.</li>
+</ul>
+
+<p>To understand voting power distribution in Uniswap DAO, we can look at the share of total voting power geld by the top addresses. Currently, the top 5 and top 10 addresses hold 21% of total voting power respectively.</p>
+
+<img src="/images/voting-uniswap.jpg" alt="Uniswap Voting" className={styles.benefitsImage} />
+<p>Delegation platforms update delegate’s supported proposals so the community can choose who to delegate to.</p>
 </div>
+
+
+
 <div id="section9" className={styles.section}> 
-<h2 className={styles.sectionSubtitle}>Voting Process</h2> 
-<p>For proposals not enacted by The Security Council:</p>
-<p className={styles.titleBlack}>Step 1: Temperature check using Snapshot Poll</p>
-<p>This preliminary vote gauges the community's interest in a proposal before it moves on to the next stage.</p>
-<p className={styles.titleBlack}>Step 2: Submit your on-chain proposal using Tally</p>
-<p>To submit a proposal you need to have an Ethereum Wallet Address representing at least 1,000,000 tokens. </p>
-<p>Today, 19 delegates can submit on-chain proposals to the Arbitrum DAO ecosystem. </p>
-<p>To be approved, more than 50% of tokens must have voted in favor of the proposal:</p>
-<ul className={styles.orderedList}>
-            <li className={styles.listItem}><strong>Constitutional AIPs</strong> must receive votes from at least 5% of all votable tokens; </li>
-            <li className={styles.listItem}><strong>Non-constitutional</strong> AIPs must receive votes from at least 3% of all votable tokens.</li>
-            </ul>
-<p>The entire AIP voting process typically takes 34 days for Constitutional or 21 days for Non-Constitutional AIPs. </p>
-<img src="/images/dao-vote.webp" alt="DAO vote" className={styles.benefitsImage} />
+<p className={styles.titleBlack}>Voting Process</p>
+<ol>
+<li><strong>Request for comment:</strong>  A quorum must be reached on the temperature check of at least 10M UNI ‘for’ votes to move onto Phase 3.</li>
+<p></p>
+<li><strong>Snapshot temperature check:</strong> A quorum must be reached on the temperature check of at least 10M UNI ‘for’ votes to move onto Phase 3.</li>
+<p></p>
+<li><strong>Governance proposal:</strong> Create the proposal through an interface (on Uniswap 93, Tally 21, or Boardroom 24) or through writing the calldata. Submit the proposal or get someone with the necessary submission threshold to submit it for you.</li>
+<p></p>
+<li><strong>Voting and execution: </strong> The proposal undergoes a two-day waiting period and then a seven-day voting period. If a proposal passes the final on chain vote it is queued in a timelock contract, where the proposed changes can be executed after a 2-day delay</li>
+</ol>
 
+<p>Read more about the current governance process <Link href="https://gov.uniswap.org/t/community-governance-process-update-jan-2023/19976" target='_blank' className={styles.link}> here.</Link></p>
+<img src="/images/voting-process.jpg" alt="Voting Process" className={styles.benefitsImage} />
+</div>
+
+<div id="section10" className={styles.section}> 
+<h2 className={styles.sectionSubtitle}>Contribution Pathways</h2>
+<p>Uniswap conducts a series of grants through the Uniswap Foundation and partnerships with other ecosystems</p>
 </div>
 
 
+<div id="section11" className={styles.section}> 
+  <p className={styles.titleBlack}>Uniswap-Arbitrum Grant Program</p>
+  <p>This 6-month grant program aims to advance projects that build exclusively on the Uniswap-Arbitrum ecosystem. Learn more about the program and how to apply  <Link href="https://www.notion.so/Uniswap-Arbitrum-Grant-Program-UAGP-1c1e8b33bc60436993dd65e37d022f9d?pvs=4" target='_blank' className={styles.link}> here.</Link></p>
+  </div>
+  <div id="section12" className={styles.section}> 
+  <p className={styles.titleBlack}>Uniswap Grants</p> 
+  <p>Uniswap funds proposals through:</p>
+  <ul>
+    <li><strong>Grants RFPs</strong>, where the Foundation gathers pain points and funds submitted ideas and initiatives.</li>
+    <li><strong>Grants Program</strong>, where the Foundation allocates funds to public goods from contributors on a rolling basis. Currently, Uniswap is exploring long-term grants and will be launching new funding initiatives in early 2024.</li>
+  </ul>
+  </div>
+
+
+  <div id="section13" className={styles.section}> 
+  <p className={styles.titleBlack}>Build on Uniswap</p> 
+  <p>Learn through its <Link href="https://www.uniswapfoundation.org/hacker-home" target='_blank' className={styles.link}> various resources </Link> for hackers and start building on Uniswap.</p>
+    </div>
+
+    <div id="section14" className={styles.section}> 
+  <p className={styles.titleBlack}>Keep informed</p> 
+  <p>Read what’s new on Uniswap on<Link href="https://www.reddit.com/r/UniSwap/" target='_blank' className={styles.link}> Reddit </Link>,
+  <Link href="https://gov.uniswap.org/" target='_blank' className={styles.link}> Forum</Link>,
+  <Link href="https://discord.com/invite/FCfyBSbCU5" target='_blank' className={styles.link}> Discord</Link>,
+  <Link href="https://twitter.com/UniswapFND" target='_blank' className={styles.link}> Twitter</Link>,
+  <Link href="https://github.com/Uniswap" target='_blank' className={styles.link}> Github</Link>,
+  <Link href="https://uniswapfoundation.mirror.xyz/" target='_blank' className={styles.link}> Uniswap Foundation’s blog. </Link></p>
+    </div>
           </div>
       </div>
   );

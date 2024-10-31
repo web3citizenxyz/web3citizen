@@ -3,26 +3,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
- 
   color: #E5E5E5;
-  padding: 60px 0px;
-  position: relative;
+
+  padding:  0px;
+  padding-bottom: 100px;
+ position: relative;
+
   z-index: 1;
   text-align: left;
- 
   background: linear-gradient(to top, #050706, #2b2c3a);
- 
-  
+  overflow: hidden; 
 }
 
-
 .team .content {
-
   padding-left: 80px;
   margin-top: 40px;
-  width: 50%;
-  margin-right: 300px;
-
+  width: 100%;
 
 }
 
@@ -33,6 +29,7 @@
   font-family: 'Montserrat';
   font-weight: 500;
   text-align: left;
+ 
 
 }
 
@@ -43,6 +40,7 @@
   font-family: 'Montserrat';
   text-align: left;
   margin-top: 0px;
+  max-width: 650px;
 }
 
 .btn  {
@@ -71,40 +69,45 @@
 
 .teamsvg {
   position: relative;
-  margin-top: -20px;
-
-
+  margin-top: -10px;
+ 
 
 }
 
 .elipseTeam {
-  width: 100%;
+
   width: 500px;
   position: absolute;
   top: 0%;
   z-index: -1; 
-  margin-left: -20%;
+  right: 0;
 }
+
+
 
 .carousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 700px; 
- margin-top: 100px;
-  margin-left: 110px;
-  overflow: hidden;
-  z-index: 1000; 
+  height: 850px; 
+  margin-right: 150px;
+
+
+  z-index: 1;
+  perspective: 1000px; 
+
 }
 
 .carouselItem {
-  width: 180px; 
+  width: 180px;
   height: 180px;
-  margin: 30px 0;
-
-  z-index: 1000;
-
+  margin: 20px 0;
+  opacity: 0.5;
+  transform: scale(0.9) rotateX(10deg);
+  filter: blur(2px);
+  transition: opacity 1s, transform 1s, filter 1s;
+  z-index: 10;
 }
 
 .carouselItem img {
@@ -116,17 +119,19 @@
 
 .carouselItem.active {
   opacity: 1;
-
+  transform: scale(1) rotateX(0); /* Imagen activa sin rotación para resaltar */
+  filter: blur(0);
 }
 
-@keyframes scroll {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+@keyframes moveUp {
+  0% { transform: translateY(20%); } /* Empieza un poco más arriba */
+  100% { transform: translateY(-80%); } /* Termina antes de salir del contenedor */
 }
 
 .carousel {
-  animation: scroll 20s linear infinite;
+  animation: moveUp 30s linear infinite; /* Ajuste continuo */
 }
+
 
 
 @media (max-width: 768px) {

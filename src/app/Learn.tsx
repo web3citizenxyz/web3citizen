@@ -41,10 +41,13 @@ export default function Learn () {
                   slidesPerView: 3,
                 },
 
-                768: {
-                 
-                  slidesPerView: 1,
+                820: {
+                  slidesPerView: 3,
                   spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 1, 
+                  spaceBetween: 1,
                 },
                 300:
                 {
@@ -61,7 +64,7 @@ export default function Learn () {
         <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Your initial guide to Zero Knowledge Proofs</p>
+        <p>Your initial guide<br></br> to Zero Knowledge<br></br> Proofs</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
@@ -92,13 +95,13 @@ export default function Learn () {
         <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Your initial guide to Zero Knowledge Proofs</p>
+        <p>Your initial guide<br></br> to Zero Knowledge<br></br> Proofs</p>
       </a>
     </SwiperSlide>
  
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/daos" className={styles.card}>
-        <h2>Daos</h2>
+        <h2>DAOs</h2>
         <span className={styles.dash}></span>
         <p>Learn about DAOs and their role in blockchain governance.</p>
       </a>

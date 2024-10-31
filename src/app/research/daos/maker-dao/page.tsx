@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from './ArticleLayout.module.css';
+import styles from '..ArticleLayout.module.css';
 
 const Article = () => {
   const [showWeekly, setShowWeekly] = useState(false);

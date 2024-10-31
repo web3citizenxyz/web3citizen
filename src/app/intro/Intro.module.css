@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  margin-top: 25%;
+  margin-top: 40%;
  
 }
 
@@ -33,9 +33,9 @@
   margin-bottom: 0;
 }
 .line {
-  margin-top: 30px;
+  margin-top: 0px;
   width: 0.5px;
-  height: 250px;
+  height: 80vh;
   background-color: #F1EAE1;
   transition: height 0.3s ease-out, width 2.5s ease-out, opacity 2s ease-out;
 
@@ -71,4 +71,49 @@
   };
 
   
+}
+
+/* Estilos para iPad Mini (7.9") */
+@media only screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+  .introContainer {
+    align-items: center;
+  }
+
+  .logoContainer {
+    margin-top: 50%; 
+  }
+
+  .line {
+    height: 50vh; 
+  }
+}
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación vertical */
+@media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+  .introContainer {
+    align-items: center; 
+  }
+
+  .logoContainer {
+    margin-top: 50%; 
+  }
+
+  .line {
+    height: 55vh;
+  }
+}
+
+/* Estilos para iPad Air (10.9") y iPad Pro (11" y 12.9") en orientación horizontal */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .introContainer {
+    align-items: center; 
+  }
+
+  .logoContainer {
+    margin-top: 50%; 
+  }
+
+  .line {
+    height: 60vh; 
+  }
 }
