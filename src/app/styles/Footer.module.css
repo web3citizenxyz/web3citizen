@@ -40,9 +40,13 @@
     transition: transform 0.3s ease; 
   }
   
+ 
+  
   .icon:hover {
     transform: scale(1.2); 
   }
+
+
   .scrollToTop {
     position: absolute;
     bottom: 20px;
@@ -50,6 +54,11 @@
     cursor: pointer;
   }
   
+  
+
+
+
+
   .arrowIcon {
     width: 30px;
     height: 30px;

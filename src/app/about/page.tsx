@@ -11,10 +11,13 @@ export default function About() {
       <header className={styles.header}>
         <h1 className={styles.headerTitle}>About</h1>
         <p className={styles.headerText}>
-          Welcome to Web3Citizen, your gateway to navigating the WEB3 universe. Our mission is to <span className={styles.highlight}>empower</span> our community by making complex concepts accessible.Through our research and aggregated resources, we break down the intricacies of crypto narratives, so you don't have to.
+      Welcome to<span className={styles.highlight}> Web3 Citizen</span> – your trusted gateway to navigating the Web3 universe.
         </p>
         <p className={styles.headerText}>
-        As a community-centered project, where we all <span className={styles.highlight}>contribute</span> to fostering innovation and <span className={styles.highlight}>expanding</span> our collective knowledge.
+        As a community-centered research collective, we gather around a shared mission: making complex concepts accessible. Through our reports and resources, our commitment is to expand collective knowledge by open sourcing our insights.
+        </p>
+        <p className={styles.headerText}>
+        Join us in our exploration of Ethereum’s infinite garden.
         </p>
       </header>
     </div>

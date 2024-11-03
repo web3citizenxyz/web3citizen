@@ -8,24 +8,28 @@ const Article = () => {
       <div className={styles.articleContainer}>
           <div className={styles.menuContainer}>
               <ul className={styles.menu}>
-                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Descentraland DAO</a></li>
-                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>AIP-1</a></li>
-                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Arbitrum DAO Governance</a></li>
-                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>Governance Framework</a></li>
-                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Gobvernance Proposals</a></li>
-                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>Security Council Actions</a></li>
-                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Governance Process and Mechanisms</a></li>
-                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Voting Power</a></li>
-                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Voting Process</a></li>
-                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Delays and Waiting Periods</a></li>
-                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Contribution Pathways</a></li>
-                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Ambassadors Program</a></li>
-                  <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Grants</a></li>
+                  <li className={styles.menuItem}><a href="#section1" className={styles.menuLink}>Decentraland </a></li>
+                  <li className={styles.menuItem}><a href="#section2" className={styles.menuLink}>Decentraland’s Governance</a></li>
+                  <li className={styles.menuItem}><a href="#section3" className={styles.menuLink}>Governance Framework</a></li>
+                  <li className={styles.menuItem}><a href="#section4" className={styles.menuLink}>DAO Committee</a></li>
+                  <li className={styles.menuItem}><a href="#section5" className={styles.menuLink}>Security Advisory Board</a></li>
+                  <li className={styles.menuItem}><a href="#section6" className={styles.menuLink}>SWearable Curation Committee</a></li>
+                  <li className={styles.menuItem}><a href="#section7" className={styles.menuLink}>Revocation Committee</a></li>
+                  <li className={styles.menuItem}><a href="#section8" className={styles.menuLink}>Governance Proposals</a></li>
+                  <li className={styles.menuItem}><a href="#section9" className={styles.menuLink}>Governance Process</a></li>
+                  <li className={styles.menuItem}><a href="#section10" className={styles.menuLink}>Voting Power</a></li>
+                  <li className={styles.menuItem}><a href="#section11" className={styles.menuLink}>Voting Process</a></li>
+                  <li className={styles.menuItem}><a href="#section12" className={styles.menuLink}>Governance Participation and VP</a></li>
+                 <li className={styles.menuItem}><a href="#section13" className={styles.menuLink}>Contribution Pathways</a></li>
+                 <li className={styles.menuItem}><a href="#section14" className={styles.menuLink}>Grants Program</a></li>
+                 <li className={styles.menuItem}><a href="#section15" className={styles.menuLink}>Bidding & tendering</a></li>
+
+
               </ul>
           </div>
           <div className={styles.contentContainer}>
               <div id="section1" className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Descentraland DAO</h2>
+                  <h2 className={styles.sectionTitle}>Descentraland</h2>
                   <div className={styles.quoteContainer}>
         <p className={styles.quote}>
         <strong>Offchain</strong>Labs is a New York-based company building <strong>Arbitrum, Arbitrum One, and Nova</strong>, Layer 2 scaling solutions for Ethereum. Arbitrum launched on Mainnet on August 31, 2021, and on August 31, 2022, Arbitrum One and Nova upgraded to Nitro tech stack.

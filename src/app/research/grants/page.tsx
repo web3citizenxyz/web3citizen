@@ -20,13 +20,13 @@ const grantsData = [
  { title: <>Decentraland<br /> Grants Program</>, href: "/research/grants/decentraland", category: ["Active", "Development", "Other", "Community"]  },
  { title: <>Ecosystem<br /> Support Program</>, href: "/research/grants/ecosystem", category:["Active", "Development", "Other", "DApps & tooling", "Community"] },
  { title: <>ENS<br />Small Grants</>,  href: "/research/grants/ens",  category: [ "Development", "Other", "Community"] },
- { title: <>Lido's LEGO</>, href: "/research/grants/lido", category:["Active", "Development", "Other", "Dapps & tooling"]},
+ { title: <>Lido's LEGO</>, href: "/research/grants/lido", category:["Active", "Development", "Other", "DApps & tooling" ]},
 
  { title: <>Optimism Foundation <br /> Missions (RFPs) </>, href: "/research/grants/op", category:["Active", "Other"]},
   { title: <>Optimism<br /> Partner Fund</>, href: "/research/grants/op-partner", category: ["Active", "Development"]},
   { title: <>Optimism<br /> Delegate Missions</>, href: "/research/grants/delegate", category: ["Active", "Development"]},
  /* { title: <>Polygon<br /> zkBuilder Grants</>, href: "/research/grants/polygon", category: ["Active", "Development", "Dapps & tooling"]},*/
-  { title: <>Retro<br />Funding 5</>, href: "/research/grants/opfund", category:["Active", "Development", "Dapps & tooling" ]},
+  { title: <>Retro<br />Funding 5</>, href: "/research/grants/opfund", category:["Active", "Dapps & tooling" ]},
   
   /*{ title: <>Arbitrum Fundation<br />Grant Program</>, href: "/research/grants/arbitrum", category: "Community" },*/
   { title: <>The Graph Fundation<br /> Grants Program</>, href: "/research/grants/thegraph-fund", category: ["Active", "Development", "Other", "DApps & tooling", "Community"]},

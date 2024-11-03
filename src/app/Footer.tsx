@@ -29,7 +29,18 @@ const Footer = ({ isBlack }: FooterProps) => {
           <a href="https://www.linkedin.com/company/web3citizenxyz/" target="_blank" rel="noopener noreferrer">
             <img src="/icons/in.svg" alt="LinkedIn" className={styles.icon} />
           </a>
-        </div>
+          
+          <a href="https://paragraph.xyz/@web3citizenxyz" target="_blank" rel="noopener noreferrer">
+            <img src="/icons/paragraph.png" alt="Paragraph" className={styles.icon} />
+          </a>
+          
+          
+          <a href="https://github.com/web3citizenxyz/" target="_blank" rel="noopener noreferrer">
+            <img src="/icons/github.svg" alt="Github" className={styles.icon} />
+          </a>
+          
+          
+                 </div>
         <a href="#" className={styles.scrollToTop} onClick={() => window.scrollTo(0, 0)}>
           <img src="/icons/arrow-foot.svg" alt="Scroll to Top" className={styles.arrowIcon} />
         </a>
