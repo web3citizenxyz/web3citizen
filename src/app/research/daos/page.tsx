@@ -39,6 +39,18 @@ export default function DAOS() {
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </div>
              </Link>
+             <Link href="/research/daos/dao-trends">
+                <div className={styles.card}>
+                    <div className={styles.cardHeader}>
+                        <img src="/icons/ade.svg" alt="icon adelantar" className={styles.cardHubIcon} />
+                        <h2 className={styles.cardTitle}>DAO Trends 2024</h2>
+                    </div>
+                    <div className={styles.cardLine}></div>
+                    <p className={styles.cardDescription}>Emerging trends in the DAO space.</p>
+                  
+                    <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
+                </div>
+             </Link>
             </div>
         </div>
     );
