@@ -63,7 +63,7 @@
  .semicircles {
  position: relative;
     width: 1000px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: -20px;
     z-index: 1;
   }
