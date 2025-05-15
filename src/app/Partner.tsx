@@ -7,7 +7,7 @@ export default function Partner () {
         <h1>Support</h1>
 
         <p>Our progress is driven by collaborating with projects and making meaningful contributions together.</p>
-        <a href="mailto:angela@web3citizen.xyz" target='_blank' className={styles.contactButton}>Contact us</a>
+        <a href="mailto:ops@web3citizen.xyz" target='_blank' className={styles.contactButton}>Contact us</a>
       </div>
       <div className={styles.svgContainer}>
         <img src="/icons/elipse-sup.svg" alt="Semicircles" className={styles.semicircles}/>

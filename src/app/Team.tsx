@@ -6,7 +6,7 @@ import styles from './styles/Team.module.css';
 export default function Team() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const items = [
-    { src: "/images/profile-1.jpg", twitter: "https://twitter.com/eugelikeeugenia" },
+    { src: "/images/profile-1.jpg", twitter: "https://twitter.com/eugenia_0x" },
     { src: "/images/profile-2.png", twitter: "https://twitter.com/ocandocrypto" },
     { src: "/images/profile-3.jpeg", twitter: "https://twitter.com/0xpili_" },
  
@@ -26,8 +26,8 @@ export default function Team() {
     <section className={styles.team}>
       <div className={styles.content}>
         <h1>Contributors</h1>
-        <p>Join Our Open Source Community</p>
-        <p>All our content is open source. We aim to create a collaborative research environment where you can share knowledge and explore different areas of the Ethereum ecosystem.</p>
+        <p>Share your knowledge with the community.</p>
+        <p>We aim to create collaborative research, where anyone can share knowledge on different areas of the Ethereum ecosystem.</p>
         <button className={styles.btn}>
           <a href='https://github.com/web3citizenxyz/web3citizen' target='_blank'>Start Contributing</a>
         </button>

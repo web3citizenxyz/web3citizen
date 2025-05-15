@@ -1,5 +1,6 @@
 "use client";
-import PdfViewer from'./PdfViewer';
+import dynamic from 'next/dynamic';
+const PdfViewer = dynamic(() => import('./PdfViewer'), { ssr: false });
 import styles from './Eigen.module.css';
 import SideIcons from '@/components/SideIcons';
 import BackToTop from '@/components/BackToTop';
@@ -21,10 +22,11 @@ export default function EigenLayer() {
         <h2>Understanding EigenLayer</h2>
 
         <p className={styles.aLinks}>
-  Contributors: 
-     <a href="https://twitter.com/eugelikeeugenia" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugelikeeugenia</a> - 
-      <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a>  
-</p>
+          Published: 2024-07-10<br />
+          Contributors: 
+          <a href="https://twitter.com/eugenia_0x" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@eugenia_0x</a> - 
+          <a href="https://twitter.com/lichuacu" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@lichuacu</a>  
+        </p>
 
         <p> This report includes two main sections:</p>
         <ol className={styles.list}>
@@ -49,14 +51,7 @@ export default function EigenLayer() {
     </div>
  
       </section>
-      <a href="/EigenLayer.pdf" download className={styles.contactButton}>Download the report</a>
-      <div className={styles.pdfContainer}>
-      <PdfViewer url={pdfUrl} />
-      </div>
-  
-
-     <SideIcons />
-     <BackToTop />
+      <a href="/EigenLayer.pdf" download className={styles.contactButton}>Download report</a>
     </div>
 
 

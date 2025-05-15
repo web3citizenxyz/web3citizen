@@ -128,9 +128,11 @@ export default function RootLayout({ children }: LayoutProps) {
                 RESOURCES 
               </Link>
               */}
+              {/* Commented out the grants link
               <a href="/research/grants" className={styles.navItem} onClick={closeMenu}>
                 GRANTS
               </a>
+              */}
 
               <Link href="/about">
              <div className={styles.navItem} onClick={closeMenu}>ABOUT</div>

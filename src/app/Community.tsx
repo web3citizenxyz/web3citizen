@@ -10,8 +10,8 @@ export default function Community () {
 <section className={styles.community}>
   <div className={styles.content}>
     <h1>Community</h1>
-    <p>Stay Updated with the Latest Trends</p>
-    <p>Stay informed about the latest projects and DAOs in the Ethereum ecosystem.</p>
+    <p>We want to build a web of knowledge.</p>
+    <p>Stay informed about what we're working on and our latest projects.</p>
     
     <button className={styles.btn}>
         <a href='https://t.me/web3citizenxyznews' target='_blank'>Join Our Community</a>

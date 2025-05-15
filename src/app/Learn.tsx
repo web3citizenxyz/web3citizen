@@ -23,8 +23,7 @@ export default function Learn () {
           <div className={styles.contentWrapper}>
             <div className={styles.textContent}>
               <h1>Learn</h1>
-              <p>Explore Curated Guides.</p>
-              <p>Access aggregated resources and information about the Ethereum ecosystem.</p>
+              <p> Guides to explore the Ethereum ecosystem.</p>
             </div>
             <div className={styles.swiperContainer}>
             <Swiper
@@ -64,14 +63,14 @@ export default function Learn () {
         <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Your initial guide<br></br> to Zero Knowledge<br></br> Proofs</p>
+        <p>ZK proofs<br></br> from scratch</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
-        <p>Understand EigenLayer’s importance in blockchain performance</p>
+        <p>Understanding the coordination layer</p>
       </a>
     </SwiperSlide>
    
@@ -79,14 +78,14 @@ export default function Learn () {
     <a href="/research/daos" className={styles.card}>
         <h2>DAOs</h2>
         <span className={styles.dash}></span>
-        <p>Learn about DAOs and their role in blockchain governance.</p>
+        <p>Learn about blockchain governance.</p>
       </a>
     </SwiperSlide>
        <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
         <span className={styles.dash}></span> 
-        <p>Understand EigenLayer’s importance in blockchain performance</p>
+        <p>Understanding the coordination layer</p>
       </a>
     </SwiperSlide>
    
@@ -95,7 +94,7 @@ export default function Learn () {
         <h2>ZK 101
         </h2>
         <span className={styles.dash}></span>
-        <p>Your initial guide<br></br> to Zero Knowledge<br></br> Proofs</p>
+        <p>ZK proofs<br></br> from scratch</p>
       </a>
     </SwiperSlide>
  
@@ -103,7 +102,7 @@ export default function Learn () {
     <a href="/research/daos" className={styles.card}>
         <h2>DAOs</h2>
         <span className={styles.dash}></span>
-        <p>Learn about DAOs and their role in blockchain governance.</p>
+        <p>Learn about blockchain governance.</p>
       </a>
     </SwiperSlide> 
     

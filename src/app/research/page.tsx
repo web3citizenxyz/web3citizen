@@ -33,8 +33,8 @@ export default function Research() {
   return (
     <div className={styles.researchPage}>
       <header className={styles.header}>
-        <h1>Stay Updated with Our Research Reports</h1>
-        <p>Explore our curated selection of reports. </p>
+        <h1>Reports & Articles</h1>
+        <h2>Explore our selection of reports </h2>
         <p>
       Select a category or filter topics from <a  className={styles.researchLink} > RESEARCH</a> menu in the navigation bar.
         </p>
