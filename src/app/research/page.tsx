@@ -36,7 +36,7 @@ export default function Research() {
         <h1>Reports & Articles</h1>
         <h2>Explore our selection of reports </h2>
         <p>
-      Select a category or filter topics from <a  className={styles.researchLink} > RESEARCH</a> menu in the navigation bar.
+      Select a category and begin exploring.
         </p>
       </header>
       <div className={styles.cardsContainer}>
