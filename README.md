@@ -1,20 +1,42 @@
 
-## Welcome to the Web3 Citizen Knowledge Repository! 🎉
+# Welcome to the Web3 Citizen Knowledge Repository! 🎉
 
-This repository is a collaborative space where enthusiasts, professionals, and contributors can share their knowledge and insights about the Ethereum ecosystem and the broader world of Web3. 
+This repository is a collaborative space where contributors can share their insights about the Ethereum ecosystem.
 
-Our goal is to build a comprehensive resource that helps others navigate decentralized projects and opportunities.
+Our goal is to build a comprehensive web of knowledge that helps others navigate decentralized projects.
 
-### Share Your Knowledge
+## Share Your Knowledge
 
-We believe that everyone has valuable insights to contribute. Whether you’re an expert in DAOs, grants, EigenLayer, or any other aspect of the Ethereum ecosystem, your contributions are welcome here. By sharing your knowledge, you help grow the community and empower others to engage more deeply with Web3 technologies.
+Everyone has valuable insights to contribute. Whether you’re an expert in DAOs, rollups, or any other aspect, your contributions are welcome. By sharing, you help grow the community and others to engage with Web3 technologies.
 
-### How to Contribute
+## How to Contribute
 
-We’re currently preparing detailed instructions on how you can submit your content to the Web3 Citizen repository. These guidelines will help ensure that your contributions are well-integrated and accessible to the community.
+1. Fork the Repository
+Click the Fork button in the top-right corner of this page to create your own copy of the repository.
+
+2. Clone Your Fork
+Open your terminal and run:
+
+git clone https://github.com/YOUR-USERNAME/web3-citizen-repo.git
+cd web3-citizen-repo
+Replace YOUR-USERNAME with your GitHub username.
+
+3. Add Your Contribution
+Create or edit a file in the appropriate folder (/src/app/research/<category> or add your own!)
+- Add a clear title and short summary at the top. Feel free to copy the format of available articles.
+- Follow consistent formatting used in other files
+
+4. Commit Your Changes
+git add .
+git commit -m "Add contribution: [Your Title Here]"
+git push origin main
+
+5. Open a Pull Request
+Go to your forked repo on GitHub and click "Compare & pull request". Add a short description of your contribution, then submit the PR.
+
+Once approved, your content will be merged into the main repository and published.
 
 ### Coming Soon
 
-Detailed instructions on how to: _Submit your articles, reports, and guides and collaborate with other contributors._
-
-Stay tuned.
+More articles :P
+Stay tuned
