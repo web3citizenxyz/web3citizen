@@ -122,28 +122,17 @@ export default function RootLayout({ children }: LayoutProps) {
             <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
             <Link href="/research" className={styles.navItem} onClick={closeMenu}>
                 RESEARCH 
-                  {/*
-                <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} 
-                  alt="Arrow" 
-                  className={`${styles.arrow} ${submenuOpen ? styles.active : ''}`} 
-                  onClick={toggleSubmenu}
-                />
-  */}
               </Link>
-              <Link href="/resources" className={styles.navItem} onClick={closeMenu}> RESOURCES 
-                {/*
-              <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
-  */}
+              {/* Commented out the resources link
+              <Link href="/resources" className={styles.navItem} onClick={closeMenu}> 
+                RESOURCES 
               </Link>
-              <a href="/research/grants" className={styles.navItem} onClick={closeMenu}>GRANTS
-
-               {/*
-              <img src={navDark ? "/icons/flecha-nav.svg" : "/icons/flecha-nav-blue.svg"} alt="Arrow" className={styles.arrow} />
-*/}
+              */}
+              <a href="/research/grants" className={styles.navItem} onClick={closeMenu}>
+                GRANTS
               </a>
 
               <Link href="/about">
-
              <div className={styles.navItem} onClick={closeMenu}>ABOUT</div>
              </Link>
               <a href="#" className={styles.navItem}onClick={toggleSearch}>
