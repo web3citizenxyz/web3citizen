@@ -20,7 +20,7 @@ const Footer = ({ isBlack }: FooterProps) => {
           </a>
         </div>
         <div className={styles.rightsReserved}>
-          © 2024 — All Rights Reserved
+          © {new Date().getFullYear()} — All Rights Reserved
         </div>
         <div className={styles.socialIcons}>
           <a href="https://x.com/web3citizenxyz?s=21" target="_blank" rel="noopener noreferrer">

@@ -21,11 +21,11 @@ const researchTopics = [
     slug: "zk/articles/zk-101",
    
   },
- /*
   {
-    title: "Category",
+    title: "Rollups",
     imgSrc: "/icons/category-4.svg",
-  },*/
+    slug: "rollups",
+  }
 ];
 
 

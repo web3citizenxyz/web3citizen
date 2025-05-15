@@ -29,7 +29,7 @@ export default function EigenLayer() {
         </p>
 
         <p> This report includes two main sections:</p>
-        <ol className={styles.list}>
+        <ol className={`${styles.list} ${styles.extraMarginBottom}`}>
        
         <li><strong>Introduction to EigenLayer:</strong> an overview of restaking, and then diving into specifics of the protocol, its mechanisms and incentives.</li>
         
@@ -38,10 +38,10 @@ export default function EigenLayer() {
       </ol> 
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.extraMarginBottom}`}>
         <h1>Key Takeaways</h1>
        <div>
-      <ul className={styles.list}>
+      <ul className={`${styles.list} ${styles.extraMarginBottom}`}>
         <li>EigenLayer is a set of smart contracts that enables an open marketplace, allowing stakers to opt-in to validating external software modules.</li>
         <li>Stakers can choose different staking paths, all of them include opting into additional slashing risks. Slashing is a key part in the mechanism design. It imposes economic penalties on dishonest or non-compliant participants, ensuring they behave as specified.</li>
         <li>EigenLayer provides incentives to all segments of the staking ecosystem. A major advantage is pooled security. Protocols in EigenLayer benefit from shared security, avoiding building in fragmented security</li>
