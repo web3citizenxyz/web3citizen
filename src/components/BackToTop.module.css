@@ -4,6 +4,7 @@
     bottom: 100px;
     right: 40px;
     z-index: 1000;
+    pointer-events: none;
   }
   
   .button {
@@ -15,13 +16,16 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+    opacity: 0.85;
+    pointer-events: auto;
   }
   
   .button:hover {
     background-color: #6E8391;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.08);
+    opacity: 1;
   }
   
   .icon {
@@ -31,10 +35,16 @@
   }
   
   @media (max-width: 768px) {
-  .backToTop {
-    bottom: 20px;
-    right: 10px
-  }
-
-
+    .backToTop {
+      bottom: 50px;
+      right: 10px;
+    }
+    .button {
+      width: 40px;
+      height: 40px;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
   }

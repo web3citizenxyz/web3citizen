@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -26,7 +25,7 @@ export default function AleoBluePrint() {
 <p> 
 Blueprint Grants are awarded to build pre-specified projects as identified by Aleo - also known as Requests for Proposals (RFPs). These grants aim to fund key components or products on the Aleo network.
 </p> 
-<p>Blueprint Grants exist within Aleo’s more extensive Developer Grants Program. Across three categories, Aleo’s Developer Grants Program has awarded more than 15 developer projects with $1M+.</p>
+<p>Blueprint Grants exist within Aleo's more extensive Developer Grants Program. Across three categories, Aleo's Developer Grants Program has awarded more than 15 developer projects with $1M+.</p>
   </section>
 
  
@@ -88,7 +87,6 @@ Blueprint Grants are awarded to build pre-specified projects as identified by Al
 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

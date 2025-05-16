@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -29,16 +28,16 @@ export default function Decentraland() {
  
     <section className={styles.section}>
    <h1>Scope</h1> 
-<p>The program’s scope covers seven areas of interest:</p>
+<p>The program's scope covers seven areas of interest:</p>
    
 <ul className={styles.list}>
       <li><strong>Core Unit:</strong> Projects that provide core infrastructure and operations for the DAO.</li>
-      <li><strong>Platform:</strong> For tools and Apps that extend Decentraland’s Platform and ecosystem.</li>
-      <li><strong>Documentation:</strong> For projects that build free educational content related to Decentraland’s dynamics.</li>
+      <li><strong>Platform:</strong> For tools and Apps that extend Decentraland's Platform and ecosystem.</li>
+      <li><strong>Documentation:</strong> For projects that build free educational content related to Decentraland's dynamics.</li>
       <li><strong>In-World Content:</strong> Projects that develop experiences to improve user retention.</li>
       <li><strong>Social Media Content:</strong> Conducts marketing efforts to reach and keep new users engaged.</li>
       <li><strong>Sponsorship:</strong> Supports in-real-life initiatives targeting audiences relevant to Decentraland.</li>
-      <li><strong>Accelerator:</strong> Provides financial support for private companies or for-profit initiatives aligned with Decentraland’s goals and in need of assistance.</li>
+      <li><strong>Accelerator:</strong> Provides financial support for private companies or for-profit initiatives aligned with Decentraland's goals and in need of assistance.</li>
 
           </ul> 
   
@@ -139,7 +138,6 @@ export default function Decentraland() {
   </ul> 
   </section>
      <SideIcons />
-     <BackToTop />
     </div>
 
 

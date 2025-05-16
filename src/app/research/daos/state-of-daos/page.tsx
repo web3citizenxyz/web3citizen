@@ -4,7 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './StateOfDaos.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -71,7 +70,6 @@ const StateOfDaos = () => {
 
   
             <SideIcons />
-            <BackToTop />
         </div>
      </div>
     );

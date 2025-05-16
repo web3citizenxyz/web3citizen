@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -24,7 +23,7 @@ export default function AleoLaunch() {
 <p>
 Launch Grants provide funding for comprehensive, full-featured projects with multiple milestones built on the Aleo network.
 </p> 
-<p>Launch Grants exist within Aleo’s more extensive Developer Grants Program. Across three categories, Aleo’s Developer Grants Program has awarded developer projects with $1M+.</p>
+<p>Launch Grants exist within Aleo's more extensive Developer Grants Program. Across three categories, Aleo's Developer Grants Program has awarded developer projects with $1M+.</p>
   </section>
 
  <br></br>
@@ -44,7 +43,7 @@ Launch Grants provide funding for comprehensive, full-featured projects with mul
     <li>Tooling & Infrastructure</li>
 
   </ul>
-  <p>In contrast to Blueprint Grants, for Launch Grants, ideation, milestone planning, and deliverables are defined and submitted by applicants. The milestones and funding amount for each milestone should depend on the project’s complexity.</p>   
+  <p>In contrast to Blueprint Grants, for Launch Grants, ideation, milestone planning, and deliverables are defined and submitted by applicants. The milestones and funding amount for each milestone should depend on the project's complexity.</p>   
    
 </section>
 
@@ -63,7 +62,7 @@ Launch Grants provide funding for comprehensive, full-featured projects with mul
 <ul className={styles.list}>
 <li>Developer projects must contain open-source elements that are built on the Aleo network.</li>
 <li>Everyone, including individuals, teams, nonprofits, and companies, can apply for a grant.</li>
-<li>Applicants must submit a project overview, their team’s background information, and a grant proposal.</li>
+<li>Applicants must submit a project overview, their team's background information, and a grant proposal.</li>
 
 </ul>
 </section>
@@ -103,7 +102,6 @@ Launch Grants provide funding for comprehensive, full-featured projects with mul
 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

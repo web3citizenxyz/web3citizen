@@ -60,9 +60,15 @@
   background-color: #2B2C3A;
   margin-left: -30px;
   margin-top: 10.5%;
-
-  width: 935px;
+  width: 800px;
+  transition: transform 0.3s ease-out;
 }
+
+/* Add a new class for the scroll animation */
+.line.slide {
+  transform: translateX(100px);
+}
+
 .welcomeIntro p {
   font-family: 'Roboto Mono';
   font-size: 25px;

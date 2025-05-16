@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './DaoTrends.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 import Link from 'next/link';
 
 
@@ -40,7 +39,7 @@ export default function DaoBasics() {
     <p></p>
     <li>Low participation remains an issue. No formula seems to emerge but delegate incentives appear in different forms.</li>
     <p></p>
-    <li>DAOs are extending their token’s utility.</li>
+    <li>DAOs are extending their token's utility.</li>
    </ul>
    <br></br>
     
@@ -75,7 +74,7 @@ export default function DaoBasics() {
 
       <section className={styles.section}>
         <h1 className={styles.subtitle}>DAOs Are Restructuring</h1>
-       <p>DAOs continue iterating on their design and framework. Over the last year, this iterative design has shown up as expected with adding committees and councils. Many DAOs implemented Security Councils to oversee upgrades, enact emergency actions, and oversee decentralization initiatives. These include ENS, ZK Sync, Optimism’s first iteration of a Security Council and Starknet’s Builder’s Committee.</p>
+       <p>DAOs continue iterating on their design and framework. Over the last year, this iterative design has shown up as expected with adding committees and councils. Many DAOs implemented Security Councils to oversee upgrades, enact emergency actions, and oversee decentralization initiatives. These include ENS, ZK Sync, Optimism's first iteration of a Security Council and Starknet's Builder's Committee.</p>
 
       <img src="/images/imagen4.png" alt=" DAOs Restructuring" className={styles.benefitsImage} />
       <br></br>
@@ -83,7 +82,7 @@ export default function DaoBasics() {
       <p>Some DAOs are taking further steps in restructuring the way they do governance.</p>
       <ul className={styles.list}>
         <li><strong>Predictability:</strong> Safe is changing their governance cadence, which begun implementing in late 2023.</li>
-        <li><strong>Adding Stakeholders:</strong> Lido is implementing a Dual Governance model, to include stETH stakers –not just LDO holders– in governance.</li>
+        <li><strong>Adding Stakeholders:</strong> Lido is implementing a Dual Governance model, to include stETH stakers -not just LDO holders- in governance.</li>
         <li><strong>Back to Basics:</strong> Decentraland is modifying and rethinking their core structure</li>
       </ul>  
 
@@ -91,11 +90,11 @@ export default function DaoBasics() {
      <br></br>
 
       <h1 className={styles.subtitle}>Participation Remains A Key Issue</h1> 
-      <p>Addressing active and informed participation at a delegate and at a contributor level remains a challenge. At the delegate level, some DAOs are implementing lowering proposing thresholds and extending voting timelines to encourage active participation. An already established DAO began implementing delegation – Safe implementing complex delegation allowing for re-delegation</p>
+      <p>Addressing active and informed participation at a delegate and at a contributor level remains a challenge. At the delegate level, some DAOs are implementing lowering proposing thresholds and extending voting timelines to encourage active participation. An already established DAO began implementing delegation - Safe implementing complex delegation allowing for re-delegation</p>
       <h3><strong>Incentives, the chosen way to address continued participation</strong></h3>
       <p><strong>5 out of the 10 DAOs studied implement some form of incentives or rewards for participating.</strong></p>
      
-      <p>These include Arbitrum’s Delegate Incentive Program, Uniswap Rewards Incentives, Lido’s Rewards Share Program, ENS vesting incentives, with Optimism even adopting a rewards framework to standardize rewards to its delegation.</p>
+      <p>These include Arbitrum's Delegate Incentive Program, Uniswap Rewards Incentives, Lido's Rewards Share Program, ENS vesting incentives, with Optimism even adopting a rewards framework to standardize rewards to its delegation.</p>
       <p>At the contributor level, rewards become difficult territory so as to not expose the DAO to gaming incentives or capture by non-mission aligned stakeholders. However, some experiments in this area include the Arbitrum DAO Onboarding Program</p>
       </section>
 <br></br>
@@ -105,11 +104,11 @@ export default function DaoBasics() {
 
       <img src="/images/imagen5.png" alt="Governance Token Utility" className={styles.benefitsImage} />
       <br></br>
-      <p>While a less explored avenue, extending the governance token’s utility has grown as a trend. In 2024, 4 out of the 10 DAOs studied began expanding their token utility. This comes at a time where staking and restaking became a central narrative in Ethereum</p>
+      <p>While a less explored avenue, extending the governance token's utility has grown as a trend. In 2024, 4 out of the 10 DAOs studied began expanding their token utility. This comes at a time where staking and restaking became a central narrative in Ethereum</p>
       <ul>
         <li>Newly established Starknet approved its first proposal: Staking STRK.</li>
         <br></br>
-        <li>Uniswap released Unichain, allowing UNI holders to stake for Unichain. Extending the utility Uniswap DAO’s governance token.</li>
+        <li>Uniswap released Unichain, allowing UNI holders to stake for Unichain. Extending the utility Uniswap DAO's governance token.</li>
        <br></br>
         <li>Safe approved token utility expansion and opens the grounds to experimenting with SAFE utility beyond staking.</li>
        <br></br>
@@ -118,7 +117,7 @@ export default function DaoBasics() {
         <li>The Graph retained its existing ability to stake GRT and secure the network</li>
       </ul>
 
-         <p>It is worth noting that Lido DAO’s liquid staking token stETH with Dual Governance will now hold a role in governance together with its existing governance token LDO.</p>
+         <p>It is worth noting that Lido DAO's liquid staking token stETH with Dual Governance will now hold a role in governance together with its existing governance token LDO.</p>
 
          <p>Thank you for reading DAO Trends 2024! To read more of our reports you can head to <Link href='https://www.web3citizen.xyz/research' className={styles.link}> Our Research</Link>.</p>
 
@@ -133,7 +132,6 @@ export default function DaoBasics() {
 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '/node_modules/swiper/swiper-bundle.min.css';
@@ -22,8 +21,8 @@ export default function Learn () {
         <div className={styles.rightSection}>
           <div className={styles.contentWrapper}>
             <div className={styles.textContent}>
-              <h1>Learn</h1>
-              <p> Guides to explore the Ethereum ecosystem.</p>
+              <h1>Foundations</h1>
+              <p> Understand the tech essentials powering Ethereum and apps.</p>
             </div>
             <div className={styles.swiperContainer}>
             <Swiper
@@ -62,14 +61,12 @@ export default function Learn () {
     <a href="/research/zk/articles/zk-101" className={styles.card}>
         <h2>ZK 101
         </h2>
-        <span className={styles.dash}></span>
         <p>ZK proofs<br></br> from scratch</p>
       </a>
     </SwiperSlide>
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
-        <span className={styles.dash}></span> 
         <p>Understanding the coordination layer</p>
       </a>
     </SwiperSlide>
@@ -77,15 +74,13 @@ export default function Learn () {
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/daos" className={styles.card}>
         <h2>DAOs</h2>
-        <span className={styles.dash}></span>
         <p>Learn about blockchain governance.</p>
       </a>
     </SwiperSlide>
        <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/eigenlayer"  className={styles.card}>
         <h2>EigenLayer</h2>
-        <span className={styles.dash}></span> 
-        <p>Understanding the coordination layer</p>
+        <p>Restaking as a coordination layer</p>
       </a>
     </SwiperSlide>
    
@@ -93,7 +88,6 @@ export default function Learn () {
     <a href="/research/zk/articles/zk-101"className={styles.card}>
         <h2>ZK 101
         </h2>
-        <span className={styles.dash}></span>
         <p>ZK proofs<br></br> from scratch</p>
       </a>
     </SwiperSlide>
@@ -101,23 +95,29 @@ export default function Learn () {
     <SwiperSlide className={styles.swiperSlide}>
     <a href="/research/daos" className={styles.card}>
         <h2>DAOs</h2>
-        <span className={styles.dash}></span>
-        <p>Learn about blockchain governance.</p>
+        <p>Blockchain governance.</p>
       </a>
     </SwiperSlide> 
+
+    <SwiperSlide className={styles.swiperSlide}>
+    <a href="/research/rollups" className={styles.card}>
+        <h2>Rollups</h2>
+        <p>Ethereum scaling<br />solutions</p>
+      </a>
+    </SwiperSlide>
     
   </Swiper>
 </div>
+{/* 
 <div className={styles.buttonWrapper}>
     <a href="/research" className={styles.learnMore}>
       <span className={styles.arrows}>&gt;&gt;&gt;</span>
       EXPLORE MORE
     </a>
-  </div>
+</div>
+*/}
         </div>
         </div>
-
-
   
       </section>
       

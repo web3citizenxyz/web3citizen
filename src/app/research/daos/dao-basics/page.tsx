@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -153,7 +152,7 @@ export default function DaoBasics() {
       <p>Ensuring accountability requires transparency and active member participation. Members should be able to voice their opinions on the DAO. This creates an avenue to raise concerns when there may be abuse of power or overspending. However, finding the right balance is key, as too much participation can lead to gridlock and bring all actions to a halt.</p>
       <p>Participation is key for a DAO to be governed "by and for" the community. It ensures that decisions are made considering the community's opinions instead of being determined by a small group. It also enhances the legitimacy of judgments by aggregating the community's thoughts, concerns, and ideas.</p>
       <p>Participation is key for a DAO to be governed "by and for" the community. It ensures that decisions are made considering the community's opinions instead of being determined by a small group of voters. It also enhances the legitimacy of judgments by aggregating the community's thoughts, concerns, and ideas. A Safe DAO member voiced this sentiment in a late 2022 forum post regarding the futility of participating in a community with highly concentrated voting power.</p>
-      <p>Excessive participation can dilute the DAO's mission by diverting focus toward minor tasks instead of the primary purpose of the DAO. To better understand this, we can look at Maker DAO, where the proliferation of missions and the pursuit of new avenues led to the need of a restructuring plan for the entire DAO. “Endgame” aims to create new mission-specific subDAOs to better align their efforts with their core mission.</p>
+      <p>Excessive participation can dilute the DAO's mission by diverting focus toward minor tasks instead of the primary purpose of the DAO. To better understand this, we can look at Maker DAO, where the proliferation of missions and the pursuit of new avenues led to the need of a restructuring plan for the entire DAO. "Endgame" aims to create new mission-specific subDAOs to better align their efforts with their core mission.</p>
       <p>Transparency is a crucial aspect that underlies both of the other principles. As we have covered in the introduction, it enables stakeholders to understand and trust the organization's mission, participate and contribute to it, and serve as a steward to "check" on its powers. There can be no form of meaningful participation when there is no clear vision of the DAO's operations.</p>
       <p>DAOs ensure transparency through various channels, such as community calls, forum discussions, newsletters, and more. Striking a balance between providing too much or too little information is key. Community members must feel valued and heard, else they may disengage from the DAO altogether.</p>
      
@@ -245,7 +244,7 @@ export default function DaoBasics() {
    </ul> 
    <div className={styles.quoteContainer}>
         <a className={styles.quote} href='https://coopahtroopa.mirror.xyz/7bfK9st2mvhxlla4XKotRjetq5-YhaiwqRwS8DhkD-o' target='_blank'>
-        “Rather than trying to house all that activity under one roof, SubDAOs offer a medium for working groups to create their own foundation and ownership structure - all while tying value back to the originating entity.”
+        "Rather than trying to house all that activity under one roof, SubDAOs offer a medium for working groups to create their own foundation and ownership structure - all while tying value back to the originating entity."
         </a>
       </div> 
       <br></br>  
@@ -281,7 +280,6 @@ export default function DaoBasics() {
      </section> 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

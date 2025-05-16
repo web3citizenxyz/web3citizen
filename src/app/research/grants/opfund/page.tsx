@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -54,7 +53,7 @@ export default function OpPartnerFound() {
 <p>Tooling projects that support its accessibility and usability.</p>
 <ul>
   <li>Tools that facilitate the deployment, operation, or testing of the OP Stack. This includes integration tools, load testing infrastructure, and scripts for node management. </li>
-<li>Documentation and tutorials of the OP Stack’s components and its development.</li>
+<li>Documentation and tutorials of the OP Stack's components and its development.</li>
 <li>Services for deploying and hosting an OP Chain.</li>
 </ul>
 
@@ -108,7 +107,6 @@ All builders and developers that meet the scope of this round may apply.
 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

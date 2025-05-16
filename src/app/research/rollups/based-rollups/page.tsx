@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import styles from '../BasedRollups.module.css';
+import BackToTop from '@/components/BackToTop';
 
 export default function BasedRollups() {
   return (
@@ -32,15 +33,18 @@ export default function BasedRollups() {
           <br /><br />
           The "based" part only speaks to its sequencing on the consensus level. Consensus of the rollup remains tied to L1 validators, while execution, state validation (optimistic or ZK) and DA is open to the design choice of each rollup team.
           <br /><br />
+        </p>
+        <ul>
           <li>Based Sequencing + Rollup Execution = Based Rollup</li>
           <li>Based Sequencing + Alt DA = Based Validium</li>
           <li>Based Sequencing + L1 (Native Rollup) = Ultrasound Rollup</li>
-          <br /><br />
+        </ul>
+        <p>
           <br /><br />
           <img src="/images/rollups/rollups.png" className={styles.benefitsImage} />
           <br /><br />
           <br /><br />
-          All of this without any change needed to L1. In fact we already have two based rollups in mainnet: @taikoxyz Alethia and @0xFacet. However, to make better based rollups some L1, L2 and sidecar software improvements need to be implemented.
+          All of this without any change needed to L1. In fact we already have two based rollups in mainnet: <a href="https://twitter.com/taikoxyz" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@taikoxyz</a> Alethia and <a href="https://twitter.com/0xFacet" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@0xFacet</a>. However, to make better based rollups some L1, L2 and sidecar software improvements need to be implemented.
         </p>
 
         <br />
@@ -50,56 +54,56 @@ export default function BasedRollups() {
         <p>
           A centralized sequencer is easier to launch, it protects us against MEV and allows for quicker transactions (as well as low costs!).<br /><br />
           But they introduce different drawbacks:
-          <ul className={styles.list}>
+        </p>
+        <ul className={styles.list}>
             <li>They leverage trust of entities (ie, Optimism, Arbitrum)</li>
             <li>Introduce fragmentation issues and are intra- not interoperable (e.g. Optimism's interoperability remains within Superchain chains).</li>
             <li>L2s with centralized sequencers can "compete with L1", MEV can be captured by sequencers on L2.</li>
             <li>Not fully censorship resistant and not credible neutral: sequencers may indefinitely censor transactions – although not fully true, forced transactions are still possible.</li>
             <li>Are central point of failure. On traditional rollups, if a centralized sequencer goes offline or becomes unavailable, the recovery time can be too long and transaction finality can be delayed. Users must resort to L1 as an escape hatch.</li>
-          </ul>
-        </p>
+        </ul>
         <br /><br />
         
         <h1>Benefits of a Based Rollup</h1>
         <p>
-        Based rollups offer a sequencing design that leverages Ethereum’s own consensus mechanism, eliminating reliance on centralized entities.<br /><br />
-        Some of the key benefits include:
-        <ul className={styles.list}>
-            <li><strong>Ethereum-grade liveness:</strong> If a proposer fails, the next L1 proposer simply includes the transaction. There’s no centralized sequencer to halt the chain or delay finality.</li>
-            <li><strong>Maximal security:</strong> Based sequencing inherits Ethereum’s security guarantees. (With some caveats — see “Gateways” in a later article.)</li>
-            <li><strong>Economic alignment:</strong> MEV flows back to Ethereum, preserving and reinforcing L1 network effects rather than fragmenting them.</li>
-            <li><strong>Synchronous composability:</strong> Based rollups can access and react to L1 state within the same block, enabling seamless inter-rollup and L1↔L2 interactions — no bridges, no delays.</li>
-            <li><strong>Infra reuse:</strong> Apps can rely on L1-native tooling (like oracles) without duplicating infrastructure. This is especially valuable for smaller appchains that can’t afford to build everything from scratch.</li>
-            <li><strong>No token-based sequencing overhead:</strong> Since Ethereum does the sequencing, there's no need to verify L2 signatures or maintain separate escape hatches — reducing complexity and attack surface.</li>
-            <li><strong>Asset resilience:</strong> If a based rollup shuts down, its assets don’t immediately go to zero. Value can persist on Ethereum itself (e.g. Base’s memecoins, Zora’s NFTs).</li>
-        </ul>
+          Based rollups offer a sequencing design that leverages Ethereum's own consensus mechanism, eliminating reliance on centralized entities.<br /><br />
+          Some of the key benefits include:
         </p>
+        <ul className={styles.list}>
+          <li><strong>Ethereum-grade liveness:</strong> If a proposer fails, the next L1 proposer simply includes the transaction. There's no centralized sequencer to halt the chain or delay finality.</li>
+          <li><strong>Maximal security:</strong> Based sequencing inherits Ethereum's security guarantees. (With some caveats — see "Gateways" in a later article.)</li>
+          <li><strong>Economic alignment:</strong> MEV flows back to Ethereum, preserving and reinforcing L1 network effects rather than fragmenting them.</li>
+          <li><strong>Synchronous composability:</strong> Based rollups can access and react to L1 state within the same block, enabling seamless inter-rollup and L1↔L2 interactions — no bridges, no delays.</li>
+          <li><strong>Infra reuse:</strong> Apps can rely on L1-native tooling (like oracles) without duplicating infrastructure. This is especially valuable for smaller appchains that can't afford to build everything from scratch.</li>
+          <li><strong>No token-based sequencing overhead:</strong> Since Ethereum does the sequencing, there's no need to verify L2 signatures or maintain separate escape hatches — reducing complexity and attack surface.</li>
+          <li><strong>Asset resilience:</strong> If a based rollup shuts down, its assets don't immediately go to zero. Value can persist on Ethereum itself (e.g. Base's memecoins, Zora's NFTs).</li>
+        </ul>
         <br /><br />
 
         <h1>Drawbacks of a Based Rollup</h1>
         <p>
-        While based rollups offer strong alignment with Ethereum, they also come with important trade-offs:<br /><br />
-        <ul className={styles.list}>
-            <li><strong>L1 performance constraints:</strong> Tying sequencing to Ethereum means inheriting its block times and upgrade cycles. Transactions confirm every ~12 seconds by default. Preconfirmations can mitigate this, offering faster UX despite the base latency.</li>
-            <li><strong>Architectural complexity:</strong> Based rollups require significant engineering effort — redesigning validator subsets for sequencing, supporting preconfirmations, and building gateway mechanisms adds considerable complexity to implementation.</li>
-            <li><strong>Loss of sequencer revenue:</strong> Centralized sequencers today generate fees and extract MEV. Based rollups shift that revenue to Ethereum validators, reducing potential earnings for rollup teams or token-based ecosystems.</li>
-            <li><strong>Data availability bottlenecks:</strong> Based rollups depend on Ethereum for DA. A highly active rollup may face elevated fees or need to limit throughput due to limited L1 block space — unless using alternatives like AltDA providers (e.g. @rise_chain).</li>
-            <li><strong>Design flexibility is still essential:</strong> Not all rollups will—or should—go based. The broader ecosystem must support a variety of sequencing models to meet different project needs and trade-offs.</li>
-        </ul>
+          While based rollups offer strong alignment with Ethereum, they also come with important trade-offs:<br /><br />
         </p>
+        <ul className={styles.list}>
+          <li><strong>L1 performance constraints:</strong> Tying sequencing to Ethereum means inheriting its block times and upgrade cycles. Transactions confirm every ~12 seconds by default. Preconfirmations can mitigate this, offering faster UX despite the base latency.</li>
+          <li><strong>Architectural complexity:</strong> Based rollups require significant engineering effort — redesigning validator subsets for sequencing, supporting preconfirmations, and building gateway mechanisms adds considerable complexity to implementation.</li>
+          <li><strong>Loss of sequencer revenue:</strong> Centralized sequencers today generate fees and extract MEV. Based rollups shift that revenue to Ethereum validators, reducing potential earnings for rollup teams or token-based ecosystems.</li>
+          <li><strong>Data availability bottlenecks:</strong> Based rollups depend on Ethereum for DA. A highly active rollup may face elevated fees or need to limit throughput due to limited L1 block space — unless using alternatives like AltDA providers (e.g. <a href="https://twitter.com/rise_chain" target="_blank" rel="noopener noreferrer" className={styles.twitterLink}>@rise_chain</a>).</li>
+          <li><strong>Design flexibility is still essential:</strong> Not all rollups will—or should—go based. The broader ecosystem must support a variety of sequencing models to meet different project needs and trade-offs.</li>
+        </ul>
         <br /><br />
 
         <h1>A Short Note on Synchronous Composability</h1>
         <p>
         Using Ethereum consensus for sequencing enables <em>synchronous composability</em> — effectively giving rollups the benefits of a shared sequencer. Since Ethereum builds both L1 and L2 blocks simultaneously, actions in an L1 block can immediately impact the rollup.<br /><br />
         This allows contracts to call other contracts within the same block, interact across rollups, and move liquidity seamlessly between chains — all without added bridging complexity or latency.
+        </p>
         <ul className={styles.list}>
             <li>👍 Less fragmentation across rollups and apps</li>
             <li>👍 Seamless user experience with unified state access</li>
             <li>👍 Improved developer experience — fewer cross-chain workarounds</li>
-            <li>👎 ~12 second <em>soft confirmation times</em>, tied to Ethereum’s block cadence. Centralized sequencers already solved this; based rollups will need <strong>preconfirmation mechanisms</strong> to match that speed.</li>
+            <li>👎 ~12 second <em>soft confirmation times</em>, tied to Ethereum's block cadence. Centralized sequencers already solved this; based rollups will need <strong>preconfirmation mechanisms</strong> to match that speed.</li>
         </ul>
-        </p>
         <br /><br />
         <h1>Sequencing Design Options</h1>
         <p>
@@ -188,7 +192,7 @@ export default function BasedRollups() {
             <strong>Preconfirmations:</strong> Users need confidence their transactions will be included. With optimized proving, preconfirmations can match centralized sequencer UX (100ms). However, proposer assignment and tip negotiation are non-trivial problems.
         </li>
         <li>
-            <strong>Inclusion Lists:</strong> Allow validators to force builders to include transactions they’ve preconfirmed. This ensures delivery and avoids censorship.
+            <strong>Inclusion Lists:</strong> Allow validators to force builders to include transactions they've preconfirmed. This ensures delivery and avoids censorship.
             <ul>
             <li>Inclusion logic gets tricky (e.g., swap txs vary by price).</li>
             <li>Requires additional validity and inclusion correctness proofs.</li>
@@ -222,7 +226,7 @@ export default function BasedRollups() {
         <code>Preconfirmations</code> are commitments from <strong>validators</strong> to <strong>users</strong>,
         guaranteeing that a transaction will be included. They can be interpreted as execution futures:
         the sequencer "sells" inclusion, priced to reflect expected MEV. Preconfirmations are also commitments
-        to Ethereum’s actual future state.
+        to Ethereum's actual future state.
         </p>
 
         <blockquote className={styles.quote}>
@@ -230,7 +234,7 @@ export default function BasedRollups() {
         </blockquote>
 
         <p>
-        Without preconfirmations, based rollups inherit Ethereum’s ~12s confirmation delay. Preconfs are essential to make based rollups competitive with centralized sequencers.
+        Without preconfirmations, based rollups inherit Ethereum's ~12s confirmation delay. Preconfs are essential to make based rollups competitive with centralized sequencers.
         </p>
 
         <ul className={styles.list}>
@@ -260,7 +264,7 @@ export default function BasedRollups() {
 
         <h3>How Confirmations Work</h3>
         <p>
-        Preconfirmations use the Beacon Chain’s “lookahead” feature — validators know the next proposer for one epoch (32 slots).
+        Preconfirmations use the Beacon Chain's "lookahead" feature — validators know the next proposer for one epoch (32 slots).
         </p>
 
         <p>
@@ -308,7 +312,7 @@ export default function BasedRollups() {
         </p>
 
         <p>
-        There’s much more to be explored about the role of hardware in enabling faster based rollups — but for now, let’s look at the current landscape.
+        There's much more to be explored about the role of hardware in enabling faster based rollups — but for now, let's look at the current landscape.
         </p>
 
         <br /><br />
@@ -444,9 +448,8 @@ export default function BasedRollups() {
             </tr>
         </tbody>
         </table>
-
-
       </section>
+      <BackToTop />
     </div>
   );
 } 

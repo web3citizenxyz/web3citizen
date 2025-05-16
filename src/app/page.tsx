@@ -1,5 +1,5 @@
 "use client";
-import { useRef} from 'react';
+import { useRef, useEffect } from 'react';
 
 import useFadeInOnScroll from './hooks/useFadeInOnScroll';
 import styles from './styles/Home.module.css';
@@ -16,11 +16,28 @@ export default function Home() {
   const partnerRef = useRef<HTMLDivElement>(null);
   const communityRef = useRef<HTMLDivElement>(null);
   const teamRef = useRef<HTMLDivElement>(null);
+  const lineRef = useRef<HTMLDivElement>(null);
 
   useFadeInOnScroll(learnRef);
   useFadeInOnScroll(partnerRef);
   useFadeInOnScroll(communityRef);
   useFadeInOnScroll(teamRef);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (lineRef.current) {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 50) {
+          lineRef.current.classList.add(styles.slide);
+        } else {
+          lineRef.current.classList.remove(styles.slide);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
  
   return (
@@ -30,7 +47,7 @@ export default function Home() {
             <section className={styles.welcomeIntro}>
               <div className={styles.headerContainer}>
                 <h1>Your infinite garden guide.</h1>
-                <div className={styles.line}></div>
+                <div className={styles.line} ref={lineRef}></div>
               </div>
               <a href='/about'>
               <p>/</p>

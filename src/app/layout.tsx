@@ -123,6 +123,9 @@ export default function RootLayout({ children }: LayoutProps) {
             <Link href="/research" className={styles.navItem} onClick={closeMenu}>
                 RESEARCH 
               </Link>
+              <Link href="/governance" className={styles.navItem} onClick={closeMenu}>
+                GOVERNANCE
+              </Link>
               {/* Commented out the resources link
               <Link href="/resources" className={styles.navItem} onClick={closeMenu}> 
                 RESOURCES 
@@ -137,40 +140,6 @@ export default function RootLayout({ children }: LayoutProps) {
               <Link href="/about">
              <div className={styles.navItem} onClick={closeMenu}>ABOUT</div>
              </Link>
-              <a href="#" className={styles.navItem}onClick={toggleSearch}>
- 
-                <img src={navDark ? "/icons/Search.svg" : "/icons/search-blue.svg"} alt="Search" className={styles.searchIcon} />
-  
-              </a>
-              {submenuOpen && (
-                <div className={styles.submenu}>
-                  <div className={styles.submenuItem}>
-                    <input type="checkbox" id="filter1" />
-                    <label htmlFor="filter1">FILTER 1</label>
-                  </div>
-                  <div className={styles.submenuItem}>
-                    <input type="checkbox" id="filter2" />
-                    <label htmlFor="filter2">FILTER 2</label>
-                  </div>
-                  <div className={styles.submenuItem}>
-                    <input type="checkbox" id="filter3" />
-                    <label htmlFor="filter3">FILTER 3</label>
-                  </div>
-                  <div className={styles.submenuItem}>
-                    <input type="checkbox" id="filter4" />
-                    <label htmlFor="filter4">FILTER 4</label>
-                  </div>
-                  <div className={styles.submenuItem}>
-                    <input type="checkbox" id="filter5" />
-                    <label htmlFor="filter5">FILTER 5</label>
-                  </div>
-                </div>
-              )}
-                {menuOpen && (
-                <a href="#" className={styles.navItem} onClick={toggleSearch}>
-                  SEARCH
-                </a>
-              )}
             </nav>
             <div className={`${styles.menuToggle}`} onClick={toggleMenu}>
   {menuOpen ? (

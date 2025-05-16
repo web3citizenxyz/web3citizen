@@ -41,9 +41,11 @@ const Footer = ({ isBlack }: FooterProps) => {
           
           
                  </div>
+        {/*
         <a href="#" className={styles.scrollToTop} onClick={() => window.scrollTo(0, 0)}>
           <img src="/icons/arrow-foot.svg" alt="Scroll to Top" className={styles.arrowIcon} />
         </a>
+        */}
       </div>
     </footer>
   );

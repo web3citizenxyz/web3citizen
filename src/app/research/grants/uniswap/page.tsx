@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -59,7 +58,7 @@ export default function DaoBasics() {
       <section className={styles.section}>
 
   <p className={styles.black}>Application process</p>
-  <p>1. Create a project by connecting your wallet to the Gitcoin Builder Explorer and then selecting “Create a Project”.</p>
+  <p>1. Create a project by connecting your wallet to the Gitcoin Builder Explorer and then selecting "Create a Project".</p>
   <p>2. Apply to the UAGP round. Once you have completed the application process, you can view the status of your application in Builder, and you will receive an email from Gitcoin Stack.</p>
 
 <p>You can find a detailed overview on the registration process<a href='https://www.notion.so/How-to-Apply-98f0daa71c6047fe8ed3e05d82001814?pvs=4' className={styles.a}> here.</a></p>
@@ -85,7 +84,6 @@ export default function DaoBasics() {
      </section> 
 
      <SideIcons />
-     <BackToTop />
     </div>
 
 

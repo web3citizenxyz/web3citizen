@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../DaoBasics.module.css';
 import SideIcons from '@/components/SideIcons';
-import BackToTop from '@/components/BackToTop';
 
 
 
@@ -22,7 +21,7 @@ export default function Base() {
 <br></br>
 <br></br>
         <h1> What are Blueprint Grants?</h1>
-    <p>Builder Grants is Base’s grant program that aims to boost meaningful and impactful contributions to Base. Since its launch in October 2023, Builders Grants has funded 20+ projects.</p>
+    <p>Builder Grants is Base's grant program that aims to boost meaningful and impactful contributions to Base. Since its launch in October 2023, Builders Grants has funded 20+ projects.</p>
     </section>
 <br></br>
 
@@ -70,11 +69,10 @@ The program rewards meaningful contributions without adhering to strict categori
       <p>2. If selected, the team reaches out to the grantee, conducts a KYC process, and then issues the grant.</p>
       
     </ol>
-<p>There is no specified timeline for the grant review process. However, several grants have been issued since the program’s launch three months ago.</p>
+<p>There is no specified timeline for the grant review process. However, several grants have been issued since the program's launch three months ago.</p>
 
 </section>
      <SideIcons />
-     <BackToTop />
     </div>
 
 
