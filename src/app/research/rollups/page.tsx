@@ -19,22 +19,20 @@ export default function Rollups() {
                         <h2 className={styles.cardTitle}>Based Rollups</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>Understanding based rollups and their role in Ethereum scaling.</p>
+                    <p className={styles.cardDescription}>Moving sequencing back to the L1.</p>
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                 </Link>
-                {/*
-                <Link href="/research/rollups/rollup-basics">
+                <Link href="/research/rollups/native-rollups">
                     <div className={styles.card}>
                     <div className={styles.cardHeader}>
                         <img src="/icons/ade.svg" alt="icon adelantare" className={styles.cardHubIcon} />
-                        <h2 className={styles.cardTitle}>Rollup Basics</h2>
+                        <h2 className={styles.cardTitle}>Native Rollups</h2>
                     </div>
                     <div className={styles.cardLine}></div>
-                    <p className={styles.cardDescription}>An introduction to rollups, their types, and how they work.</p>
+                    <p className={styles.cardDescription}>Moving execution back to the L1.</p>
                     <img src="/icons/arrow-card.svg" alt="Arrow Icon" className={styles.arrowRightIcon} />
                     </div>
                 </Link>
-                */}
             </div>
         </div>
     );
