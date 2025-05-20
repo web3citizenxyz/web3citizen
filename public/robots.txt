@@ -1,0 +1,10 @@
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://web3citizen.xyz/sitemap.xml
