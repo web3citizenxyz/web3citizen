@@ -7,4 +7,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://web3citizen.xyz/sitemap.xml
+Sitemap: https://wwww.web3citizen.xyz/sitemap.xml
